@@ -18,6 +18,7 @@
     "test_a_metrics": 0.06735024849573772,
     "test_n_shuffle": 0.0007864077885945638,
     "test_a_prime": 0.0065854986508687334,
-    "vina_variance": 70.24200760920843
+    "vina_variance": 70.24200760920843,
+    "test_b_generation": 30.76761168638865
   }
 }
