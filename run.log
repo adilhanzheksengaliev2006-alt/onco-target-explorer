@@ -18,3 +18,8 @@
 2026-08-31 16:20:00 Тест A: BEDROC=0.693 (порог 0.2, случайный уровень 0.210), p=0.0000
 2026-08-31 16:20:03 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
 2026-08-31 16:20:03 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
+2026-08-31 16:20:05 git push: ok
+2026-08-31 16:20:05 [test_a_metrics] готово за 0.1 мин
+2026-08-31 16:20:05 [test_n_shuffle] старт
+2026-08-31 16:20:06 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
+2026-08-31 16:20:06 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
