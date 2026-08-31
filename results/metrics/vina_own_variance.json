@@ -1,0 +1,125 @@
+{
+  "n_ligands": 9,
+  "n_seeds": 5,
+  "per_ligand": [
+    {
+      "ligand_idx": 0,
+      "smiles": "Cc1ccc([N+](=O)[O-])cc1S(=O)(=O)N(C)/N=C/c1cnc2ccc(Br)cn12",
+      "scores": [
+        -8.024,
+        -8.064,
+        -7.984,
+        -8.038,
+        -8.044
+      ],
+      "mean": -8.0308,
+      "std": 0.02670131082924594
+    },
+    {
+      "ligand_idx": 1,
+      "smiles": "COC[C@H]1OC(=O)/C(=C/N2CCN(Cc3ccccc3)CC2)C2=C(O)C(=O)C3=C([C@H](OC(C)=O)C[C@]4(C)[C@@H](O)CC[C@@H]34)[C@]21C",
+      "scores": [
+        -6.781,
+        -6.779,
+        -6.778,
+        -6.783,
+        -6.77
+      ],
+      "mean": -6.7782,
+      "std": 0.004445222154178771
+    },
+    {
+      "ligand_idx": 2,
+      "smiles": "C=CCN(/C=C1/C(=O)O[C@H](COC)[C@@]2(C)C1=C(O)C(=O)C1=C2[C@H](OC(C)=O)C[C@]2(C)C(=O)CC[C@@H]12)CC=C",
+      "scores": [
+        -6.73,
+        -6.768,
+        -6.699,
+        -6.672,
+        -6.704
+      ],
+      "mean": -6.7146,
+      "std": 0.03243208288099926
+    },
+    {
+      "ligand_idx": 3,
+      "smiles": "CN(C)Cc1cc2nc(-c3cccc(O)c3)nc(N3CCOCC3)c2s1",
+      "scores": [
+        -7.781,
+        -7.723,
+        -7.765,
+        -7.867,
+        -7.764
+      ],
+      "mean": -7.779999999999999,
+      "std": 0.04753945729601888
+    },
+    {
+      "ligand_idx": 4,
+      "smiles": "CC1(C)CC(=O)c2sc(N3CCOC[C@@H]3Cc3c[nH]c4ccccc34)nc2C1",
+      "scores": [
+        -8.886,
+        -8.834,
+        -8.882,
+        -8.91,
+        -8.884
+      ],
+      "mean": -8.8792,
+      "std": 0.024774180107523372
+    },
+    {
+      "ligand_idx": 6,
+      "smiles": "COC(=O)N1CCC(n2ncc3c(N4CCOCC4)nc(-c4ccc(NC(=O)Nc5ccc(CO)cc5)cc4)nc32)CC1",
+      "scores": [
+        -9.472,
+        -9.53,
+        -9.535,
+        -9.523,
+        -9.515
+      ],
+      "mean": -9.515,
+      "std": 0.022529980026622404
+    },
+    {
+      "ligand_idx": 7,
+      "smiles": "O=C(Nc1ccccc1)Nc1ccc(-c2nc(C3=CCOCC3)c3sccc3n2)cc1",
+      "scores": [
+        -9.6,
+        -9.69,
+        -9.544,
+        -9.796,
+        -9.586
+      ],
+      "mean": -9.643199999999998,
+      "std": 0.09001866473126521
+    },
+    {
+      "ligand_idx": 8,
+      "smiles": "CS(=O)(=O)N1CCN(Cc2cc3nc(-c4ccc(NC(=O)Nc5ccncc5)cc4)nc(N4CC5CCC(C4)O5)c3s2)CC1",
+      "scores": [
+        -9.261,
+        -9.64,
+        -9.425,
+        -9.037,
+        -9.607
+      ],
+      "mean": -9.394,
+      "std": 0.22449231612685527
+    },
+    {
+      "ligand_idx": 9,
+      "smiles": "CC(C)n1nnc2c(N3CCOCC3)nc(-c3ccc(NC(=O)Nc4ccncc4)cc3)nc21",
+      "scores": [
+        -9.532,
+        -9.361,
+        -9.337,
+        -9.276,
+        -9.579
+      ],
+      "mean": -9.417,
+      "std": 0.11737631788397543
+    }
+  ],
+  "mean_std_across_ligands": 0.06558994800407607,
+  "max_std_across_ligands": 0.22449231612685527
+}

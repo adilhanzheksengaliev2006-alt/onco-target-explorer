@@ -8,7 +8,8 @@
     "test_a_docking",
     "test_a_metrics",
     "test_n_shuffle",
-    "test_a_prime"
+    "test_a_prime",
+    "vina_variance"
   ],
   "stage_timings": {
     "test0_redock": 0.08788321812947592,
@@ -16,6 +17,7 @@
     "test_a_docking": 108.91409553686778,
     "test_a_metrics": 0.06735024849573772,
     "test_n_shuffle": 0.0007864077885945638,
-    "test_a_prime": 0.0065854986508687334
+    "test_a_prime": 0.0065854986508687334,
+    "vina_variance": 70.24200760920843
   }
 }
