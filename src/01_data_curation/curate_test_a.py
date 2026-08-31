@@ -108,7 +108,7 @@ def fetch_smiles_for_ids(mol_ids):
     return out
 
 
-def fetch_decoy_candidates(mw_lo, mw_hi, alogp_lo, alogp_hi, exclude_ids, limit=6000, page_size=200):
+def fetch_decoy_candidates(mw_lo, mw_hi, alogp_lo, alogp_hi, exclude_ids, limit=6000, page_size=500):
     """Ручная постраничная выборка с ретраями на страницу -- ChEMBL/EBI
     изредка отдают HTML-страницу ошибки вместо JSON посреди пагинации;
     implicit-итератор queryset тогда падает необратимо. Здесь одна неудачная
@@ -122,7 +122,10 @@ def fetch_decoy_candidates(mw_lo, mw_hi, alogp_lo, alogp_hi, exclude_ids, limit=
     out = []
     offset = 0
     consecutive_failures = 0
-    while len(out) < limit and consecutive_failures < 5:
+    max_offset = 10000  # жёсткий потолок на случай низкой плотности
+    # кандидатов в этом MW/ALogP-окне -- иначе пагинация может идти
+    # неограниченно долго, если limit никогда не достигается
+    while len(out) < limit and consecutive_failures < 5 and offset < max_offset:
         page = None
         for attempt in range(3):
             try:
@@ -250,7 +253,7 @@ def main():
     mw_lo, mw_hi = min(mws) * (1 - PROPERTY_TOLERANCE["mw"]), max(mws) * (1 + PROPERTY_TOLERANCE["mw"])
     alogp_lo, alogp_hi = min(alogps) - PROPERTY_TOLERANCE["alogp"], max(alogps) + PROPERTY_TOLERANCE["alogp"]
     exclude_ids = set(active_smiles.keys()) | set(inactive_smiles.keys())
-    candidates = fetch_decoy_candidates(mw_lo, mw_hi, alogp_lo, alogp_hi, exclude_ids, limit=12000)
+    candidates = fetch_decoy_candidates(mw_lo, mw_hi, alogp_lo, alogp_hi, exclude_ids, limit=4000)
     print(f"[curate_test_a] Кандидатов в декои (после фильтра по MW/ALogP): {len(candidates)}")
 
     # предвычислить фингерпринты кандидатов

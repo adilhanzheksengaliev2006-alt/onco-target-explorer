@@ -110,6 +110,15 @@ def git_commit(message: str):
         subprocess.run(["git", "commit", "-m", message], cwd=BASE_DIR, capture_output=True, timeout=60)
     except Exception as e:
         log(f"git commit не удался: {e}")
+    try:
+        push = subprocess.run(["git", "push", "origin", "main"], cwd=BASE_DIR,
+                               capture_output=True, text=True, timeout=120)
+        if push.returncode != 0:
+            log(f"git push не удался (продолжаю без остановки): {push.stderr[-300:]}")
+        else:
+            log("git push: ok")
+    except Exception as e:
+        log(f"git push не удался: {e}")
 
 
 def update_status(state, stage_name: str, stage_status: str):

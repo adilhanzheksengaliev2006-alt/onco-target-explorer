@@ -1,0 +1,8 @@
+rdkit
+pandas
+numpy
+requests
+gemmi
+meeko
+chembl_webresource_client
+pyyaml

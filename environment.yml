@@ -1,0 +1,26 @@
+name: pik3ca-pilot
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - rdkit
+      - pandas
+      - numpy
+      - requests
+      - gemmi
+      - meeko
+      - chembl_webresource_client
+      - pyyaml
+
+# AutoDock Vina: используется официальный бинарник tools/vina.exe
+# (Windows), не python-биндинги -- см. dock_existing_candidates.py
+# docstring. На Linux/кластере: заменить на conda-forge пакет vina или
+# системный автономный vina, поменяв только config/paths.yaml (см.
+# docs/scale-up.md).
+#
+# DiffSBDD (Тест B) ставится в ОТДЕЛЬНОЕ окружение
+# (module_generative/diffsbdd_env, не входит в этот environment.yml из-за
+# конфликтующих версий torch) -- см. module_generative/DiffSBDD/README.md
+# и docs/reproducibility.md для точных версий и источника чекпоинта.
