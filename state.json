@@ -4,10 +4,12 @@
   "protocol_sha256": "920b33bdfaadc0217454eb1075917dd04b3c49f31fce6b72206f7e497c4a0044",
   "stages_completed": [
     "test0_redock",
-    "test_a_curation"
+    "test_a_curation",
+    "test_a_docking"
   ],
   "stage_timings": {
     "test0_redock": 0.08788321812947592,
-    "test_a_curation": 0.3842025876045227
+    "test_a_curation": 0.3842025876045227,
+    "test_a_docking": 108.91409553686778
   }
 }

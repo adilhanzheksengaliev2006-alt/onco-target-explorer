@@ -3,3 +3,12 @@
 2026-08-31 14:22:44 git push: ok
 2026-08-31 14:22:44 [test0_redock] готово за 0.1 мин
 2026-08-31 14:22:44 [test_a_curation] старт
+2026-08-31 14:23:09 git push: ok
+2026-08-31 14:23:09 [test_a_curation] готово за 0.4 мин
+2026-08-31 14:23:09 [test_a_docking] старт
+2026-08-31 14:31:00 === Пилотный пайплайн PIK3CA/4JPS запущен. Дедлайн: 2026-09-02T14:22:34.308325 ===
+2026-08-31 14:31:00 [test0_redock] уже завершён, пропуск
+2026-08-31 14:31:00 [test_a_curation] уже завершён, пропуск
+2026-08-31 14:31:00 [test_a_docking] старт
+2026-08-31 16:19:55 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
+2026-08-31 16:19:55 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
