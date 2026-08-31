@@ -1,0 +1,843 @@
+16:12:32 <INFO> Started REINVENT 4.8.24 (C) AstraZeneca 2017, 2023 on 2026-08-22
+16:12:32 <INFO> Command line: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\module_generative\REINVENT4\reinvent\__main__.py -l 4jps_test_run.log configs/4jps_test_run.toml
+16:12:32 <INFO> Reading run configuration from C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\module_generative\REINVENT4\configs\4jps_test_run.toml using format toml
+16:12:32 <INFO> User yrysz on host Yryszhan
+16:12:32 <INFO> Python version 3.11.16
+16:12:32 <INFO> PyTorch version 2.12.0+cu126 git 7661cd9c6b841b62b7f411aa52ec51f05457263b
+16:12:32 <INFO> PyTorch compiled with CUDA version 12.6
+16:12:32 <INFO> RDKit version 2026.03.1
+16:12:32 <INFO> Platform Windows-10-10.0.26200-SP0
+16:12:32 <INFO> Number of PyTorch CUDA devices 1
+16:12:32 <INFO> Using GPU device:0 NVIDIA RTX A4000
+16:12:32 <INFO> GPU memory: 15258 MiB free, 16375 MiB total
+16:12:32 <INFO> Writing TensorBoard summary to C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\module_generative\REINVENT4\tb_logs_4jps_test
+16:12:32 <INFO> Writing JSON config file to C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\module_generative\REINVENT4\_4jps_test_run.json
+16:12:32 <INFO> Starting 1 stage of Reinforcement Learning
+16:12:32 <ERRO> C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\module_generative\REINVENT4\priors\reinvent.prior has invalid hash:
+{ 'comments': ['test small batch size', 'TL'],
+  'creation_date': 1741157561.98086,
+  'date_format': 'UNIX epoch',
+  'hash_id': 'cb6c8ae795fefcc07c366041382b353d',
+  'hash_id_format': 'xxhash.xxh3_128_hex 3.4.1',
+  'model_id': UUID('4178afaa-e86f-4baf-a5e1-2c324c401e7f'),
+  'model_id_format': 'uuid.uuid4 3.10.16',
+  'origina_data_source': 'PubChem 2024-06-03',
+  'updates': [1741606576.2719467]}
+16:12:32 <INFO> Number of network parameters: 5,880,195
+16:12:32 <INFO> Network architecture:
+RNN(
+  (_embedding): Embedding(131, 256)
+  (_rnn): LSTM(256, 512, num_layers=3, batch_first=True)
+  (_linear): Linear(in_features=512, out_features=131, bias=True)
+)
+16:12:33 <ERRO> C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\module_generative\REINVENT4\priors\reinvent.prior has invalid hash:
+{ 'comments': ['test small batch size', 'TL'],
+  'creation_date': 1741157561.98086,
+  'date_format': 'UNIX epoch',
+  'hash_id': 'cb6c8ae795fefcc07c366041382b353d',
+  'hash_id_format': 'xxhash.xxh3_128_hex 3.4.1',
+  'model_id': UUID('4178afaa-e86f-4baf-a5e1-2c324c401e7f'),
+  'model_id_format': 'uuid.uuid4 3.10.16',
+  'origina_data_source': 'PubChem 2024-06-03',
+  'updates': [1741606576.2719467]}
+16:12:33 <INFO> Number of network parameters: 5,880,195
+16:12:33 <INFO> Network architecture:
+RNN(
+  (_embedding): Embedding(131, 256)
+  (_rnn): LSTM(256, 512, num_layers=3, batch_first=True)
+  (_linear): Linear(in_features=512, out_features=131, bias=True)
+)
+16:12:33 <INFO> Using generator Reinvent
+16:12:33 <INFO> Prior read from priors/reinvent.prior
+16:12:33 <INFO> Agent read from priors/reinvent.prior
+16:12:33 <INFO> Using reward strategy dap
+16:12:33 <INFO> Using diversity filter IdenticalMurckoScaffold
+16:12:33 <INFO> Diversity filter memories are retained between stages
+16:12:33 <WARN> Inception disabled but may speed up convergence
+16:12:33 <ERRO> Component reinvent_plugins.components.OpenEye.comp_rocs could not be imported: No module named 'openeye'
+16:12:33 <INFO> Registered scoring component GroupCount
+16:12:33 <INFO> Registered scoring component FragmentQed
+16:12:33 <INFO> Registered scoring component FragmentSlogP
+16:12:33 <INFO> Registered scoring component FragmentMolecularWeight
+16:12:33 <INFO> Registered scoring component FragmentTPSA
+16:12:33 <INFO> Registered scoring component FragmentDistanceMatrix
+16:12:33 <INFO> Registered scoring component FragmentNumAtomStereoCenters
+16:12:33 <INFO> Registered scoring component FragmentHBondAcceptors
+16:12:33 <INFO> Registered scoring component FragmentHBondDonors
+16:12:33 <INFO> Registered scoring component FragmentNumRotBond
+16:12:33 <INFO> Registered scoring component FragmentCsp3
+16:12:33 <INFO> Registered scoring component Fragmentnumsp
+16:12:33 <INFO> Registered scoring component Fragmentnumsp2
+16:12:33 <INFO> Registered scoring component Fragmentnumsp3
+16:12:33 <INFO> Registered scoring component FragmentEffectiveLength
+16:12:33 <INFO> Registered scoring component FragmentGraphLength
+16:12:33 <INFO> Registered scoring component FragmentLengthRatio
+16:12:33 <INFO> Registered scoring component FragmentNumHeavyAtoms
+16:12:33 <INFO> Registered scoring component FragmentNumHeteroAtoms
+16:12:33 <INFO> Registered scoring component FragmentNumRings
+16:12:33 <INFO> Registered scoring component FragmentNumAromaticRings
+16:12:33 <INFO> Registered scoring component FragmentNumAliphaticRings
+16:12:33 <INFO> Registered scoring component FragmentSlogP
+16:12:33 <INFO> Registered scoring component MatchingSubstructure
+16:12:33 <INFO> Registered scoring component MolVolume
+16:12:33 <INFO> Registered scoring component Qed
+16:12:33 <INFO> Registered scoring component LargestRingSize
+16:12:33 <INFO> Registered scoring component MolecularWeight
+16:12:33 <INFO> Registered scoring component GraphLength
+16:12:33 <INFO> Registered scoring component NumAtomStereoCenters
+16:12:33 <INFO> Registered scoring component HBondAcceptors
+16:12:33 <INFO> Registered scoring component HBondDonors
+16:12:33 <INFO> Registered scoring component NumRotBond
+16:12:33 <INFO> Registered scoring component Csp3
+16:12:33 <INFO> Registered scoring component numsp
+16:12:33 <INFO> Registered scoring component numsp2
+16:12:33 <INFO> Registered scoring component numsp3
+16:12:33 <INFO> Registered scoring component NumHeavyAtoms
+16:12:33 <INFO> Registered scoring component NumHeteroAtoms
+16:12:33 <INFO> Registered scoring component NumRings
+16:12:33 <INFO> Registered scoring component NumAromaticRings
+16:12:33 <INFO> Registered scoring component NumAliphaticRings
+16:12:33 <INFO> Registered scoring component SlogP
+16:12:33 <INFO> Registered scoring component LargestRingSize
+16:12:33 <INFO> Registered scoring component PMI
+16:12:33 <INFO> Registered scoring component RDKitDescriptors
+16:12:33 <INFO> Registered scoring component TanimotoSimilarity
+16:12:33 <INFO> Registered scoring component TanimotoDistance
+16:12:33 <INFO> Registered scoring component TPSA
+16:12:33 <INFO> Registered scoring component SAScore
+16:12:33 <ERRO> Component reinvent_plugins.components.comp_chemprop could not be imported: No module named 'chemprop'
+16:12:33 <ERRO> Component reinvent_plugins.components.comp_chemprop2 could not be imported: No module named 'chemprop'
+16:12:33 <INFO> Registered scoring component CustomAlerts
+16:12:33 <INFO> Registered scoring component DockStream
+16:12:33 <INFO> Registered scoring component ExternalProcess
+16:12:33 <INFO> Registered scoring component REST
+16:12:33 <INFO> Registered scoring component Icolos
+16:12:33 <INFO> Registered scoring component MMP
+16:12:33 <INFO> Registered scoring component Qptuna
+16:12:33 <INFO> Registered scoring component ReactionFilter
+16:12:33 <INFO> Registered scoring component RingPrecedence
+16:12:33 <INFO> Registered scoring component Maize
+16:12:33 <INFO> Registered scoring component SynthSense
+16:12:33 <INFO> Registered scoring component CAZP
+16:12:33 <INFO> Creating filter component custom_alerts
+16:12:33 <INFO> Creating scoring component SAScore
+16:12:33 <INFO> Writing tabular data for stage to 4jps_test_run_1.csv
+16:12:33 <INFO> Starting stage 1 <<<
+16:12:33 <INFO> Sampled SMILES c1(C2(CC3c4cccc5cccc(C2)c45)N=NC(=O)N32CCCC2)ccccc1 failed to sanitize.
+16:12:33 <INFO> Sampled SMILES c1c(cc(C(F)(F)F)cc1)-p1oc2ccc3C(CC)(C)c4cc(ccc4-c3c2c([nH]c1C)C)-c1ccc(cc1)C1CNC1 failed to sanitize.
+16:12:33 <INFO> Sampled SMILES c1c(F)c(N2CC(C(=O)N3CCCC(C(=O)Nc4noc(C)c4)c4ccc(OC)c(c4)OC)CC3=S)ccc2ccc1 failed to sanitize.
+16:12:33 <INFO> Score: 0.63 Agent NLL: 37.34 Valid:  97% Step: 1
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 33.9166 33.9166 -33.9166 0.0000000 C=CCCC(=O)CC(C(=O)O)c1cccc(F)c1 1 c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 60.7698 60.7698 -53.1818 0.0592815 CC(C)CCCC(O)C1=CCC2C(C)C(O)CCC2(C)C1CC=CC(=O)CC=CC(C)(C)C 1 C1=CCC2CCCCC2C1 0.0592815 4.9604 1.0000000 1.0000 []
+ | 36.9966 36.9966 87.5016 0.9726417 Cc1cccc(C)c1Cn1cnc2c(c(CC(C)C)nn2C(C)(C)C)c1=O 1 O=c1c2cn[nH]c2ncn1Cc1ccccc1 0.9726417 2.7593 1.0000000 1.0000 []
+ | 30.9858 30.9858 -30.9858 0.0000000 CCCCCCCC(O)COc1ccc(C#CCO)cc1C 1 c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['C#C']
+ | 27.6994 27.6994 98.9509 0.9894557 CCOc1cc(C=C2C(=O)NC(=O)N(c3cccc(F)c3)C2=O)cc(Br)c1O 1 O=C1NC(=O)N(c2ccccc2)C(=O)C1=Cc1ccccc1 0.9894557 2.4221 1.0000000 1.0000 []
+ | 28.0208 28.0208 93.5836 0.9500340 O=c1oc2ccc([N+](=O)[O-])cc2n1[O-] 1 O=c1[nH]c2ccccc2o1 0.9500340 2.9767 1.0000000 1.0000 []
+ | 57.2579 57.2579 -57.2579 0.0000000 COC(=O)c1cc2c(c(C3(C)CN3c3cccc(CO)c3)c1)C(=O)c1cc(Br)ccc1C2=O 1 O=C1c2ccccc2C(=O)c2c1cccc2C1CN1c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 61.5177 61.5177 -61.5177 0.0000000 CCOC(=O)Nc1nc(N2CCC(NS(=O)(=O)Cc3ccccc3)C2)nn2cc(Oc3ncccc3Br)cc12 1 O=S(=O)(Cc1ccccc1)NC1CCN(c2ncc3cc(Oc4ccccn4)cn3n2)C1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 27.2324 27.2324 98.0470 0.9787456 O=[N+]([O-])c1ccccc1S(=O)(=O)NC1CCOC1 1 O=S(=O)(NC1CCOC1)c1ccccc1 0.9787456 2.6694 1.0000000 1.0000 []
+ | 31.9291 31.9291 93.2135 0.9776767 COc1ccc(C2(O)CCCN(CCCF)CC2)cc1 1 c1ccc(C2CCCNCC2)cc1 0.9776767 2.6868 1.0000000 1.0000 []
+16:12:34 <INFO> Sampled SMILES [C@]1(C2[C@@]3([C@@H](C([C@H]4[C@](C=C(O)C(=O)[C@@]4(C=3O)C)(C)[C@H]([C@@]([C@@H]2O)(COC(c2ccc3ccccc3c2)=O)C)O[C@@]2([C@H](C3(C4=C([C@H]2CCC3)C)OC4)C)O)=O)O)C=CC=1)(OC)OC failed to sanitize.
+16:12:34 <INFO> Sampled SMILES O=C(NC1[C@H]2N(C1=O)C(C(O)=O)=C(CS2)CN(Cc1nc2n(C)c(=O)n(c(c2n1C)=O)C)=O)c1ccc(c(c1)Cl)Cl failed to sanitize.
+16:12:34 <INFO> Score: 0.63 Agent NLL: 36.17 Valid:  98% Step: 2
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 34.0855 34.1925 90.4546 0.9738052 CC(CC(=O)Nn1cnc(-c2ccccc2)c1)c1ccccc1 1 O=C(CCc1ccccc1)Nn1cnc(-c2ccccc2)c1 0.9738052 2.7438 1.0000000 1.0000 []
+ | 118.4202 117.7197 -117.7197 0.0000000 COc1ccc2ncc(F)c(C(C[B]C(=O)O)(SC3(c4ccccc4F)C4=CC3N(S(=O)(=O)c3ccc(C)cc3)CC(C(C)C)N4N)c3ccc(C#N)cc3)c2n1 1 O=S(=O)(c1ccccc1)N1CCNC2=CC1C2(SC(c1ccccc1)c1ccnc2cccnc12)c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]', 'C(=[O,S])[O,S]']
+ | 31.7503 32.0065 90.8346 0.9596962 CC1CCCCN1Cc1ccc(NC(=O)C(C)n2ccnc2)cc1 1 O=C(Cn1ccnc1)Nc1ccc(CN2CCCCC2)cc1 0.9596962 2.8986 1.0000000 1.0000 []
+ | 23.0564 23.0471 -23.0471 0.0000000 CC(C)(C)OC(=O)CCC=CI 1  0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 26.5361 26.4002 53.6867 0.6256785 CCC1(CC)NC(=O)NC1CCCCOC 1 O=C1NCCN1 0.6256785 3.8215 1.0000000 1.0000 []
+ | 47.2271 47.4076 62.4583 0.8583275 CCC(C(=O)CSCC=CC(O)C(c1ccccc1)c1ccccc1)=C(C)C 1 c1ccc(Cc2ccccc2)cc1 0.8583275 3.3741 1.0000000 1.0000 []
+ | 24.5396 24.5480 90.6038 0.8996235 CC1(CNCc2ccc(F)c(F)c2)CCCS1 1 c1ccc(CNCC2CCCS2)cc1 0.8996235 3.2381 1.0000000 1.0000 []
+ | 49.9455 49.9600 66.2443 0.9078455 COc1cc(-n2cc(C3=CC=CCC=C3)c3c(=O)[nH]c(=O)[nH]c32)ccc1N1CCCC1 1 O=c1[nH]c(=O)c2c(C3=CC=CCC=C3)cn(-c3ccc(N4CCCC4)cc3)c2[nH]1 0.9078455 3.2052 1.0000000 1.0000 []
+ | 33.3293 33.9258 93.3099 0.9940292 Cc1ccc(OCCN(C)C(=O)NCCCc2c(C)nn(C)c2C)cc1 1 O=C(NCCCc1cn[nH]c1)NCCOc1ccccc1 0.9940292 2.2229 1.0000000 1.0000 []
+ | 25.8228 25.6439 95.9948 0.9503018 CCCn1ccnc1CNC1CCCc2sccc21 1 c1c[nH]c(CNC2CCCc3sccc32)n1 0.9503018 2.9748 1.0000000 1.0000 []
+16:12:34 <INFO> Sampled SMILES C(=O)(c1cnn(CCNC(=O)/C([N+]#N)=C/N(C)C)c2c1CCCC2=O)OC failed to sanitize.
+16:12:34 <INFO> Score: 0.71 Agent NLL: 34.48 Valid:  98% Step: 3
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 26.8085 26.5872 97.1100 0.9663847 CC1(C)CCCC(O)(CCc2ccc(Br)cc2)C1 1 c1ccc(CCC2CCCCC2)cc1 0.9663847 2.8331 1.0000000 1.0000 []
+ | 45.0117 44.7799 80.7058 0.9803576 CCOCCCN1Cc2c(OC)c(OC)cc3cc(C(C)C)cc(c23)C1=O 1 O=C1NCc2cccc3cccc1c23 0.9803576 2.6414 1.0000000 1.0000 []
+ | 47.7663 47.1136 -19.2902 0.2173702 CC1CCC(=O)C2C1C(O)C(c1ccccc1)C1(C)OCCC21 1 O=C1CCCC2CC(c3ccccc3)C3OCCC3C12 0.2173702 4.4451 1.0000000 1.0000 []
+ | 25.9297 26.0234 99.4930 0.9805967 CC(O)c1nnc(-c2cccc(F)c2)o1 1 c1ccc(-c2nnco2)cc1 0.9805967 2.6371 1.0000000 1.0000 []
+ | 47.0015 47.3272 66.5025 0.8892944 CC1(c2ccccc2)c2ccccc2-c2c1cc(-c1ccc(-n3ccc4c3-c3ccccc3C4=O)cc1)c1ccccc21 1 O=C1c2ccccc2-c2c1ccn2-c1ccc(-c2cc3c(c4ccccc24)-c2ccccc2C3c2ccccc2)cc1 0.8892944 3.2761 1.0000000 1.0000 []
+ | 24.2796 24.5856 102.4396 0.9923845 COC(C)(C)COc1cccc(C#N)c1 1 c1ccccc1 0.9923845 2.3080 1.0000000 1.0000 []
+ | 28.3975 28.2770 93.4747 0.9511854 CCC(C)(C)C(=O)Cc1c(Br)cncc1Br 1 c1ccncc1 0.9511854 2.9682 1.0000000 1.0000 []
+ | 34.0381 34.4085 81.3676 0.9045004 CC(SCc1sccc1Cl)C(=O)NCC(F)(F)F 1 c1ccsc1 0.9045004 3.2189 1.0000000 1.0000 []
+ | 36.7382 35.1146 87.6092 0.9587803 O=C(Nc1nc2cc(F)ccc2n1C1CC1)C1CC(=O)N(C2CC2)C1 1 O=C(Nc1nc2ccccc2n1C1CC1)C1CC(=O)N(C2CC2)C1 0.9587803 2.9067 1.0000000 1.0000 []
+ | 27.1470 26.6872 -26.6872 0.0000000 O=C(O)c1ccccc1CN1CCC2(O)CCCCC2C1 1 c1ccc(CN2CCC3CCCCC3C2)cc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+16:12:35 <INFO> Sampled SMILES c1c(OCCCN2CCCCC2)cc2CCCN3C(=O)c4c5c(c1c23)cc(cc5)C(=O)O4 failed to sanitize.
+16:12:35 <INFO> Sampled SMILES c1cc2c(cc1)-n1ccc(I)nc1N(C2)Cc1ccc(OC)cc1 failed to sanitize.
+16:12:35 <INFO> Score: 0.67 Agent NLL: 33.38 Valid:  98% Step: 4
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 32.2234 32.5182 92.2336 0.9746237 CCc1noc(-c2ccccc2OCC(=O)N2c3ccccc3CC2C)n1 1 O=C(COc1ccccc1-c1ncno1)N1CCc2ccccc21 0.9746237 2.7325 1.0000000 1.0000 []
+ | 37.5959 37.2833 88.5444 0.9830291 O=C(Nc1ccccc1)N1CCc2nnnn2-c2ccc(C(F)(F)F)cc21 1 O=C(Nc1ccccc1)N1CCc2nnnn2-c2ccccc21 0.9830291 2.5897 1.0000000 1.0000 []
+ | 48.2955 47.9083 77.9860 0.9835491 CCS(=O)(=O)Nc1ccc(CCCNc2nncc(-c3ccc([N+](=O)[O-])cc3)n2)cc1Cl 1 c1ccc(CCCNc2nncc(-c3ccccc3)n2)cc1 0.9835491 2.5787 1.0000000 1.0000 []
+ | 24.0921 24.9352 95.1915 0.9384893 CC(C)N1CCN(C2CC2)C(CN)C1 1 C1CN(C2CC2)CCN1 0.9384893 3.0532 1.0000000 1.0000 []
+ | 31.6430 31.9735 95.2807 0.9941735 Nc1cc(NC(=O)c2nc(Cl)c(Cl)cc2Cl)ccc1Cl 1 O=C(Nc1ccccc1)c1ccccn1 0.9941735 2.2144 1.0000000 1.0000 []
+ | 53.0098 52.4255 -52.4255 0.0000000 c1c(OCCCN2CCCCC2)cc2CCCN3C(=O)c4c5c(c1c23)cc(cc5)C(=O)O4 0 -- 0.0000000 0.0000 0.0000000 0.0000 None
+ | 43.9598 44.1436 78.7144 0.9598280 CC(=O)Nc1cccc(CN2C(=O)C(=O)C(=C(O)c3ccc(C)c(C)c3)C2c2c(F)cccc2F)c1 1 O=C1C(=O)N(Cc2ccccc2)C(c2ccccc2)C1=Cc1ccccc1 0.9598280 2.8974 1.0000000 1.0000 []
+ | 24.9985 24.9990 57.8795 0.6474885 CC1CCN(CC2CNCCC2C)C(C)C1 1 C1CCN(CC2CCCNC2)CC1 0.6474885 3.7888 1.0000000 1.0000 []
+ | 47.5003 47.3545 -47.3545 0.0000000 O=C(CCCCSc1ccccc1NS(=O)(=O)c1cccc2cccnc12)N1CCCOC1=O 1 O=C(CCCCSc1ccccc1NS(=O)(=O)c1cccc2cccnc12)N1CCCOC1=O 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 45.7063 45.9138 -45.9138 0.0000000 CN(S)C(=O)Nc1ccc(Cn2cc(C(=O)NC3CCN(S(C)(=O)=O)CC3)nn2)cc1 1 O=C(NC1CCNCC1)c1cn(Cc2ccccc2)nn1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][S;!$(S(=O)=O)]']
+16:12:35 <INFO> Sampled SMILES n1cc2cc(-c3ccc4[nH]ncc4c3)cc3c2n(OCc2c(F)cccc2)c1NC3N failed to sanitize.
+16:12:35 <INFO> Sampled SMILES c1c(cc2c(ncnc2c1)C1CCNCC1)Nc1nc(N)n2c(C(CC2)c2ccc(cc2)Cl)c1F failed to sanitize.
+16:12:35 <INFO> Score: 0.74 Agent NLL: 32.12 Valid:  98% Step: 5
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 26.6104 26.7349 98.4341 0.9778826 CC(NC(=O)Cc1ccccc1N)c1nncn1C 1 O=C(Cc1ccccc1)NCc1nnc[nH]1 0.9778826 2.6836 1.0000000 1.0000 []
+ | 50.9899 49.8868 -47.8468 0.0159379 CC(C)(O)CCCC(C)(C(O)CCC(C)(C)O)C1C(O)CCC2(C)C1CCC21COC1 1 C1CCC2C(C1)CCC21COC1 0.0159379 5.4325 1.0000000 1.0000 []
+ | 35.5946 35.6181 -29.0609 0.0512278 CC1=C2COCC(CC1)N2I 1 C1=C2COCC(CC1)N2 0.0512278 5.0141 1.0000000 1.0000 []
+ | 23.8496 24.4423 30.5971 0.4299952 CC(C)(N)C(O)NO 1  0.4299952 4.0979 1.0000000 1.0000 []
+ | 30.5687 31.3652 94.9567 0.9868897 Brc1ccc(C(=Cc2ccccn2)Cn2ccnc2)cc1 1 C(=C(Cn1ccnc1)c1ccccc1)c1ccccn1 0.9868897 2.4987 1.0000000 1.0000 []
+ | 26.7495 26.7529 99.6046 0.9871678 CCC(Oc1ccccc1F)C(=O)N1CCc2ccccc21 1 O=C(COc1ccccc1)N1CCc2ccccc21 0.9871678 2.4911 1.0000000 1.0000 []
+ | 23.2412 23.9794 97.2964 0.9474670 CNCc1cc(Cl)ccc1N1CCSC(C)C1 1 c1ccc(N2CCSCC2)cc1 0.9474670 2.9951 1.0000000 1.0000 []
+ | 27.2200 28.0273 99.4864 0.9962007 CCCCCNC(=O)c1nn(-c2cccc(C)c2)c(C)cc1=O 1 O=c1ccn(-c2ccccc2)nc1 0.9962007 2.0651 1.0000000 1.0000 []
+ | 29.7389 29.2049 -29.2049 0.0000000 COC(=O)c1ccoc1C(=O)Nc1ccc(C)c(C)c1 1 O=C(Nc1ccccc1)c1ccco1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 43.8240 44.3115 78.1213 0.9565067 Cc1nc(-c2cccnc2)sc1CN1CCn2c(nnc2-c2ccc(=O)n(C)c2C)C1 1 O=c1ccc(-c2nnc3n2CCN(Cc2cnc(-c4cccnc4)s2)C3)c[nH]1 0.9565067 2.9262 1.0000000 1.0000 []
+16:12:35 <INFO> Sampled SMILES c1(cnc2n(c1N)C[C@H](C(C)(C)C)N2C)C(=O)N[C@@H](C)c1ccccc1 failed to sanitize.
+16:12:35 <INFO> Sampled SMILES c12c(sc(Nc3n4ncc(c4nc(c3)OC3CNCC3)C)n2C)cccc1 failed to sanitize.
+16:12:36 <INFO> Score: 0.73 Agent NLL: 31.84 Valid:  98% Step: 6
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 40.0194 40.6026 -31.2147 0.0733426 CCNC(=O)C1C(C)C2OC23CN(C)C(=O)C13 1 O=C1NCC23OC2CCC13 0.0733426 4.8813 1.0000000 1.0000 []
+ | 32.4948 31.7488 64.6667 0.7532462 CCOC1CN(c2nc(NC)cc(C)c2C#N)CC1C 1 c1ccc(N2CCCC2)nc1 0.7532462 3.6123 1.0000000 1.0000 []
+ | 28.8299 29.2999 94.1075 0.9641209 CSCCN1C(=O)NC(C)(c2cccc(N)c2)C1=O 1 O=C1NC(=O)C(c2ccccc2)N1 0.9641209 2.8566 1.0000000 1.0000 []
+ | 25.7163 25.7266 97.9706 0.9663844 CC(O)c1ccnc(S(C)(=O)=O)c1 1 c1ccncc1 0.9663844 2.8331 1.0000000 1.0000 []
+ | 30.5834 30.5150 96.7236 0.9940516 COc1cc(Sc2ccc3ccccc3n2)cc(Br)c1OC 1 c1ccc(Sc2ccc3ccccc3n2)cc1 0.9940516 2.2216 1.0000000 1.0000 []
+ | 27.5732 28.0012 99.7172 0.9977997 O=C(CCc1c[nH]c2ccc(Br)cc12)Nc1ccc(Cl)cc1 1 O=C(CCc1c[nH]c2ccccc12)Nc1ccccc1 0.9977997 1.8748 1.0000000 1.0000 []
+ | 28.0703 28.0269 -28.0269 0.0000000 O=C1C(=Cc2ccc(-c3ccc(Cl)cc3Cl)o2)SC(=S)N1c1ccccc1 1 O=C1C(=Cc2ccc(-c3ccccc3)o2)SC(=S)N1c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 30.5833 30.0750 91.4893 0.9497204 CNc1ncnc(N2CCC(C3CCCC3)C2)c1[N+](=O)[O-] 1 c1cc(N2CCC(C3CCCC3)C2)ncn1 0.9497204 2.9790 1.0000000 1.0000 []
+ | 60.0808 59.4117 -59.4117 0.0000000 NC(N)=NCCCC(NC(=O)C(CCCCNCC(N)CO)NC(=O)N1CCN(C2=CCC=CN2)CC1)C(=O)O 1 C1=CNC(N2CCNCC2)=CC1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 26.4850 27.2329 -27.2329 0.0000000 NNC(=O)C(=O)N1CCc2ccccc21 1 c1ccc2c(c1)CCN2 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+16:12:36 <INFO> Sampled SMILES c1n(C)c2c(n1)c(N)c(nc2)C=Cc1nc2n(CCC(C2)N(C)C)cc1 failed to sanitize.
+16:12:36 <INFO> Score: 0.65 Agent NLL: 30.83 Valid:  99% Step: 7
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 26.6599 26.7446 100.4337 0.9935803 CC(NC(=O)NC1CCC1)c1ccc(Br)cc1 1 O=C(NCc1ccccc1)NC1CCC1 0.9935803 2.2482 1.0000000 1.0000 []
+ | 27.5788 29.3341 -29.3341 0.0000000 Cc1c(F)cccc1CC(=O)C(C)(F)F 1 c1ccccc1 0.9885392 2.4514 1.0000000 1.0000 []
+ | 25.0917 26.8133 101.0600 0.9990101 CCc1ccc(NC(=O)c2ccc(NC(=O)NC)cc2)cc1 1 O=C(Nc1ccccc1)c1ccccc1 0.9990101 1.5968 1.0000000 1.0000 []
+ | 33.9715 34.2596 92.8707 0.9932048 COc1cccc(NC(=O)N2CCn3c(nnc3NC(=O)c3ccccc3)C2)c1 1 O=C(Nc1nnc2n1CCN(C(=O)Nc1ccccc1)C2)c1ccccc1 0.9932048 2.2681 1.0000000 1.0000 []
+ | 60.8477 60.5572 -60.5572 0.0000000 CCS(=O)(=O)NC1=NC2=C3C=C(C(Cl)=CC(Cl)=C3c3cccc4nsnc34)N(C=N1)CC2 1 C1=CC2=CC(=C3CCN2C=NC=N3)C(c2cccc3nsnc23)=C1 0.0000000 0.0000 0.0000000 0.0000 ['[*;r{8-17}]']
+ | 23.7551 24.1742 102.5260 0.9898453 O=[N+]([O-])c1ccc(Br)c(-c2nn[nH]n2)c1 1 c1ccc(-c2nn[nH]n2)cc1 0.9898453 2.4089 1.0000000 1.0000 []
+ | 26.2991 28.9676 88.0704 0.9143595 CCNC(=NCc1cc(F)ccc1Cl)N1CCC(CN(C)C)C1 1 C(=NCc1ccccc1)N1CCCC1 0.9143595 3.1772 1.0000000 1.0000 []
+ | 44.8703 43.5205 -34.6251 0.0694956 CC1CC(C)C(C)(C)CC1CC1OC(C)(O)CC1(C)C 1 C1CCC(CC2CCCO2)CC1 0.0694956 4.9014 1.0000000 1.0000 []
+ | 30.6810 31.7022 -31.7022 0.0000000 CCc1ccccc1NC(=O)CN1C(=O)SC(=Cc2ccc(OCc3ccccc3)c(Cl)c2)C1=O 1 O=C(CN1C(=O)SC(=Cc2ccc(OCc3ccccc3)cc2)C1=O)Nc1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 42.1502 42.1728 -42.1728 0.0000000 CCCC(=O)N1C(C(=O)O)C2C=CC3(OCC(C)(C)C13)O2 1 C1=CC23OCCC2NCC1O3 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+16:12:36 <INFO> Score: 0.77 Agent NLL: 32.39 Valid:  99% Step: 8
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 35.5483 36.3496 90.5233 0.9911948 Cc1cc2c(Nc3cccc4c([N+](=O)[O-])cccc34)ncnc2s1 1 c1ccc2c(Nc3ncnc4sccc34)cccc2c1 0.9911948 2.3589 1.0000000 1.0000 []
+ | 29.2637 32.1766 95.6628 0.9987453 CC(=O)Nc1ccc(C(=O)NCc2cccc(-c3ccc(Cl)cc3)c2)cc1 1 O=C(NCc1cccc(-c2ccccc2)c1)c1ccccc1 0.9987453 1.6793 1.0000000 1.0000 []
+ | 30.6196 32.1272 94.9654 0.9929112 CN(C)CCNc1ccc(-c2cc(=O)c3ccccc3[nH]2)cn1 1 O=c1cc(-c2cccnc2)[nH]c2ccccc12 0.9929112 2.2829 1.0000000 1.0000 []
+ | 23.1341 23.6031 101.5820 0.9780091 C=CCN1CCCC(C(N)=O)C1 1 C1CCNCC1 0.9780091 2.6815 1.0000000 1.0000 []
+ | 28.5721 28.2378 95.9808 0.9704576 CCC(C)CN1CCC(NC(=O)CC2CCNCC2)CC1 1 O=C(CC1CCNCC1)NC1CCNCC1 0.9704576 2.7868 1.0000000 1.0000 []
+ | 26.6440 27.0254 97.2147 0.9706263 Nc1ccccc1C(=O)N1CCC2(CCOC2)CC1 1 O=C(c1ccccc1)N1CCC2(CCOC2)CC1 0.9706263 2.7847 1.0000000 1.0000 []
+ | 23.9016 23.4686 101.0918 0.9731283 CCCCC(CC)COc1ccc(Br)nc1 1 c1ccncc1 0.9731283 2.7529 1.0000000 1.0000 []
+ | 30.9845 32.2275 89.3200 0.9495897 Nc1c(NCc2cccnc2)ncnc1NC1CCS(=O)(=O)C1 1 O=S1(=O)CCC(Nc2cc(NCc3cccnc3)ncn2)C1 0.9495897 2.9800 1.0000000 1.0000 []
+ | 24.4251 25.2492 100.2931 0.9807991 CCNC(=O)c1ccccc1NC1CCSC1 1 c1ccc(NC2CCSC2)cc1 0.9807991 2.6334 1.0000000 1.0000 []
+ | 30.8151 30.7298 95.6800 0.9875770 COc1cc2c(cc1Nc1ncc(N)cn1)CN(C)CC2 1 c1cnc(Nc2ccc3c(c2)CNCC3)nc1 0.9875770 2.4797 1.0000000 1.0000 []
+16:12:37 <INFO> Sampled SMILES c1c2C(C)CCN3CCc4sc5c(ccc(c5oc(c4)=O)-c4ccccc4)c3-c2ccc1 failed to sanitize.
+16:12:37 <INFO> Sampled SMILES N1c2ccccc2C(=Nc2ncnc(NCc3cccc(NS(=O)(C)=O)c3)c2=O)C1=O failed to sanitize.
+16:12:37 <INFO> Score: 0.71 Agent NLL: 29.98 Valid:  98% Step: 9
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 25.1251 25.9413 101.3510 0.9944711 COc1cc(C=C(C#N)c2ccccc2)cc(I)c1OCc1ccc(C)cc1 1 C(=Cc1ccc(OCc2ccccc2)cc1)c1ccccc1 0.9944711 2.1960 1.0000000 1.0000 []
+ | 16.9122 17.2354 109.2318 0.9880246 c1ccn2cnnc2c1 1 c1ccn2cnnc2c1 0.9880246 2.4668 1.0000000 1.0000 []
+ | 25.8738 26.7155 99.8441 0.9887466 CN(Cc1ccc(Oc2ccccc2)cc1)C1CCS(=O)(=O)C1 1 O=S1(=O)CCC(NCc2ccc(Oc3ccccc3)cc2)C1 0.9887466 2.4450 1.0000000 1.0000 []
+ | 27.6853 29.1238 98.2321 0.9949685 CCc1c(F)ccc(C2CCCC2)c1F 1 c1ccc(C2CCCC2)cc1 0.9949685 2.1631 1.0000000 1.0000 []
+ | 29.9656 30.0275 -30.0275 0.0000000 C[CH]C=CC(=O)c1ccc(F)cc1 1 c1ccccc1 0.9908115 2.3738 1.0000000 1.0000 []
+ | 44.2288 46.3082 73.4816 0.9358579 Cc1ccc(N=Nc2cc(C(CC(N)=O)c3ccc(Cl)cc3)c(O)c3ccccc23)c(C)c1 1 c1ccc(Cc2cc(N=Nc3ccccc3)c3ccccc3c2)cc1 0.9358579 3.0687 1.0000000 1.0000 []
+ | 34.6035 35.9378 90.0707 0.9844412 Cn1c(=O)c2cccc(N3CCC(C(=O)NC4CCNCC4)CC3)c2n(C)c1=O 1 O=C(NC1CCNCC1)C1CCN(c2cccc3c(=O)[nH]c(=O)[nH]c23)CC1 0.9844412 2.5590 1.0000000 1.0000 []
+ | 25.4557 25.7299 99.8165 0.9808314 CCN(C(=O)C(c1ccccc1)c1ccccc1)C1CCS(=O)(=O)C1 1 O=C(NC1CCS(=O)(=O)C1)C(c1ccccc1)c1ccccc1 0.9808314 2.6328 1.0000000 1.0000 []
+ | 24.8038 24.8842 101.6511 0.9885571 CC(C)(C)NCc1cnc(Cc2ccc(F)cc2F)s1 1 c1ccc(Cc2nccs2)cc1 0.9885571 2.4508 1.0000000 1.0000 []
+ | 29.2526 29.1240 -29.1240 0.0000000 O=C(Nc1ccc2ncccc2c1)c1ccc(C(=O)O)nc1 1 O=C(Nc1ccc2ncccc2c1)c1cccnc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+16:12:37 <INFO> Sampled SMILES [nH]1c(c(n(c1)-c1ccc(C)cc1)=O)C(F)(F)F failed to sanitize.
+16:12:37 <INFO> Sampled SMILES c1(=O)c(sc2cc(Oc3ccccc3)ccc21)C(Nc1ccccc1)=O failed to sanitize.
+16:12:37 <INFO> Sampled SMILES c1cc(OC)ccc1N1Nc2n(-c3ccc(Br)cc3)c3ccc(cc3nc2N(C)C1)=O failed to sanitize.
+16:12:37 <INFO> Score: 0.75 Agent NLL: 30.60 Valid:  98% Step: 10
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 28.5496 29.1342 -29.1342 0.0000000 [nH]1c(c(n(c1)-c1ccc(C)cc1)=O)C(F)(F)F 0 -- 0.0000000 0.0000 0.0000000 0.0000 None
+ | 24.4012 25.8543 -9.2524 0.1297020 CC(C)NC(=O)CC12CC3CC(CC(N)(C3)C1)C2 1 C1C2CC3CC1CC(C2)C3 0.1297020 4.6614 1.0000000 1.0000 []
+ | 24.0466 24.5350 -24.5350 0.0000000 CCCNC(C)c1cccc(OCCCC(C)C)c1 1 c1ccccc1 0.9919995 2.3253 1.0000000 1.0000 []
+ | 47.1440 47.9579 78.0955 0.9847921 Cc1ccnc(-c2ccc(-c3cccc(-c4nc(-c5cccc(Cl)c5)cnc4C)c3)o2)n1 1 c1ccc(-c2cncc(-c3cccc(-c4ccc(-c5ncccn5)o4)c3)n2)cc1 0.9847921 2.5510 1.0000000 1.0000 []
+ | 25.0474 26.3903 95.7956 0.9545775 Cc1cc2c(NC(C)c3ccco3)ncnc2s1 1 c1coc(CNc2ncnc3sccc23)c1 0.9545775 2.9420 1.0000000 1.0000 []
+ | 25.2811 25.3975 101.8787 0.9943451 CC(C)Cn1nc(C(=O)NCCCN2CCOCC2)c2ccccc2c1=O 1 O=C(NCCCN1CCOCC1)c1n[nH]c(=O)c2ccccc12 0.9943451 2.2039 1.0000000 1.0000 []
+ | 42.7908 41.7128 48.5802 0.7054139 Cc1nnc(NC(=O)CCN2CC(=O)N(CCN3CCOCC3)C3CS(=O)(=O)CC32)o1 1 O=C(CCN1CC(=O)N(CCN2CCOCC2)C2CS(=O)(=O)CC21)Nc1nnco1 0.7054139 3.6966 1.0000000 1.0000 []
+ | 23.6687 24.7563 102.7941 0.9964882 O=C(CSc1n[nH]c(-c2ccncc2)n1)Nc1ccccc1 1 O=C(CSc1n[nH]c(-c2ccncc2)n1)Nc1ccccc1 0.9964882 2.0377 1.0000000 1.0000 []
+ | 28.5574 29.3108 88.4607 0.9200897 CCNC(=NCc1ncc2n1CCCC2)NCCN(C)CC 1 c1ncn2c1CCCC2 0.9200897 3.1510 1.0000000 1.0000 []
+ | 32.8590 33.2611 94.4059 0.9973983 Cc1cc(N2CCCC2)ccc1NC(=O)c1ccc(NC(=O)c2ccccn2)cc1 1 O=C(Nc1ccc(N2CCCC2)cc1)c1ccc(NC(=O)c2ccccn2)cc1 0.9973983 1.9331 1.0000000 1.0000 []
+16:12:37 <INFO> Sampled SMILES C(Nc1cc(F)ccc1)N1C(CCC2C=CC(F)=CCC=12)=O failed to sanitize.
+16:12:37 <INFO> Sampled SMILES c1(c(=O)c(Br)cnn1C)N(C)C1CNC1 failed to sanitize.
+16:12:38 <INFO> Score: 0.73 Agent NLL: 30.11 Valid:  98% Step: 11
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 40.2648 39.4206 -39.4206 0.0000000 C1=C(C2CCCCC2)C(Cc2ccccc2)C(C2CC2)NN1 1 C1=C(C2CCCCC2)C(Cc2ccccc2)C(C2CC2)NN1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 27.2956 26.2737 100.1555 0.9877276 Fc1ccc(NCc2cncn2C2CC2)nc1 1 c1ccc(NCc2cncn2C2CC2)nc1 0.9877276 2.4754 1.0000000 1.0000 []
+ | 27.2260 29.8011 -29.8011 0.0000000 Cc1nc(NN=Cc2ccc(F)cc2)cc(-c2cccnc2)n1 1 C(=NNc1cc(-c2cccnc2)ncn1)c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 32.4954 33.0196 -33.0196 0.0000000 Cc1ccc(-n2c(C)cc(C=NNC(=O)CSc3nc4ccccc4[nH]3)c2-c2ccccc2)cc1 1 O=C(CSc1nc2ccccc2[nH]1)NN=Cc1ccn(-c2ccccc2)c1-c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 26.4249 26.7051 100.3177 0.9923656 CC(C)c1nnc(NC(=O)c2ccc(OCc3cscn3)cc2)s1 1 O=C(Nc1nncs1)c1ccc(OCc2cscn2)cc1 0.9923656 2.3089 1.0000000 1.0000 []
+ | 23.8864 26.2125 101.4701 0.9975207 Cc1ccc(Nc2ccc(Br)cc2Cl)c(Br)c1 1 c1ccc(Nc2ccccc2)cc1 0.9975207 1.9163 1.0000000 1.0000 []
+ | 44.2344 43.3881 50.8891 0.7365404 CCNc1nc2c(c(=O)[nH]1)C(=O)C(NC(=O)C(C)CC)C(=O)N2Cc1ccc(F)cc1 1 O=C1CC(=O)N(Cc2ccccc2)c2nc[nH]c(=O)c21 0.7365404 3.6428 1.0000000 1.0000 []
+ | 29.0978 29.4457 93.3739 0.9595275 Cc1[nH]c(=O)c(C#N)c(C)c1CCC(=O)NC(C)C(C)C 1 O=c1cccc[nH]1 0.9595275 2.9001 1.0000000 1.0000 []
+ | 51.8944 50.9986 47.4981 0.7695060 CC(C)(C)N1CCc2c(ccc3c2ccn3CC2CC2)C1C=Nc1ccc(O)cc1 1 C(=Nc1ccccc1)C1NCCc2c1ccc1c2ccn1CC1CC1 0.7695060 3.5812 1.0000000 1.0000 []
+ | 27.5910 31.0010 96.8659 0.9989597 COc1cccc(NC(=S)Nc2ccccc2Cl)c1 1 S=C(Nc1ccccc1)Nc1ccccc1 0.9989597 1.6141 1.0000000 1.0000 []
+16:12:38 <INFO> Score: 0.84 Agent NLL: 28.28 Valid: 100% Step: 12
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 24.2714 25.6705 -25.6705 0.0000000 CCC(C)(CO)NCc1ccc(CN)cc1 1 c1ccccc1 0.9811175 2.6275 1.0000000 1.0000 []
+ | 30.3524 30.4882 93.3357 0.9673739 COc1ccc(C2OCC(C3CCN(Cc4ccccc4)CC3)O2)cc1 1 c1ccc(CN2CCC(C3COC(c4ccccc4)O3)CC2)cc1 0.9673739 2.8224 1.0000000 1.0000 []
+ | 28.0795 30.6865 96.8139 0.9960975 Cc1cccc(CN2CCC(N3CCN(Cc4ccccc4)C3=O)CC2)c1 1 O=C1N(Cc2ccccc2)CCN1C1CCN(Cc2ccccc2)CC1 0.9960975 2.0744 1.0000000 1.0000 []
+ | 23.0202 24.6306 -24.6306 0.0000000 CC1CC1C(NN)c1cnn(C)c1 1 c1n[nH]cc1CC1CC1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 25.2022 27.2073 99.4565 0.9895614 CC(C)(C)c1c(N)cnn1-c1ccc(F)c(F)c1 1 c1ccc(-n2cccn2)cc1 0.9895614 2.4186 1.0000000 1.0000 []
+ | 27.6417 29.8350 97.6600 0.9960546 Cc1ccc(CNc2cc(C(C)C)ccc2N)cn1 1 c1ccc(NCc2cccnc2)cc1 0.9960546 2.0782 1.0000000 1.0000 []
+ | 27.2847 29.4506 97.2822 0.9901004 CN(C)c1cccc2cc(CNC(C)(C)C)ncc12 1 c1ccc2cnccc2c1 0.9901004 2.3999 1.0000000 1.0000 []
+ | 36.9859 37.2897 87.4356 0.9744158 CN1CCc2sc(C(=O)NCC3(C)CCN(CC=Cc4ccccc4)CC3)cc2C1 1 O=C(NCC1CCN(CC=Cc2ccccc2)CC1)c1cc2c(s1)CCNC2 0.9744158 2.7354 1.0000000 1.0000 []
+ | 29.3652 30.9869 96.2900 0.9943510 Cc1cc(N2CCN(C(=O)c3cc(Cl)cc(Cl)c3)CC2)nc(-c2ccc(F)cc2)n1 1 O=C(c1ccccc1)N1CCN(c2ccnc(-c3ccccc3)n2)CC1 0.9943510 2.2035 1.0000000 1.0000 []
+ | 28.6285 32.0888 94.0522 0.9854764 CCCN1C(=O)C(=O)C(=C(O)c2ccc(Cl)c(Cl)c2)C1c1ccc(Cl)cc1 1 O=C1NC(c2ccccc2)C(=Cc2ccccc2)C1=O 0.9854764 2.5347 1.0000000 1.0000 []
+16:12:38 <INFO> Sampled SMILES c1c(C#N)nc(CN(c2ccc(cc2)Cl)C)ccc1 failed to sanitize.
+16:12:38 <INFO> Score: 0.73 Agent NLL: 29.51 Valid:  99% Step: 13
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 24.7549 24.8113 102.7796 0.9968041 CNC(=O)Nc1nc2cc(OC)ccc2s1 1 c1ccc2scnc2c1 0.9968041 2.0048 1.0000000 1.0000 []
+ | 23.0889 25.3404 -25.3404 0.0000000 COc1ccc(C=NNc2ccccn2)cc1Br 1 C(=NNc1ccccn1)c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 31.4894 33.7899 88.0003 0.9514862 CC(C)CCN1C(=O)NC(=O)C(Nc2cccc(C(F)(F)F)c2)C1=O 1 O=C1NC(=O)C(Nc2ccccc2)C(=O)N1 0.9514862 2.9660 1.0000000 1.0000 []
+ | 23.6277 25.2302 99.6907 0.9759449 CCNC(=NCCC(C)(C)C)N1CCN(C(C)=O)CC1 1 C1CNCCN1 0.9759449 2.7134 1.0000000 1.0000 []
+ | 22.5583 25.2194 -25.2194 0.0000000 Cc1cccc(C(O)CN(C)CC(=O)N(C)C)c1 1 c1ccccc1 0.9839904 2.5691 1.0000000 1.0000 []
+ | 31.3193 30.8694 -30.8694 0.0000000 COc1cccc(C(=O)Oc2ccc3c(c2)OCCCO3)c1 1 O=C(Oc1ccc2c(c1)OCCCO2)c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 30.5487 31.5358 89.4798 0.9454345 O=[N+]([O-])c1cccc([N+](=O)[O-])c1NC1CCCSCC1 1 c1ccc(NC2CCCSCC2)cc1 0.9454345 3.0090 1.0000000 1.0000 []
+ | 31.4716 34.2966 93.1762 0.9958814 Cc1ccc(-c2ccc(N3CCC(N)CC3)cc2C)c(F)c1 1 c1ccc(-c2ccc(N3CCCCC3)cc2)cc1 0.9958814 2.0932 1.0000000 1.0000 []
+ | 21.4778 24.1709 103.4413 0.9969699 CS(=O)(=O)NC1CCN(c2ccc(Br)cc2)CC1 1 c1ccc(N2CCCCC2)cc1 0.9969699 1.9862 1.0000000 1.0000 []
+ | 28.0680 31.6421 94.3811 0.9845559 CN1CCC(NC(=O)C2CCCN(S(C)(=O)=O)CC2)CC1 1 O=C(NC1CCNCC1)C1CCCNCC1 0.9845559 2.5564 1.0000000 1.0000 []
+16:12:39 <INFO> Sampled SMILES c1cccc(-c2ccc(-c3nc(-c4ccc(-c5ccccc5)cc4)nc(-c4c(-c5c(-c6ccc(-c7cc(C)ccc7)ccc6C)cccc5)ccc4)c3)cc2)c1 failed to sanitize.
+16:12:39 <INFO> Score: 0.76 Agent NLL: 28.57 Valid:  99% Step: 14
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 23.9800 25.5065 102.3198 0.9986432 CCCOc1ccccc1CNCc1ccccc1Cl 1 c1ccc(CNCc2ccccc2)cc1 0.9986432 1.7065 1.0000000 1.0000 []
+ | 29.1308 30.1216 96.8852 0.9922408 CCc1ccccc1NC(=S)NC(=O)c1oc2ccccc2c1Br 1 O=C(NC(=S)Nc1ccccc1)c1cc2ccccc2o1 0.9922408 2.3146 1.0000000 1.0000 []
+ | 31.8805 32.1799 93.3861 0.9809847 C[n+]1cncc2ccc3c(c4ccccc4n3-c3ccccc3)c21 1 c1ccc(-n2c3ccccc3c3c4[nH+]cncc4ccc32)cc1 0.9809847 2.6300 1.0000000 1.0000 []
+ | 25.0074 25.2341 87.4244 0.8801442 CC1(CCC2CCCCO2)CNC1 1 C1CCC(CCC2CNC2)OC1 0.8801442 3.3073 1.0000000 1.0000 []
+ | 25.7365 28.2473 98.4344 0.9897014 CCC1(CC)NC(=O)N(CC(=O)Nc2ncccc2C)C1=O 1 O=C(CN1C(=O)CNC1=O)Nc1ccccn1 0.9897014 2.4138 1.0000000 1.0000 []
+ | 32.2277 33.3814 91.1429 0.9728462 C1=CC(c2ccc(N(c3ccc(-c4cccc5c4sc4ccccc45)cc3)c3cccc4ccccc34)cc2)=CCC1 1 C1=CC(c2ccc(N(c3ccc(-c4cccc5c4sc4ccccc45)cc3)c3cccc4ccccc34)cc2)=CCC1 0.9728462 2.7566 1.0000000 1.0000 []
+ | 30.8310 31.5563 94.8548 0.9875871 CCc1[nH]cc(C(=O)NCc2ccccn2)c1O 1 O=C(NCc1ccccn1)c1cc[nH]c1 0.9875871 2.4794 1.0000000 1.0000 []
+ | 30.2062 31.0653 86.0572 0.9150200 CN(CCBr)Cc1c(N)ncn2ncnc12 1 c1cc2ncnn2cn1 0.9150200 3.1743 1.0000000 1.0000 []
+ | 24.4497 26.4199 -26.4199 0.0000000 CN(C)CCCNC(=O)c1cccc(CS(C)(=O)=O)c1 1 c1ccccc1 0.9973167 1.9439 1.0000000 1.0000 []
+ | 27.5363 27.7197 99.7621 0.9959517 COc1ccccc1C=CCN1CCN(C(=O)c2cccnc2)CC1 1 O=C(c1cccnc1)N1CCN(CC=Cc2ccccc2)CC1 0.9959517 2.0872 1.0000000 1.0000 []
+16:12:39 <INFO> Sampled SMILES c12C(=O)CCN=c2ccc(c1)N failed to sanitize.
+16:12:39 <INFO> Score: 0.76 Agent NLL: 29.51 Valid:  98% Step: 15
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 35.8565 36.0633 83.7756 0.9362414 O=C(C1=C(O)C(=O)N(c2ccc(Cl)cc2Cl)C1c1cccc([N+](=O)[O-])c1)c1cc2cc(Cl)ccc2o1 1 O=C(C1=CC(=O)N(c2ccccc2)C1c1ccccc1)c1cc2ccccc2o1 0.9362414 3.0665 1.0000000 1.0000 []
+ | 36.1199 39.0196 87.4794 0.9882738 Cc1ccc(S(=O)(=O)Nc2cc(C3=CCc4ccc(Cl)cc4N3)ccc2Cl)cc1 1 O=S(=O)(Nc1cccc(C2=CCc3ccccc3N2)c1)c1ccccc1 0.9882738 2.4594 1.0000000 1.0000 []
+ | 25.1825 28.5313 -28.5313 0.0000000 CC1CCCCN(c2nc(N)ncc2Br)CC1 1 c1cc(N2CCCCCCC2)ncn1 0.0000000 0.0000 0.0000000 0.0000 ['[*;r{8-17}]']
+ | 35.2215 36.5556 83.4684 0.9376876 CN1C(=O)NC(=O)C1(C)Nc1ccc2ccccc2c1 1 O=C1NC(=O)C(Nc2ccc3ccccc3c2)N1 0.9376876 3.0580 1.0000000 1.0000 []
+ | 26.7431 29.3314 97.7859 0.9931038 CCn1nccc1NC(=O)C=Cc1cccc(Br)c1 1 O=C(C=Cc1ccccc1)Nc1ccn[nH]1 0.9931038 2.2733 1.0000000 1.0000 []
+ | 33.6091 31.8157 -31.8157 0.0000000 O=C(O)c1ccccc1-c1cccc2c3ccc4ccccc4c3c3ccccc3c12 1 c1ccc(-c2cccc3c4ccc5ccccc5c4c4ccccc4c23)cc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 33.8049 31.7663 93.2025 0.9763182 O=C1CCCC(c2nc3c(F)cccc3[nH]2)N1Cc1ccccc1 1 O=C1CCCC(c2nc3ccccc3[nH]2)N1Cc1ccccc1 0.9763182 2.7079 1.0000000 1.0000 []
+ | 25.1757 27.1434 100.4737 0.9970085 CC(C)N(Cc1ccccc1)C(=O)CN(C)c1ccc(F)cc1 1 O=C(CNc1ccccc1)NCc1ccccc1 0.9970085 1.9818 1.0000000 1.0000 []
+ | 32.7935 38.6096 54.2634 0.7255697 CN1CCC2(NC(=O)N(c3ccc(Cl)cc3)C2=O)C(c2ccc(Cl)cc2)C1 1 O=C1NC2(CCNCC2c2ccccc2)C(=O)N1c1ccccc1 0.7255697 3.6622 1.0000000 1.0000 []
+ | 23.9209 23.6220 101.2425 0.9755041 CCC(N)(CC)CNC(=O)c1sccc1C 1 c1ccsc1 0.9755041 2.7199 1.0000000 1.0000 []
+16:12:40 <INFO> Sampled SMILES CN1[C@@H](c2ccccc2)C2C(c3c(NC2=O)ccc(c3)Cl)C=1 failed to sanitize.
+16:12:40 <INFO> Score: 0.78 Agent NLL: 28.59 Valid:  99% Step: 16
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 25.3508 29.7837 97.8381 0.9970453 Fc1ccccc1C(=S)NCCCNc1ccccc1 1 S=C(NCCCNc1ccccc1)c1ccccc1 0.9970453 1.9774 1.0000000 1.0000 []
+ | 22.8185 24.6456 103.1049 0.9980508 O=C(c1ccc([N+](=O)[O-])cc1)N1CCCc2ccccc21 1 O=C(c1ccccc1)N1CCCc2ccccc21 0.9980508 1.8326 1.0000000 1.0000 []
+ | 27.1073 27.1440 -27.1440 0.0000000 COC(=O)c1ccc(CSc2nnc(-c3cccc(Cl)c3)o2)cc1 1 c1ccc(CSc2nnc(-c3ccccc3)o2)cc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 25.1774 27.2214 100.4498 0.9974314 Cc1ccc(Oc2ccc(Cl)cc2[N+](=O)[O-])c(Br)c1 1 c1ccc(Oc2ccccc2)cc1 0.9974314 1.9287 1.0000000 1.0000 []
+ | 30.8749 31.4305 83.4714 0.8976716 CC1CCCC(C)N1Cn1c(-c2ccccc2)noc1=O 1 O=c1onc(-c2ccccc2)n1CN1CCCCC1 0.8976716 3.2455 1.0000000 1.0000 []
+ | 29.9826 31.0517 94.1158 0.9778712 Cc1ccccc1C(C)CNC(=O)c1ccc(N)nn1 1 O=C(NCCc1ccccc1)c1cccnn1 0.9778712 2.6837 1.0000000 1.0000 []
+ | 34.8597 38.3844 85.4525 0.9674755 COCc1cnc(C(C)C)nc1NC(C)c1cccc(C)c1 1 c1ccc(CNc2ccncn2)cc1 0.9674755 2.8213 1.0000000 1.0000 []
+ | 23.0366 26.0209 101.6785 0.9976515 Cc1ccc(N(CCN2CCOCC2)C(=O)c2ccccc2)cc1 1 O=C(c1ccccc1)N(CCN1CCOCC1)c1ccccc1 0.9976515 1.8974 1.0000000 1.0000 []
+ | 27.1828 30.8840 96.7636 0.9972469 Cc1cccc(=O)n1Cc1ccc(NC(=O)c2ccc([N+](=O)[O-])cc2)cc1 1 O=C(Nc1ccc(Cn2ccccc2=O)cc1)c1ccccc1 0.9972469 1.9528 1.0000000 1.0000 []
+ | 30.2829 29.9778 95.3533 0.9791497 Cc1c(C(=O)NCC(O)c2cc3ccccc3o2)cccc1[N+](=O)[O-] 1 O=C(NCCc1cc2ccccc2o1)c1ccccc1 0.9791497 2.6626 1.0000000 1.0000 []
+16:12:40 <INFO> Score: 0.82 Agent NLL: 29.74 Valid: 100% Step: 17
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 22.5537 25.4544 102.2565 0.9977417 NCc1ccc(CN2CCCN(CC(N)=O)CC2)cc1 1 c1ccc(CN2CCCNCC2)cc1 0.9977417 1.8838 1.0000000 1.0000 []
+ | 27.1273 29.4913 97.2701 0.9903236 Cc1cc(C2CCNCC2)c(-c2cccc(F)c2)cn1 1 c1ccc(-c2cnccc2C2CCNCC2)cc1 0.9903236 2.3919 1.0000000 1.0000 []
+ | 24.5608 26.0898 100.7097 0.9906210 COc1ccccc1[P+](Cc1ccccc1)(c1ccccc1)c1ccccc1 1 c1ccc(C[P+](c2ccccc2)(c2ccccc2)c2ccccc2)cc1 0.9906210 2.3810 1.0000000 1.0000 []
+ | 28.6613 30.9989 94.4197 0.9798329 Cc1noc(-c2ccc(C(=O)N3Cc4ccccc4CC3C)cc2)n1 1 O=C(c1ccc(-c2ncno2)cc1)N1CCc2ccccc2C1 0.9798329 2.6508 1.0000000 1.0000 []
+ | 29.6942 32.6447 94.8949 0.9964034 Cc1ccc(C(=O)NCc2c(F)cccc2CN(C)C)cc1C 1 O=C(NCc1ccccc1)c1ccccc1 0.9964034 2.0460 1.0000000 1.0000 []
+ | 23.9779 26.9003 100.6495 0.9964827 O=C(CN(c1ccc(Cl)cc1)S(=O)(=O)c1ccccc1)NCCOc1ccccc1Cl 1 O=C(CN(c1ccccc1)S(=O)(=O)c1ccccc1)NCCOc1ccccc1 0.9964827 2.0382 1.0000000 1.0000 []
+ | 30.4500 30.9049 -30.9049 0.0000000 Cc1c(N)ccc(C(N)=O)c1NCCNC(N)=O 1 c1ccccc1 0.9889100 2.4398 1.0000000 1.0000 []
+ | 32.2392 34.2887 91.4743 0.9825236 Cc1ccn(C(C)(C)c2ccc(F)cc2)c(=O)c1Cl 1 O=c1ccccn1Cc1ccccc1 0.9825236 2.6001 1.0000000 1.0000 []
+ | 24.4593 26.2577 100.7514 0.9922591 O=C(CCc1ccccn1)NC1CCN(Cc2ccccc2)C1 1 O=C(CCc1ccccn1)NC1CCN(Cc2ccccc2)C1 0.9922591 2.3137 1.0000000 1.0000 []
+ | 25.1139 25.4534 97.1646 0.9579526 CCCNC(Cc1cccc(Cl)c1)c1ccoc1Br 1 c1ccc(CCc2ccoc2)cc1 0.9579526 2.9139 1.0000000 1.0000 []
+16:12:40 <INFO> Sampled SMILES n1(C)c2=[N+]3C(CC(C4C3C=CC=C4)(C)N(C=C)c3c2c(c1Br)ccc3)=O failed to sanitize.
+16:12:40 <INFO> Sampled SMILES c1cccc(c1)-c1c(-c2cccnc2)cn(c(c1)N)O failed to sanitize.
+16:12:40 <INFO> Sampled SMILES C1OCCCn2c1c(c(C1CCN(CC1)C(=C)C)[nH]2)=O failed to sanitize.
+16:12:41 <INFO> Score: 0.77 Agent NLL: 28.63 Valid:  98% Step: 18
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 25.2601 29.0430 98.0641 0.9930239 NC(=S)NCC1(O)CCN(Cc2ccccc2)CC1 1 c1ccc(CN2CCCCC2)cc1 0.9930239 2.2773 1.0000000 1.0000 []
+ | 23.9866 25.5524 102.1525 0.9976946 COc1cccc(CNC(=O)Cn2ccnc2-c2ccccc2)c1 1 O=C(Cn1ccnc1-c1ccccc1)NCc1ccccc1 0.9976946 1.8910 1.0000000 1.0000 []
+ | 33.7172 36.4681 90.5499 0.9923279 CC(C)c1cc(NC(=O)CN(C)S(=O)(=O)c2ccc(Br)cc2)nc(-c2ccccc2)n1 1 O=C(CNS(=O)(=O)c1ccccc1)Nc1ccnc(-c2ccccc2)n1 0.9923279 2.3106 1.0000000 1.0000 []
+ | 28.4101 28.5513 97.8523 0.9875282 CC(C)C(=O)Nc1cccc(C(=O)NC2CCS(=O)(=O)C2)c1 1 O=C(NC1CCS(=O)(=O)C1)c1ccccc1 0.9875282 2.4811 1.0000000 1.0000 []
+ | 23.9750 24.4774 102.1491 0.9892699 Fc1cccc(CC(CBr)Cc2ccccc2Cl)c1 1 c1ccc(CCCc2ccccc2)cc1 0.9892699 2.4282 1.0000000 1.0000 []
+ | 33.1734 35.6358 91.4745 0.9930491 Cc1ccc(C(=O)Nc2cc(=O)c3ccccc3o2)cc1NC(=O)c1ccco1 1 O=C(Nc1cc(=O)c2ccccc2o1)c1cccc(NC(=O)c2ccco2)c1 0.9930491 2.2761 1.0000000 1.0000 []
+ | 25.7176 26.9722 100.6343 0.9969258 Cn1nc(-c2ccccc2)cc1C(=O)NCCc1ccncc1 1 O=C(NCCc1ccncc1)c1cc(-c2ccccc2)n[nH]1 0.9969258 1.9913 1.0000000 1.0000 []
+ | 30.7722 30.4890 94.0702 0.9731183 CC(Oc1ccc(Br)cc1F)C(=O)N1CCc2sccc2C1 1 O=C(COc1ccccc1)N1CCc2sccc2C1 0.9731183 2.7530 1.0000000 1.0000 []
+ | 23.5348 24.7178 13.5043 0.2986105 C=C=C(CC)[N+](C)(C)C 1  0.2986105 4.2967 1.0000000 1.0000 []
+ | 23.1886 22.8136 104.0259 0.9909337 CC(CCc1ccccc1)NCc1ccc2c(c1)CCO2 1 c1ccc(CCCNCc2ccc3c(c2)CCO3)cc1 0.9909337 2.3691 1.0000000 1.0000 []
+16:12:41 <INFO> Sampled SMILES C(C1CC1)C(N1C[C@](Cn2c(cc(C)cn2)C)(CCC1)OC)=O failed to sanitize.
+16:12:41 <INFO> Score: 0.78 Agent NLL: 28.31 Valid:  99% Step: 19
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 24.9725 25.9591 101.7478 0.9977098 Cc1ccc(S(=O)(=O)N(CC(=O)Nc2ccc(F)cc2)c2ccc(F)cc2)cc1 1 O=C(CN(c1ccccc1)S(=O)(=O)c1ccccc1)Nc1ccccc1 0.9977098 1.8887 1.0000000 1.0000 []
+ | 23.6658 24.1210 -24.1210 0.0000000 CCCC(C)CCc1cccc(O)c1 1 c1ccccc1 0.9919422 2.3278 1.0000000 1.0000 []
+ | 22.6542 27.7213 100.0600 0.9982916 Cc1ccc(S(=O)(=O)NCCCNC(=O)c2cccc(Cl)c2)cc1 1 O=C(NCCCNS(=O)(=O)c1ccccc1)c1ccccc1 0.9982916 1.7867 1.0000000 1.0000 []
+ | 26.7764 27.0443 85.9181 0.8825186 CCN1CCOC(c2noc(C(N)=O)n2)C1 1 c1nc(C2CNCCO2)no1 0.8825186 3.2994 1.0000000 1.0000 []
+ | 24.8568 24.7459 -24.7459 0.0000000 COc1ccc(C(=O)NNC(=O)CCCOc2ccc(C)cc2)cc1 1 O=C(CCCOc1ccccc1)NNC(=O)c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 26.7110 26.9391 100.7871 0.9978610 O=C(CCN(Cc1ccccc1)Cc1ccccn1)c1ccccc1 1 O=C(CCN(Cc1ccccc1)Cc1ccccn1)c1ccccc1 0.9978610 1.8649 1.0000000 1.0000 []
+ | 41.3887 40.5728 -40.5728 0.0000000 C(C1CC1)C(N1C[C@](Cn2c(cc(C)cn2)C)(CCC1)OC)=O 0 -- 0.0000000 0.0000 0.0000000 0.0000 None
+ | 24.4282 28.7301 97.8946 0.9892552 CCN(CC)CC1CCCN(Cc2ccccc2C)C1 1 c1ccc(CN2CCCCC2)cc1 0.9892552 2.4287 1.0000000 1.0000 []
+ | 22.3767 25.9909 101.5786 0.9966363 CN(C)c1ccccc1NCc1nc(-c2ccccc2)cs1 1 c1ccc(NCc2nc(-c3ccccc3)cs2)cc1 0.9966363 2.0226 1.0000000 1.0000 []
+ | 29.7095 29.0820 93.3612 0.9565873 CC(Cl)C(=O)N1CCCCC1c1nc2ccccc2s1 1 c1ccc2sc(C3CCCCN3)nc2c1 0.9565873 2.9255 1.0000000 1.0000 []
+16:12:41 <INFO> Sampled SMILES c1(C)c(C)c[nH]c(N(C)CCCN(C)C)c1 failed to sanitize.
+16:12:41 <INFO> Sampled SMILES c1(ccc(cc1)-n1c2ncn(/N=C\c3cc(n(c3C)-c3c(cccc3)F)C)c(c2nn1)C)Cl failed to sanitize.
+16:12:41 <INFO> Sampled SMILES C1(Cn2c(cc3c(n2)c(ncn3)N)-c2ccc(cc2)Oc2ccccc2)CCN(C(=O)C)CC1 failed to sanitize.
+16:12:42 <INFO> Score: 0.84 Agent NLL: 28.07 Valid:  98% Step: 20
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 21.6217 22.7626 104.6293 0.9952494 N#[N+]c1ccc(C=Cc2ccccc2)cc1 1 C(=Cc1ccccc1)c1ccccc1 0.9952494 2.1431 1.0000000 1.0000 []
+ | 25.0314 28.5821 98.7019 0.9944064 Clc1ccc(N2CCN(CCCOC(c3ccccc3)(c3ccccc3)c3ccccc3)CC2)cc1 1 c1ccc(N2CCN(CCCOC(c3ccccc3)(c3ccccc3)c3ccccc3)CC2)cc1 0.9944064 2.2001 1.0000000 1.0000 []
+ | 40.9285 40.0677 86.9158 0.9920591 CCCCOc1ccc(-c2c(OCCC)c(CCC)c3ccccc3c2Cl)cc1 1 c1ccc(-c2ccc3ccccc3c2)cc1 0.9920591 2.3227 1.0000000 1.0000 []
+ | 17.2004 18.8218 108.1311 0.9918193 CN1CCNCC1 1 C1CNCCN1 0.9918193 2.3331 1.0000000 1.0000 []
+ | 28.3547 32.5473 95.0544 0.9968883 Cc1ccc(N2CCN(Cc3ccc(CNC(=O)C(=O)NCc4ccccc4)cc3)CC2)cc1 1 O=C(NCc1ccccc1)C(=O)NCc1ccc(CN2CCN(c3ccccc3)CC2)cc1 0.9968883 1.9955 1.0000000 1.0000 []
+ | 30.0196 31.5898 92.8154 0.9719149 CCC(C)N(CC(C)Oc1ccccc1)c1ccccc1 1 c1ccc(NCCOc2ccccc2)cc1 0.9719149 2.7687 1.0000000 1.0000 []
+ | 25.5946 27.8587 99.4524 0.9946187 CCN(CCNC(=O)c1c(-c2ccccc2Cl)noc1C)c1ccccc1 1 O=C(NCCNc1ccccc1)c1conc1-c1ccccc1 0.9946187 2.1866 1.0000000 1.0000 []
+ | 29.1950 35.6353 89.8817 0.9806017 CCc1ccc(C(C)C(=O)N(CCN(C)C)c2ccccc2C)cc1 1 O=C(Cc1ccccc1)Nc1ccccc1 0.9806017 2.6370 1.0000000 1.0000 []
+ | 25.5972 25.9744 98.9376 0.9758748 O=S(=O)(NCC1CCOC1)c1cc(Cl)ccc1Br 1 O=S(=O)(NCC1CCOC1)c1ccccc1 0.9758748 2.7145 1.0000000 1.0000 []
+ | 28.6048 33.0263 93.5557 0.9889216 Cc1ccc(Nc2nc(C)nc3c2CCN(Cc2cc(C)on2)CC3)cc1 1 c1ccc(Nc2ncnc3c2CCN(Cc2ccon2)CC3)cc1 0.9889216 2.4395 1.0000000 1.0000 []
+16:12:42 <INFO> Sampled SMILES c1cc2c3ccccc3n(c2c(C2=NC(c3ccc4oc5ccccc5c4c3)C3N=C(NC(c4ccccc4)N=3)c3ccccc3)c2c1)-c1ccccc1 failed to sanitize.
+16:12:42 <INFO> Sampled SMILES c1(c2c([C@@](NC(=O)c3[nH]ccc3)(c3c(C)[nH]cc3)CC1)nccc2)-c1c(F)cccc1 failed to sanitize.
+16:12:42 <INFO> Sampled SMILES C(C(F)(F)F)Nc1cnn2cc3cc(c(n(c3n12)-c1ccc(F)cc1)=O)C failed to sanitize.
+16:12:42 <INFO> Score: 0.78 Agent NLL: 29.44 Valid:  98% Step: 21
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 36.7666 36.4081 -5.0296 0.2451445 CC1(CN)COC(c2cnc[nH]2)C1(C)C 1 c1ncc(C2CCCO2)[nH]1 0.2451445 4.3908 1.0000000 1.0000 []
+ | 23.0099 24.4581 90.0189 0.8943521 N#Cc1ccc2c(c1)C=NCN2 1 C1=NCNc2ccccc21 0.8943521 3.2579 1.0000000 1.0000 []
+ | 28.8252 32.5617 90.7243 0.9631723 CCNC(=NCc1ccccc1-n1nc(C)cc1C)NCc1nc(C(C)C)cs1 1 C(=NCc1ccccc1-n1cccn1)NCc1nccs1 0.9631723 2.8660 1.0000000 1.0000 []
+ | 24.6105 24.5648 -24.5648 0.0000000 COc1c(C)cc(CNC(=O)CC#N)cc1C 1 c1ccccc1 0.9945133 2.1934 1.0000000 1.0000 []
+ | 25.2174 25.3963 -25.3963 0.0000000 CCCCCCCCCCCCC(C)CBr 1  0.9883795 2.4562 1.0000000 1.0000 []
+ | 31.8338 32.9783 87.6764 0.9426149 CCNC(CCCC1CCCC1)c1cccc(=O)[nH]1 1 O=c1cccc(CCCCC2CCCC2)[nH]1 0.9426149 3.0276 1.0000000 1.0000 []
+ | 24.4576 28.7254 98.9254 0.9972723 Fc1ccc(CC2CCN(CCN3CCN(c4ccccc4)CC3)CC2)cc1 1 c1ccc(CC2CCN(CCN3CCN(c4ccccc4)CC3)CC2)cc1 0.9972723 1.9496 1.0000000 1.0000 []
+ | 30.5814 29.5048 95.8450 0.9792949 COc1ccccc1-c1cc(C(=O)Nc2ccccc2OCC2CCCO2)[nH]n1 1 O=C(Nc1ccccc1OCC1CCCO1)c1cc(-c2ccccc2)n[nH]1 0.9792949 2.6601 1.0000000 1.0000 []
+ | 29.5640 32.1097 -32.1097 0.0000000 CC(=NNC(=O)c1ccccc1)C1(C)CCC(C)(C)CC1=O 1 O=C(NN=CC1CCCCC1=O)c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 22.5020 23.9276 103.5740 0.9961061 O=C(c1cnccn1)N1CCN(C(=O)C2CCCCC2)CC1 1 O=C(c1cnccn1)N1CCN(C(=O)C2CCCCC2)CC1 0.9961061 2.0737 1.0000000 1.0000 []
+16:12:42 <INFO> Score: 0.83 Agent NLL: 28.59 Valid: 100% Step: 22
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 29.0806 30.3574 97.2202 0.9967000 COc1cc(F)ccc1-c1cc(Br)c(F)cc1OC 1 c1ccc(-c2ccccc2)cc1 0.9967000 2.0160 1.0000000 1.0000 []
+ | 22.2164 24.4252 80.3542 0.8185892 CC1CN(C2CCCN(C)CC2)C(C)CN1 1 C1CNCCC(N2CCNCC2)C1 0.8185892 3.4765 1.0000000 1.0000 []
+ | 27.7236 32.8576 -32.8576 0.0000000 CC(C)(C)OC(=O)N1CCN(c2cccc(Nc3ccc(F)cc3)c2N)CC1 1 c1ccc(Nc2cccc(N3CCNCC3)c2)cc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 21.5229 25.7364 101.8868 0.9970560 CC(NC(=O)c1ccc(F)cc1)c1ccccc1Cl 1 O=C(NCc1ccccc1)c1ccccc1 0.9970560 1.9762 1.0000000 1.0000 []
+ | 29.7298 28.3423 99.1878 0.9963292 Cc1cc(C)c(NC(=O)CN(C)Cc2ccc(C(=O)N3CCCCC3)cc2)c(C)c1 1 O=C(CNCc1ccc(C(=O)N2CCCCC2)cc1)Nc1ccccc1 0.9963292 2.0531 1.0000000 1.0000 []
+ | 20.3537 23.0869 104.7270 0.9985462 Cc1ccc(C)c(S(=O)(=O)N2CCCCC2)c1 1 O=S(=O)(c1ccccc1)N1CCCCC1 0.9985462 1.7305 1.0000000 1.0000 []
+ | 35.6007 35.1729 84.5667 0.9354658 CC(C)n1ccnc1CN1CCCC(c2ccc3cn[nH]c3c2)C1 1 c1c[nH]c(CN2CCCC(c3ccc4cn[nH]c4c3)C2)n1 0.9354658 3.0710 1.0000000 1.0000 []
+ | 26.4842 29.0362 96.2545 0.9788336 CN(C)Cc1nnc(C2CCCN(Cc3ccc(-c4ccccc4)cc3)C2)n1C 1 c1ccc(-c2ccc(CN3CCCC(c4nnc[nH]4)C3)cc2)cc1 0.9788336 2.6679 1.0000000 1.0000 []
+ | 31.4615 33.5703 93.3404 0.9914901 Cc1cnc(C(=O)Nc2cc(N)ccc2NC(=O)C2CC2)s1 1 O=C(Nc1ccccc1NC(=O)C1CC1)c1nccs1 0.9914901 2.3469 1.0000000 1.0000 []
+ | 21.3957 23.8678 98.5502 0.9563907 C=C(C)CN1CCNC(C)(C)C1 1 C1CNCCN1 0.9563907 2.9272 1.0000000 1.0000 []
+16:12:43 <INFO> Sampled SMILES c1c(NC(=O)C)ccc(C(Nc2cc(NC(=O)c3c[nH]ccc3)ccc2)=O)c1 failed to sanitize.
+16:12:43 <INFO> Sampled SMILES C1(N)c2cc(nn2[B-](F)([N+]2=1C=CC=C2)F)I failed to sanitize.
+16:12:43 <INFO> Sampled SMILES n1(c(nc(=C)c2ccccc12)=S)-c1c(Cl)cccc1 failed to sanitize.
+16:12:43 <INFO> Sampled SMILES c1ccnc(C)n1-c1nn(Cc2ccc(cc2)Cl)cc1 failed to sanitize.
+16:12:43 <INFO> Sampled SMILES s1c2c(-c3cccc4n(c5cc(ccc35)CC(C)C)c(n(c4n2)C)=O)c([nH]c1=O)=O failed to sanitize.
+16:12:43 <INFO> Sampled SMILES C1n2c(N=C(c3cccs3)c3c(N2)nccc3)cc1 failed to sanitize.
+16:12:43 <INFO> Sampled SMILES c1ccc(c(-c2cccc3c4c(n(-c5ccccc5)c3c2)c(ccc4)-c2cc(-c3ccccc3)ccc2)c1)-c1cccc2c1cccc2 failed to sanitize.
+16:12:43 <INFO> Score: 0.80 Agent NLL: 29.29 Valid:  94% Step: 23
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 23.3443 27.8840 99.8130 0.9976327 O=C(c1cccc(S(=O)(=O)Nc2ccc(F)cc2)c1)N1CCN(c2ccccc2)CC1 1 O=C(c1cccc(S(=O)(=O)Nc2ccccc2)c1)N1CCN(c2ccccc2)CC1 0.9976327 1.9002 1.0000000 1.0000 []
+ | 25.6578 28.2756 99.4782 0.9980763 NC(=O)C1CCN(Cc2cccc(C(=O)Nc3ccccc3Cl)c2)CC1 1 O=C(Nc1ccccc1)c1cccc(CN2CCCCC2)c1 0.9980763 1.8280 1.0000000 1.0000 []
+ | 27.4872 33.9137 93.5174 0.9955555 CCCCCCN(Cc1cc(-c2ccc(OC)cc2)no1)c1ccccc1 1 c1ccc(NCc2cc(-c3ccccc3)no2)cc1 0.9955555 2.1198 1.0000000 1.0000 []
+ | 24.2198 25.5063 100.7202 0.9861439 CNC(CCc1ccncc1)c1cccc(C(C)C)c1 1 c1ccc(CCCc2ccncc2)cc1 0.9861439 2.5182 1.0000000 1.0000 []
+ | 31.6420 34.4505 -34.4505 0.0000000 c1c(NC(=O)C)ccc(C(Nc2cc(NC(=O)c3c[nH]ccc3)ccc2)=O)c1 0 -- 0.0000000 0.0000 0.0000000 0.0000 None
+ | 27.4063 28.6354 91.0898 0.9353525 c1cc2cncc(C3CCCCN3)c2cn1 1 c1cc2cncc(C3CCCCN3)c2cn1 0.9353525 3.0717 1.0000000 1.0000 []
+ | 32.3046 33.3604 -33.3604 0.0000000 COC(=O)C1(C#N)CCN(Cc2ccccc2Cc2ccccc2)CC1 1 c1ccc(Cc2ccccc2CN2CCCCC2)cc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 27.2474 26.0943 -26.0943 0.0000000 COC(=O)C(=Cc1ccc(C)cc1)OC 1 c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 26.5182 26.6160 94.9866 0.9500208 CCC(O)c1cn(-c2cc(Cl)ccc2Cl)nn1 1 c1ccc(-n2ccnn2)cc1 0.9500208 2.9768 1.0000000 1.0000 []
+ | 22.9394 26.9655 100.7349 0.9976594 Cc1ccc(CNC(=O)c2cccn2C)cc1C 1 O=C(NCc1ccccc1)c1ccc[nH]1 0.9976594 1.8963 1.0000000 1.0000 []
+16:12:43 <INFO> Sampled SMILES c1c(Cl)ccc([S@+]([O-])C)c(c1)CC failed to sanitize.
+16:12:43 <INFO> Sampled SMILES c12cc(C(=COc3cc(COC)ccc3)c(c2)Cl)cccc1 failed to sanitize.
+16:12:43 <INFO> Score: 0.85 Agent NLL: 28.05 Valid:  98% Step: 24
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 26.5695 29.1713 95.3554 0.9728648 Nc1oc(Br)cc1S(=O)(=O)N1CCN(C2CC2)CC1 1 O=S(=O)(c1ccoc1)N1CCN(C2CC2)CC1 0.9728648 2.7564 1.0000000 1.0000 []
+ | 26.6313 29.7758 97.8254 0.9968844 CC(C)Oc1ccc(NC(=O)c2ccc(NCc3cccc(Cl)c3)cn2)cc1 1 O=C(Nc1ccccc1)c1ccc(NCc2ccccc2)cn1 0.9968844 1.9959 1.0000000 1.0000 []
+ | 24.2501 30.0882 94.6847 0.9747883 CC(C)c1occc1CNCc1nccn1C 1 c1c[nH]c(CNCc2ccoc2)n1 0.9747883 2.7302 1.0000000 1.0000 []
+ | 45.1023 46.2079 76.8620 0.9614833 Cc1cc(OCc2cc(Cl)c(C(F)(F)F)cn2)ccc1C1CCN(C(=O)C2CCS(=O)(=O)CC2)CC1 1 O=C(C1CCS(=O)(=O)CC1)N1CCC(c2ccc(OCc3ccccn3)cc2)CC1 0.9614833 2.8822 1.0000000 1.0000 []
+ | 38.2336 41.7061 82.1690 0.9677737 CC(CC(=O)Nc1ccc(C2SCCCS2)cc1)c1cccc(-c2ccc(Cl)cc2)c1 1 O=C(CCc1cccc(-c2ccccc2)c1)Nc1ccc(C2SCCCS2)cc1 0.9677737 2.8179 1.0000000 1.0000 []
+ | 27.1894 29.8023 97.9853 0.9983406 Cc1ccccc1Cc1ccc(NS(=O)(=O)c2ccc(Br)cc2)cc1 1 O=S(=O)(Nc1ccc(Cc2ccccc2)cc1)c1ccccc1 0.9983406 1.7765 1.0000000 1.0000 []
+ | 25.9435 26.0651 -26.0651 0.0000000 C#CC(C)(C)NC(=O)c1c(N)c(C)nn1C 1 c1cn[nH]c1 0.0000000 0.0000 0.0000000 0.0000 ['C#C']
+ | 22.1353 22.9733 104.3374 0.9946144 c1cc2c3c(cccc3c1)NCC2 1 c1cc2c3c(cccc3c1)NCC2 0.9946144 2.1869 1.0000000 1.0000 []
+ | 23.6760 25.6956 102.0264 0.9978279 Cc1ccc(NC(=O)C=Cc2ccc(Cl)cc2)c(O)c1 1 O=C(C=Cc1ccccc1)Nc1ccccc1 0.9978279 1.8702 1.0000000 1.0000 []
+ | 27.8291 32.8466 94.9168 0.9981515 CCCc1ccc(C(=O)N(C)Cc2ccccc2Oc2ccccc2)cc1 1 O=C(NCc1ccccc1Oc1ccccc1)c1ccccc1 0.9981515 1.8141 1.0000000 1.0000 []
+16:12:44 <INFO> Sampled SMILES C1N(C)C(=CCc2c1ccc1[nH]c(-c3ccccc3)n(-c3ccccc3)c12)C=C failed to sanitize.
+16:12:44 <INFO> Sampled SMILES c1(=O)c2OCCCN(C)c2cc(=O)[nH]c1 failed to sanitize.
+16:12:44 <INFO> Sampled SMILES c1(\ccc(=C/C)/c(c1)=C/c1c([nH]c([nH]c1=O)=S)-c1ccncc1)=C/c1cc(ccc1)Br failed to sanitize.
+16:12:44 <INFO> Sampled SMILES c12N(c3ncccc3)C(=C)C(=c1cccc2)c1ccc(F)cc1 failed to sanitize.
+16:12:44 <INFO> Score: 0.84 Agent NLL: 28.46 Valid:  97% Step: 25
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 26.6675 26.1907 -26.1907 0.0000000 CC(CNC(=O)c1ccccc1)CC(=N)N 1 c1ccccc1 0.9875704 2.4799 1.0000000 1.0000 []
+ | 25.2493 26.4905 -26.4905 0.0000000 Cc1cccc(S(=O)(=O)NCC(C)Br)c1F 1 c1ccccc1 0.9560035 2.9304 1.0000000 1.0000 []
+ | 40.1410 43.0605 79.0765 0.9541954 COc1ccc(-c2ccnc(Nc3cccc(OCC(C)N4CCN(C)CC4)n3)n2)cc1 1 c1ccc(-c2ccnc(Nc3cccc(OCCN4CCNCC4)n3)n2)cc1 0.9541954 2.9450 1.0000000 1.0000 []
+ | 29.9205 33.3450 87.6415 0.9452066 Cn1cc(CNCC2(Cn3cccn3)CCCCC2)c(Cl)n1 1 c1cnn(CC2(CNCc3cn[nH]c3)CCCCC2)c1 0.9452066 3.0106 1.0000000 1.0000 []
+ | 33.5308 35.6261 -35.6261 0.0000000 CN1C(=O)CCN(c2cccc(F)c2)C(=O)Cc2ccccc21 1 O=C1CCN(c2ccccc2)C(=O)Cc2ccccc2N1 0.0000000 0.0000 0.0000000 0.0000 ['[*;r{8-17}]']
+ | 28.4977 30.0161 97.1161 0.9932199 O=c1[nH]c(CNc2cccc([N+](=O)[O-])c2)nc2ccc(Br)cc12 1 O=c1[nH]c(CNc2ccccc2)nc2ccccc12 0.9932199 2.2674 1.0000000 1.0000 []
+ | 20.4759 23.7310 103.9192 0.9972673 O=C(Cn1nc(-c2ccccc2)ccc1=O)NC1CCCCCC1 1 O=C(Cn1nc(-c2ccccc2)ccc1=O)NC1CCCCCC1 0.9972673 1.9502 1.0000000 1.0000 []
+ | 24.1440 26.5983 101.1206 0.9978036 O=C(NCc1ccccc1Br)c1csc(-c2ccccc2)n1 1 O=C(NCc1ccccc1)c1csc(-c2ccccc2)n1 0.9978036 1.8741 1.0000000 1.0000 []
+ | 54.7650 54.8693 -54.8693 0.0000000 C1N(C)C(=CCc2c1ccc1[nH]c(-c3ccccc3)n(-c3ccccc3)c12)C=C 0 -- 0.0000000 0.0000 0.0000000 0.0000 None
+ | 28.2501 27.9347 -27.9347 0.0000000 CSC(=O)NCC(=O)N1CCSCC1 1 C1CSCCN1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+16:12:44 <INFO> Score: 0.87 Agent NLL: 28.32 Valid: 100% Step: 26
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 28.4287 33.2426 94.2453 0.9959992 Cc1ccc(S(=O)(=O)c2cccn(-c3ccc(Cl)cc3)c2=O)cc1 1 O=c1c(S(=O)(=O)c2ccccc2)cccn1-c1ccccc1 0.9959992 2.0831 1.0000000 1.0000 []
+ | 28.8957 28.8393 86.2133 0.8988483 C=NCCCNCC1CCCCO1 1 C1CCOCC1 0.8988483 3.2410 1.0000000 1.0000 []
+ | 30.3610 30.6015 73.1772 0.8107712 CC(CN1CCC(N)(C(C)(C)C)CC1)C1CC1 1 C1CCN(CCC2CC2)CC1 0.8107712 3.4945 1.0000000 1.0000 []
+ | 40.4004 43.4704 81.0448 0.9727749 CC1CN(Cc2ccc(CCNCc3ccc(N)nc3)cc2)CCN1c1ccccc1Cl 1 c1ccc(N2CCN(Cc3ccc(CCNCc4cccnc4)cc3)CC2)cc1 0.9727749 2.7576 1.0000000 1.0000 []
+ | 36.6795 38.7022 87.6683 0.9872695 Cc1ncc(-c2ccncc2)c(S(=O)(=O)N2CCCCCC2)c1Br 1 O=S(=O)(c1ccncc1-c1ccncc1)N1CCCCCC1 0.9872695 2.4883 1.0000000 1.0000 []
+ | 28.9967 33.5027 85.6908 0.9311987 CN1CCC(CNC(=O)c2cnccn2)(Oc2ccccc2)C1 1 O=C(NCC1(Oc2ccccc2)CCNC1)c1cnccn1 0.9311987 3.0948 1.0000000 1.0000 []
+ | 37.4618 41.0026 85.5780 0.9889113 O=C(Nc1ccsc1-c1ccncc1)Nc1cc(-c2ccccc2)nn1-c1cccc(Cl)c1 1 O=C(Nc1ccsc1-c1ccncc1)Nc1cc(-c2ccccc2)nn1-c1ccccc1 0.9889113 2.4398 1.0000000 1.0000 []
+ | 37.6340 41.8088 85.4115 0.9939092 Cc1ccc(C)c(C(=O)NCc2cccc(-c3cc(N4CCOCC4)cc(C)n3)c2)c1 1 O=C(NCc1cccc(-c2cc(N3CCOCC3)ccn2)c1)c1ccccc1 0.9939092 2.2299 1.0000000 1.0000 []
+ | 28.8472 31.7680 95.8906 0.9973329 CN1CCN(c2ccc(C(=O)Nc3cccc(Cl)c3)cc2)CC1=O 1 O=C1CN(c2ccc(C(=O)Nc3ccccc3)cc2)CCN1 0.9973329 1.9418 1.0000000 1.0000 []
+ | 29.4167 28.8189 89.0097 0.9205354 COc1ccc(C(C(C)N)C2CC2)cc1Cl 1 c1ccc(CC2CC2)cc1 0.9205354 3.1489 1.0000000 1.0000 []
+16:12:45 <INFO> Sampled SMILES n1[nH]c(c2cnc(cc2c1NC(C)=O)-c1c(Cl)cccc1)-c1ccco1 failed to sanitize.
+16:12:45 <INFO> Sampled SMILES c1n(C)ccnc1=NS(c1ccccc1)(=O)=O failed to sanitize.
+16:12:45 <INFO> Score: 0.91 Agent NLL: 27.94 Valid:  98% Step: 27
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 21.4450 27.3506 100.4901 0.9987555 O=C(Nc1ccc(Nc2ccccc2F)cc1)c1ccccc1Br 1 O=C(Nc1ccc(Nc2ccccc2)cc1)c1ccccc1 0.9987555 1.6764 1.0000000 1.0000 []
+ | 24.7552 25.4730 98.9955 0.9724098 Fc1ccc2c(c1)C(NCc1ccsc1)CCO2 1 c1ccc2c(c1)OCCC2NCc1ccsc1 0.9724098 2.7623 1.0000000 1.0000 []
+ | 26.0463 31.1736 96.4651 0.9971775 COc1ccc(-c2ccc(C(=O)NC(c3ccccc3)c3ccccc3)c(C)n2)cc1 1 O=C(NC(c1ccccc1)c1ccccc1)c1ccc(-c2ccccc2)nc1 0.9971775 1.9615 1.0000000 1.0000 []
+ | 29.6019 33.2750 90.6991 0.9685481 CC(=O)N1CCCC(C(=O)Nc2nc3ccc(F)c(F)c3s2)C1 1 O=C(Nc1nc2ccccc2s1)C1CCCNC1 0.9685481 2.8092 1.0000000 1.0000 []
+ | 30.3298 37.2973 90.1128 0.9953911 COc1ccc(NC(=S)Nc2ccc(N3CCCN(c4ccc(F)cc4)C3=O)cc2)cc1 1 O=C1N(c2ccccc2)CCCN1c1ccc(NC(=S)Nc2ccccc2)cc1 0.9953911 2.1325 1.0000000 1.0000 []
+ | 35.2794 39.7417 86.8954 0.9893525 CCn1nc(Cn2ccnc2)c(-c2ccc(-c3ccccc3Cl)cc2)c1C 1 c1ccc(-c2ccc(-c3c[nH]nc3Cn3ccnc3)cc2)cc1 0.9893525 2.4255 1.0000000 1.0000 []
+ | 23.6557 28.3313 99.4743 0.9984809 Cc1ccccc1C(=O)N(CCCc1ccccc1)c1ccccc1 1 O=C(c1ccccc1)N(CCCc1ccccc1)c1ccccc1 0.9984809 1.7458 1.0000000 1.0000 []
+ | 38.9568 42.0788 84.1180 0.9859129 COc1ccc2c(c1)CCN(CC(=CF)c1cccc(C)c1)C2=O 1 C=C(CN1CCc2ccccc2C1=O)c1ccccc1 0.9859129 2.5240 1.0000000 1.0000 []
+ | 29.4743 34.1419 93.1179 0.9942170 Clc1cccc(C2(CNCc3ccc(OCCOc4ccccc4)cc3)CCCCC2)c1 1 c1ccc(OCCOc2ccc(CNCC3(c4ccccc4)CCCCC3)cc2)cc1 0.9942170 2.2117 1.0000000 1.0000 []
+ | 23.1749 27.4200 100.3425 0.9981449 Cc1ccc(-c2cc(=O)n(-c3ccccc3)nc2C)cc1 1 O=c1cc(-c2ccccc2)cnn1-c1ccccc1 0.9981449 1.8153 1.0000000 1.0000 []
+16:12:45 <INFO> Sampled SMILES c1(-c2c(cccc2)Cl)n(Cc2ccc(cc2)Cl)c(Cl)ccc1 failed to sanitize.
+16:12:45 <INFO> Sampled SMILES O(C(CCC)CCC)(CCC)C1(CCCCC1)c1ccccc1 failed to sanitize.
+16:12:45 <INFO> Sampled SMILES c1cc(-n2n(c(-c3c(cc(Oc4ccccc4)cc3)C)c(c2)=O)C)ccc1 failed to sanitize.
+16:12:45 <INFO> Score: 0.83 Agent NLL: 29.40 Valid:  98% Step: 28
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 48.1313 48.6263 -48.6263 0.0000000 Cc1cc(-c2ccc3c(-c4cc(-c5ccccc5)nc(-c5ccccc5)n4)cccc3n2)ccc1NN=Cc1ccccc1 1 C(=NNc1ccc(-c2ccc3c(-c4cc(-c5ccccc5)nc(-c5ccccc5)n4)cccc3n2)cc1)c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 26.9170 35.8091 90.9973 0.9906752 CC1=C(c2ccccc2)CC(=Cc2ccccc2F)C(=O)N1c1ccccc1 1 O=C1C(=Cc2ccccc2)CC(c2ccccc2)=CN1c1ccccc1 0.9906752 2.3790 1.0000000 1.0000 []
+ | 24.1735 26.3167 101.1510 0.9958418 O=C(CSc1nnc(-c2ccc(Br)cc2)o1)N1CCN(c2ccccc2)CC1 1 O=C(CSc1nnc(-c2ccccc2)o1)N1CCN(c2ccccc2)CC1 0.9958418 2.0966 1.0000000 1.0000 []
+ | 30.9369 35.0210 92.0273 0.9925647 O=C(NCC=Cc1ccccc1)c1cc(N2CCCc3ccccc32)ccn1 1 O=C(NCC=Cc1ccccc1)c1cc(N2CCCc3ccccc32)ccn1 0.9925647 2.2996 1.0000000 1.0000 []
+ | 23.3419 24.8326 101.8078 0.9893785 CNc1ccccc1OCc1ncon1 1 c1ccc(OCc2ncon2)cc1 0.9893785 2.4247 1.0000000 1.0000 []
+ | 35.2107 35.0207 89.1769 0.9702936 Cc1cc(CC(=O)NC2N=C(c3ccccc3)c3ccccc3NC2=O)ccc1F 1 O=C(Cc1ccccc1)NC1N=C(c2ccccc2)c2ccccc2NC1=O 0.9702936 2.7888 1.0000000 1.0000 []
+ | 26.7616 29.7553 97.6904 0.9956695 O=C(NCC1CCN(Cc2ccc(F)cc2)CC1)C1CCN(S(=O)(=O)c2ccccc2)CC1 1 O=C(NCC1CCN(Cc2ccccc2)CC1)C1CCN(S(=O)(=O)c2ccccc2)CC1 0.9956695 2.1107 1.0000000 1.0000 []
+ | 43.5194 46.3558 80.2382 0.9890156 CSc1ccc(-c2cncc(COCc3c(-c4ccccc4)sc4ccccc34)c2)cc1 1 c1ccc(-c2cncc(COCc3c(-c4ccccc4)sc4ccccc34)c2)cc1 0.9890156 2.4365 1.0000000 1.0000 []
+ | 27.3517 30.7662 96.4738 0.9940627 Cc1c(C(=O)NCc2cnc(-c3cccnc3)nc2)cnn1-c1ccccc1 1 O=C(NCc1cnc(-c2cccnc2)nc1)c1cnn(-c2ccccc2)c1 0.9940627 2.2209 1.0000000 1.0000 []
+ | 24.9125 27.0975 100.3403 0.9956084 Cc1ccc(C(=O)N2CCN(c3nc(C)cc(N4CCCCCC4)n3)CC2)cc1 1 O=C(c1ccccc1)N1CCN(c2nccc(N3CCCCCC3)n2)CC1 0.9956084 2.1156 1.0000000 1.0000 []
+16:12:46 <INFO> Sampled SMILES c1c(-c2c(=O)c(-c3cnccc3)cs2)cccc1NC(=O)c1ccc(Br)cc1 failed to sanitize.
+16:12:46 <INFO> Sampled SMILES C1C2C=c3c(occ3)C=CC=2CCC=1 failed to sanitize.
+16:12:46 <INFO> Sampled SMILES N1c2nccc(Oc3ccncc3)cc2CC1 failed to sanitize.
+16:12:46 <INFO> Sampled SMILES C1c2ccccc2-c2c(C1)cccc2CNC(=O)c1cc2nc(Cl)c(cnc2cc1)CC failed to sanitize.
+16:12:46 <INFO> Sampled SMILES N1C(=O)CC(C(NOC)=O)C2SCC(C)=N12 failed to sanitize.
+16:12:46 <INFO> Score: 0.80 Agent NLL: 29.28 Valid:  96% Step: 29
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 26.0832 28.2181 98.1018 0.9868737 CCNC(=NCC1CCN(C)CC1)Nc1cccc(OCC(C)C)c1 1 C(=NCC1CCNCC1)Nc1ccccc1 0.9868737 2.4991 1.0000000 1.0000 []
+ | 22.0343 26.7038 100.4897 0.9936991 c1ccc(CCCNC(c2ccccc2)c2cccs2)cc1 1 c1ccc(CCCNC(c2ccccc2)c2cccs2)cc1 0.9936991 2.2417 1.0000000 1.0000 []
+ | 27.4686 30.0080 97.7288 0.9979440 Cc1ccc2c(-c3ccccc3-c3ccccc3)c3ccccc3c(-c3ccccc3)c2c1 1 c1ccc(-c2ccccc2-c2c3ccccc3c(-c3ccccc3)c3ccccc23)cc1 0.9979440 1.8511 1.0000000 1.0000 []
+ | 27.8353 28.5660 -28.5660 0.0000000 CCCOc1ccc(C=NNC(=O)CN(c2ccc(C)cc2)S(=O)(=O)c2ccc(C)cc2)cc1 1 O=C(CN(c1ccccc1)S(=O)(=O)c1ccccc1)NN=Cc1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 30.1223 30.8460 95.1876 0.9846373 O=C1c2ccc(-c3ccc(F)cc3)cc2OCC2CCCN12 1 O=C1c2ccc(-c3ccccc3)cc2OCC2CCCN12 0.9846373 2.5546 1.0000000 1.0000 []
+ | 22.6923 22.9906 104.1509 0.9932930 Cc1ccccc1-c1noc(CC2CNC2)n1 1 c1ccc(-c2noc(CC3CNC3)n2)cc1 0.9932930 2.2636 1.0000000 1.0000 []
+ | 33.9220 39.8964 -39.8964 0.0000000 c1c(-c2c(=O)c(-c3cnccc3)cs2)cccc1NC(=O)c1ccc(Br)cc1 0 -- 0.0000000 0.0000 0.0000000 0.0000 None
+ | 22.5422 23.6040 104.2230 0.9986482 Cc1cccc(Nc2nc3ccccc3s2)c1 1 c1ccc(Nc2nc3ccccc3s2)cc1 0.9986482 1.7052 1.0000000 1.0000 []
+ | 28.0621 31.2695 95.9869 0.9941908 CN(CCc1nccs1)C(=O)CCNC(=O)c1ccccc1Cl 1 O=C(CCNC(=O)c1ccccc1)NCCc1nccs1 0.9941908 2.2133 1.0000000 1.0000 []
+ | 28.0039 30.0767 97.2650 0.9948567 Cc1cc(Nc2nc3ccc(Cl)cc3s2)nc(Nc2ccccc2)n1 1 c1ccc(Nc2nccc(Nc3nc4ccccc4s3)n2)cc1 0.9948567 2.1708 1.0000000 1.0000 []
+16:12:46 <INFO> Sampled SMILES c1cscc1NC(=O)CCNc1oc(C)c(C)cc1=O failed to sanitize.
+16:12:46 <INFO> Score: 0.94 Agent NLL: 27.86 Valid:  99% Step: 30
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 27.9800 28.0645 97.9984 0.9848663 Cc1csc(NC(=O)C2CCCCN2S(=O)(=O)c2ccc(Cl)cc2)n1 1 O=C(Nc1nccs1)C1CCCCN1S(=O)(=O)c1ccccc1 0.9848663 2.5493 1.0000000 1.0000 []
+ | 31.1326 27.6822 99.0158 0.9898281 CCc1nc2ccccc2n1CC(O)COc1ccccc1OC 1 c1ccc(OCCCn2cnc3ccccc32)cc1 0.9898281 2.4095 1.0000000 1.0000 []
+ | 39.8190 41.6440 83.6091 0.9785399 C[n+]1ccc2ccc(NC(=O)c3c(N)sc4c3CCC4)cc2c1 1 O=C(Nc1ccc2cc[nH+]cc2c1)c1csc2c1CCC2 0.9785399 2.6728 1.0000000 1.0000 []
+ | 23.9877 27.2569 100.0184 0.9943385 Cc1cc(C)cc(Nc2cc(NCc3ccccc3Cl)nc(C)n2)c1 1 c1ccc(CNc2cc(Nc3ccccc3)ncn2)cc1 0.9943385 2.2043 1.0000000 1.0000 []
+ | 26.3058 31.3319 96.1888 0.9962556 Cc1ccc(C=Cc2cccc(N=Cc3ccc(C)cc3)c2)cc1 1 C(=Cc1cccc(N=Cc2ccccc2)c1)c1ccccc1 0.9962556 2.0600 1.0000000 1.0000 []
+ | 26.6097 26.8126 99.9008 0.9899482 CCc1nsc(Nc2cc([N+](=O)[O-])ccc2C)n1 1 c1ccc(Nc2ncns2)cc1 0.9899482 2.4053 1.0000000 1.0000 []
+ | 26.4351 28.5975 99.1432 0.9979740 Cc1ccc(NS(=O)(=O)c2cccc(C(=O)N3CCCC3)c2)c(C)c1 1 O=C(c1cccc(S(=O)(=O)Nc2ccccc2)c1)N1CCCC1 0.9979740 1.8460 1.0000000 1.0000 []
+ | 35.2578 36.4415 90.8696 0.9946180 Cc1cc(S(=O)(=O)Nc2n[nH]c3cc(-c4ccccc4)ccc23)ccc1F 1 O=S(=O)(Nc1n[nH]c2cc(-c3ccccc3)ccc12)c1ccccc1 0.9946180 2.1866 1.0000000 1.0000 []
+ | 32.5348 39.0581 75.9952 0.8988535 CN1C2(CCN(c3ccccc3Cl)CC2)CN(c2ccc(F)cc2)S1(=O)=O 1 O=S1(=O)NC2(CCN(c3ccccc3)CC2)CN1c1ccccc1 0.8988535 3.2410 1.0000000 1.0000 []
+ | 26.4408 28.7399 99.0787 0.9985823 Cc1ccc(NC(=O)NCC(=O)NCCc2ccccc2)cc1C 1 O=C(CNC(=O)Nc1ccccc1)NCCc1ccccc1 0.9985823 1.7218 1.0000000 1.0000 []
+16:12:47 <INFO> Sampled SMILES c1c(noc2c(C)cccc21)=O failed to sanitize.
+16:12:47 <INFO> Sampled SMILES C(=O)(N1CCN(CC1)Cc1[nH]c(-c2ccccc2)ccc1)c1c(C)cccc1 failed to sanitize.
+16:12:47 <INFO> Score: 0.84 Agent NLL: 28.78 Valid:  98% Step: 31
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 50.7015 53.2016 -45.0536 0.0636560 Cc1ccc(S(=O)(=O)Nc2cccc(C3C=C4CN5CCCC4(Cc4ccccc4)C(C3)C5)c2)cc1 1 O=S(=O)(Nc1cccc(C2C=C3CN4CCCC3(Cc3ccccc3)C(C2)C4)c1)c1ccccc1 0.0636560 4.9341 1.0000000 1.0000 []
+ | 23.0127 22.2648 103.6213 0.9834851 CNCCCN1CCCC1(C)C 1 C1CCNC1 0.9834851 2.5801 1.0000000 1.0000 []
+ | 29.2633 40.5626 86.8844 0.9956792 Cc1cc(=O)n(Cc2ccc(-c3ccc(Br)cc3)cc2)c(-c2cccc(Cl)c2)n1 1 O=c1ccnc(-c2ccccc2)n1Cc1ccc(-c2ccccc2)cc1 0.9956792 2.1100 1.0000000 1.0000 []
+ | 31.0005 32.5824 90.3224 0.9601939 O=c1ccc(C(Br)=CC2CCCCC2)c[nH]1 1 O=c1ccc(C=CC2CCCCC2)c[nH]1 0.9601939 2.8941 1.0000000 1.0000 []
+ | 23.5252 26.4205 101.2726 0.9976026 COc1ccc(Nc2nc(-c3cccnc3)nc3ccccc23)cc1 1 c1ccc(Nc2nc(-c3cccnc3)nc3ccccc23)cc1 0.9976026 1.9046 1.0000000 1.0000 []
+ | 26.1422 26.1247 -26.1247 0.0000000 NNc1nc2ccccc2c(Cl)c1F 1 c1ccc2ncccc2c1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 17.9356 21.5354 106.0968 0.9971262 CN(C)c1ccc(C=Nc2ccc(F)cc2)cc1 1 C(=Nc1ccccc1)c1ccccc1 0.9971262 1.9678 1.0000000 1.0000 []
+ | 28.7464 28.5024 -28.5024 0.0000000 Cc1ccc(C(=NN2CCOCC2)c2cccs2)cc1 1 c1ccc(C(=NN2CCOCC2)c2cccs2)cc1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 24.7931 26.0912 -26.0912 0.0000000 O=C(CF)NCc1ccc(Cl)cc1Cl 1 c1ccccc1 0.9968868 1.9956 1.0000000 1.0000 []
+ | 33.5098 34.1006 47.0842 0.6342563 CC(C)C(C)C(C)N1CCc2occc2C1 1 c1cc2c(o1)CCNC2 0.6342563 3.8087 1.0000000 1.0000 []
+16:12:47 <INFO> Sampled SMILES CCOC(=O)[C@@H]1[C@@H](c2ccccc2)C(=C(C)N=c2sc3c(cccc3)c21)C(Nc1ccccc1)=O failed to sanitize.
+16:12:47 <INFO> Sampled SMILES c1c2c(cc3c(N(c4ccccc4)c4[nH]c5c(cccc5)c4C3(C)C)c1)-c1ccc3c(c1C2(C)C)cccc3 failed to sanitize.
+16:12:47 <INFO> Sampled SMILES c1cnc2ccc(NC(C=C)=O)cc2n1CCN1CCCCC1 failed to sanitize.
+16:12:47 <INFO> Sampled SMILES NC(c1c(OCC#N)cccc1)=N1CCN(C(C)=O)CC1 failed to sanitize.
+16:12:47 <INFO> Score: 0.87 Agent NLL: 27.70 Valid:  97% Step: 32
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 23.2402 25.7103 101.9970 0.9977129 C=Cc1ccc2ccc(C)cc2c1 1 c1ccc2ccccc2c1 0.9977129 1.8882 1.0000000 1.0000 []
+ | 23.9442 25.7925 101.9204 0.9977568 CC(=O)N1CCN(C(=O)NCc2cccc(Br)c2)CC1 1 O=C(NCc1ccccc1)N1CCNCC1 0.9977568 1.8815 1.0000000 1.0000 []
+ | 31.7489 30.4550 -30.4550 0.0000000 NNc1nc(-c2ncccn2)nc(Cl)c1-c1ccncc1 1 c1cnc(-c2ncc(-c3ccncc3)cn2)nc1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 24.8542 26.7515 100.3780 0.9931989 CNc1cc(Br)cc(S(=O)(=O)NC2CC2)c1 1 O=S(=O)(NC1CC1)c1ccccc1 0.9931989 2.2684 1.0000000 1.0000 []
+ | 23.9450 26.3751 101.4251 0.9984391 COc1cc(C)ccc1S(=O)(=O)Nc1cccc(C)c1 1 O=S(=O)(Nc1ccccc1)c1ccccc1 0.9984391 1.7552 1.0000000 1.0000 []
+ | 37.8798 40.1452 80.6643 0.9438242 CCCc1ccc(N(c2ccc(C)cc2)c2ccc(C3C=Cc4ccc5ccccc5c4C3)cc2)cc1 1 C1=CC(c2ccc(N(c3ccccc3)c3ccccc3)cc2)Cc2c1ccc1ccccc21 0.9438242 3.0197 1.0000000 1.0000 []
+ | 29.0511 28.6049 11.8774 0.3162679 C=C(I)N=C(C=CC)OC 1  0.3162679 4.2679 1.0000000 1.0000 []
+ | 26.4562 29.0829 98.4805 0.9965892 CC(C)C(=O)Nc1ccc(NC(=O)c2ccc(N3CCCNC3=O)cc2)cc1 1 O=C(Nc1ccccc1)c1ccc(N2CCCNC2=O)cc1 0.9965892 2.0275 1.0000000 1.0000 []
+ | 24.5414 24.0637 100.6955 0.9746814 [CH]N1CCc2ccccc2C1 1 c1ccc2c(c1)CCNC2 0.9746814 2.7317 1.0000000 1.0000 []
+ | 21.6033 24.1476 103.7187 0.9989553 O=C(Nc1ccccc1)Nc1ccc(NC(=O)c2cccc(Br)c2)cc1 1 O=C(Nc1ccccc1)Nc1ccc(NC(=O)c2ccccc2)cc1 0.9989553 1.6155 1.0000000 1.0000 []
+16:12:48 <INFO> Sampled SMILES c1c2c3CCc4nc(-c5cnccc5)oc4cc3N(C)c2ccc1Cl failed to sanitize.
+16:12:48 <INFO> Score: 0.91 Agent NLL: 28.34 Valid:  99% Step: 33
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 21.9531 27.1731 100.6799 0.9988520 Cc1ccc(Nc2cccc(C(=O)N3CCCCC3)c2)cc1 1 O=C(c1cccc(Nc2ccccc2)c1)N1CCCCC1 0.9988520 1.6484 1.0000000 1.0000 []
+ | 25.1302 32.5426 95.1512 0.9976073 O=C(Nc1ccc(SCc2ccc(Br)cc2)cc1)c1cc(Br)ccc1Cl 1 O=C(Nc1ccc(SCc2ccccc2)cc1)c1ccccc1 0.9976073 1.9039 1.0000000 1.0000 []
+ | 26.0846 29.6546 98.0420 0.9976302 O=C(Nc1ccc(Cl)cc1C(=O)c1ccccc1)c1ccc(Br)cc1Br 1 O=C(Nc1ccccc1C(=O)c1ccccc1)c1ccccc1 0.9976302 1.9006 1.0000000 1.0000 []
+ | 21.9884 30.5072 96.3560 0.9911193 Clc1cccc(N2CCCC(c3ccccn3)CC2)c1 1 c1ccc(N2CCCC(c3ccccn3)CC2)cc1 0.9911193 2.3619 1.0000000 1.0000 []
+ | 42.5926 49.2563 77.4380 0.9897993 COc1ccc(C(=O)c2ccccc2)cc1-c1nc(Cl)c(C)c(-c2ccccc2Cl)c1-c1ccccc1 1 O=C(c1ccccc1)c1cccc(-c2nccc(-c3ccccc3)c2-c2ccccc2)c1 0.9897993 2.4105 1.0000000 1.0000 []
+ | 28.3907 32.9023 94.6885 0.9968027 Cc1cc(Br)ccc1NC(=O)c1ccccc1NC(=O)C(C)(C)c1ccccc1 1 O=C(Cc1ccccc1)Nc1ccccc1C(=O)Nc1ccccc1 0.9968027 2.0049 1.0000000 1.0000 []
+ | 21.7261 22.3537 -22.3537 0.0000000 CCN(Cc1ccccc1CN)C(C)C 1 c1ccccc1 0.9965953 2.0269 1.0000000 1.0000 []
+ | 22.6762 27.8835 99.2692 0.9933810 N#CC(CN1CCc2ccccc2C1)(c1ccccc1)c1ccccc1 1 c1ccc(C(CN2CCc3ccccc3C2)c2ccccc2)cc1 0.9933810 2.2589 1.0000000 1.0000 []
+ | 30.9694 37.4904 85.7917 0.9631411 Cc1ccc(C2CC(COc3ccccc3)N(Cc3ccc(C(C)C)cc3)C2)cc1 1 c1ccc(CN2CC(c3ccccc3)CC2COc2ccccc2)cc1 0.9631411 2.8663 1.0000000 1.0000 []
+ | 27.4958 31.4284 95.7350 0.9934640 Cc1cccc(NC2=C(c3cccc(Br)c3)C(=O)N(c3ccccc3C)C2=O)c1 1 O=C1C(Nc2ccccc2)=C(c2ccccc2)C(=O)N1c1ccccc1 0.9934640 2.2545 1.0000000 1.0000 []
+16:12:48 <INFO> Sampled SMILES c1ccc(CN2CCN(C(c3ncc(NCc4ccc(C)cc4)ccc3)=O)CC2)cc1 failed to sanitize.
+16:12:48 <INFO> Sampled SMILES C1OCCN(c2ncc(NC(=O)c3ccc(OCC)cc3)cc2Cl)c1cccc1cccc1 failed to sanitize.
+16:12:48 <INFO> Score: 0.91 Agent NLL: 28.45 Valid:  98% Step: 34
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 23.2847 27.2494 100.2056 0.9957420 CCc1ccc(C=C2C(=O)N(c3ccccc3)C(=O)N(c3ccccc3)C2=O)cc1 1 O=C1C(=Cc2ccccc2)C(=O)N(c2ccccc2)C(=O)N1c1ccccc1 0.9957420 2.1048 1.0000000 1.0000 []
+ | 24.7452 28.8241 98.7891 0.9969783 COc1cccc(-c2ccc(N3CCN(c4ccccc4C)CC3)nn2)c1 1 c1ccc(-c2ccc(N3CCN(c4ccccc4)CC3)nn2)cc1 0.9969783 1.9853 1.0000000 1.0000 []
+ | 37.3132 43.1801 82.1329 0.9790078 Cc1cc(-c2ccccc2)nc2c(N3CCC(c4ccccc4)(c4ccc(Cl)cc4)CC3)csc12 1 c1ccc(-c2ccc3scc(N4CCC(c5ccccc5)(c5ccccc5)CC4)c3n2)cc1 0.9790078 2.6650 1.0000000 1.0000 []
+ | 30.8287 31.4109 93.7461 0.9777896 OC(Cc1ccccc1)Nc1nc2c(Cl)cccc2s1 1 c1ccc(CCNc2nc3ccccc3s2)cc1 0.9777896 2.6850 1.0000000 1.0000 []
+ | 24.0916 25.3733 102.4646 0.9987333 CCC(=O)Nc1cccc(NC(=O)COc2cccc(C)c2)c1 1 O=C(COc1ccccc1)Nc1ccccc1 0.9987333 1.6826 1.0000000 1.0000 []
+ | 27.3161 27.3646 -27.3646 0.0000000 NC(Cc1cn(Cc2cccc(Cl)c2)nn1)C(=O)O 1 c1ccc(Cn2ccnn2)cc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 20.8706 25.1507 102.6390 0.9983575 O=C(NCCCN(c1ccccc1)c1ccccc1)c1ccccc1 1 O=C(NCCCN(c1ccccc1)c1ccccc1)c1ccccc1 0.9983575 1.7730 1.0000000 1.0000 []
+ | 29.9391 28.2434 95.6298 0.9677598 Clc1cc(N2CCOCC2)c2nncnc2n1 1 c1cc(N2CCOCC2)c2nncnc2n1 0.9677598 2.8181 1.0000000 1.0000 []
+ | 27.4479 28.1232 98.8584 0.9920441 Cc1nonc1C(=O)NCCOc1ccccc1C(F)(F)F 1 O=C(NCCOc1ccccc1)c1cnon1 0.9920441 2.3233 1.0000000 1.0000 []
+ | 32.0903 38.6190 88.3711 0.9921100 CCc1c(C)sc(NCCOc2cccc(Br)c2)c1-c1ccccc1 1 c1ccc(OCCNc2sccc2-c2ccccc2)cc1 0.9921100 2.3204 1.0000000 1.0000 []
+16:12:49 <INFO> Sampled SMILES c1ccc2c(c1)oc1c(-c3ccc(cc3)-c3nc(-c4ccncc4)nc(-c4ccccc4)n3)cccc1c2 failed to sanitize.
+16:12:49 <INFO> Score: 0.89 Agent NLL: 27.88 Valid:  99% Step: 35
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 22.0635 24.3097 102.8153 0.9931637 S=C(Nc1ccccc1)NC1CCCc2ccccc21 1 S=C(Nc1ccccc1)NC1CCCc2ccccc21 0.9931637 2.2702 1.0000000 1.0000 []
+ | 38.1577 45.7587 81.0682 0.9908350 O=[N+]([O-])c1ccccc1Oc1c(CN(CCc2ccccc2)Cc2ccccc2Cl)ccc2ccccc12 1 c1ccc(CCN(Cc2ccccc2)Cc2ccc3ccccc3c2Oc2ccccc2)cc1 0.9908350 2.3729 1.0000000 1.0000 []
+ | 23.4871 23.7819 102.9608 0.9901778 Cc1ccc(C)c(NC(=O)CC2CCCNC2)c1 1 O=C(CC1CCCNC1)Nc1ccccc1 0.9901778 2.3972 1.0000000 1.0000 []
+ | 19.8233 25.5151 100.7553 0.9864876 Cc1ccccc1Sc1cc(=O)[nH]cn1 1 O=c1cc(Sc2ccccc2)nc[nH]1 0.9864876 2.5093 1.0000000 1.0000 []
+ | 30.4961 31.2658 94.6525 0.9837366 ClC1=C(Cc2ccc(C3CCCCC3)cc2)C=CCC1 1 C1=CC(Cc2ccc(C3CCCCC3)cc2)=CCC1 0.9837366 2.5747 1.0000000 1.0000 []
+ | 24.9836 27.3049 100.4644 0.9981977 O=C(Nc1ccc(Cl)cc1)N(c1ccccc1)c1ccc(Cl)cc1 1 O=C(Nc1ccccc1)N(c1ccccc1)c1ccccc1 0.9981977 1.8053 1.0000000 1.0000 []
+ | 20.4690 24.1124 103.3543 0.9958334 Cc1ccc(Sc2ncccc2Br)cc1C 1 c1ccc(Sc2ccccn2)cc1 0.9958334 2.0973 1.0000000 1.0000 []
+ | 45.8634 48.8985 45.9904 0.7413202 CCC(N)c1ccc(S(=O)(=O)N2CC3CCN(C)CC3(c3cccc(Cl)c3)C2)cc1 1 O=S(=O)(c1ccccc1)N1CC2CCNCC2(c2ccccc2)C1 0.7413202 3.6342 1.0000000 1.0000 []
+ | 25.1662 30.7059 96.6025 0.9945971 Cc1ccc(CNc2cc(C)nc(NCCc3ccccc3)n2)nc1 1 c1ccc(CCNc2nccc(NCc3ccccn3)n2)cc1 0.9945971 2.1880 1.0000000 1.0000 []
+ | 22.4004 26.7510 100.9614 0.9977531 Nc1nccc2cccc(-c3ccc(Cl)cc3)c12 1 c1ccc(-c2cccc3ccncc23)cc1 0.9977531 1.8820 1.0000000 1.0000 []
+16:12:49 <INFO> Sampled SMILES c1c(COc2ccccc2CNc2ncnc3scc(-c4ccc(cc4)F)c3c2)cccc1Cl failed to sanitize.
+16:12:49 <INFO> Sampled SMILES c1n2c(nc(nc2)-c2c(onc2-c2c(cccc2Cl)Cl)C)cnc1N failed to sanitize.
+16:12:49 <INFO> Sampled SMILES FC(F)(F)c1cnc(N[C@H]2CCN(C[C@H](CC)C)CCC2)ccc1Br failed to sanitize.
+16:12:49 <INFO> Score: 0.87 Agent NLL: 28.23 Valid:  98% Step: 36
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 20.7720 20.2975 -20.2975 0.0000000 NCCC(N)P(=O)(O)O 1  0.6868614 3.7271 1.0000000 1.0000 []
+ | 20.7727 22.7938 105.0416 0.9987138 C=C(c1ccc(F)cc1)c1ccc(Cl)cc1 1 C=C(c1ccccc1)c1ccccc1 0.9987138 1.6879 1.0000000 1.0000 []
+ | 25.4687 26.8743 100.5040 0.9951426 CC(NC(=O)CCc1ccc(Cl)cc1)c1ccc2ccccc2c1 1 O=C(CCc1ccccc1)NCc1ccc2ccccc2c1 0.9951426 2.1508 1.0000000 1.0000 []
+ | 28.5358 30.7092 96.4255 0.9932395 CCc1c(C)nn(CC)c1CNS(=O)(=O)c1ccccc1 1 O=S(=O)(NCc1ccn[nH]1)c1ccccc1 0.9932395 2.2663 1.0000000 1.0000 []
+ | 21.9727 25.5222 102.0874 0.9969501 Cc1ccccc1Nc1nccn(C)c1=O 1 O=c1[nH]ccnc1Nc1ccccc1 0.9969501 1.9885 1.0000000 1.0000 []
+ | 25.3922 27.3105 100.2202 0.9963341 COc1ccc(N2CCN(CC(=O)c3ccc(=O)[nH]c3)CC2)cc1 1 O=C(CN1CCN(c2ccccc2)CC1)c1ccc(=O)[nH]c1 0.9963341 2.0526 1.0000000 1.0000 []
+ | 24.0098 31.5120 95.1826 0.9898015 Cn1c(CCNc2ccccc2)nnnc1=O 1 O=c1nnnc(CCNc2ccccc2)[nH]1 0.9898015 2.4104 1.0000000 1.0000 []
+ | 35.7800 37.4329 88.8984 0.9869630 Cn1c(C2CC2)cnc1-c1ccccc1NS(=O)(=O)c1ccc(C#N)cc1 1 O=S(=O)(Nc1ccccc1-c1ncc(C2CC2)[nH]1)c1ccccc1 0.9869630 2.4967 1.0000000 1.0000 []
+ | 25.7838 28.8647 98.5939 0.9957702 O=c1c2cc(-c3ccccc3)sc2ncn1Cc1cccc(Br)c1 1 O=c1c2cc(-c3ccccc3)sc2ncn1Cc1ccccc1 0.9957702 2.1025 1.0000000 1.0000 []
+ | 31.9297 29.4390 96.5488 0.9842799 CCCCCCCCCC[n+]1ccc(CCCC)cc1CCCCCC 1 c1cc[nH+]cc1 0.9842799 2.5627 1.0000000 1.0000 []
+16:12:50 <INFO> Sampled SMILES [nH]1nc([nH]c(c1C)=O)CCc1ccccc1F failed to sanitize.
+16:12:50 <INFO> Score: 0.91 Agent NLL: 27.32 Valid:  99% Step: 37
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 24.6877 27.4628 100.3860 0.9988190 Fc1ccc(OCCCCNc2cccc(Cl)c2)cc1 1 c1ccc(NCCCCOc2ccccc2)cc1 0.9988190 1.6582 1.0000000 1.0000 []
+ | 31.7810 33.2781 87.0585 0.9401298 O=C(c1ccncc1)N1CCN2C(=O)NCC2c2cc(F)ccc21 1 O=C(c1ccncc1)N1CCN2C(=O)NCC2c2ccccc21 0.9401298 3.0432 1.0000000 1.0000 []
+ | 40.8162 43.6115 62.2597 0.8271182 Cc1ccc(S(=O)(=O)N2C(C(=O)CC(C)C)=C(Cc3ccccc3)NC3CCCCC32)cc1 1 O=S(=O)(c1ccccc1)N1C=C(Cc2ccccc2)NC2CCCCC21 0.8271182 3.4561 1.0000000 1.0000 []
+ | 21.0002 24.9951 102.8018 0.9984135 c1ccc(CCc2ccc3sccc3c2)cc1 1 c1ccc(CCc2ccc3sccc3c2)cc1 0.9984135 1.7609 1.0000000 1.0000 []
+ | 31.3105 32.9059 -32.9059 0.0000000 NC(=O)NNC1CCN(c2cccc3ccccc23)CC1 1 c1ccc2c(N3CCCCC3)cccc2c1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 18.1587 24.1638 103.6981 0.9989210 O=C(Nc1cccc2ccccc12)c1ccco1 1 O=C(Nc1cccc2ccccc12)c1ccco1 0.9989210 1.6268 1.0000000 1.0000 []
+ | 22.0594 25.3892 97.3737 0.9590849 CCCNC(c1ccccc1Cl)c1ccoc1CC 1 c1ccc(Cc2ccoc2)cc1 0.9590849 2.9040 1.0000000 1.0000 []
+ | 25.1445 24.1763 90.2512 0.8939642 CC(NC(=O)CC1CCCCN1)C(C)(C)C 1 C1CCNCC1 0.8939642 3.2593 1.0000000 1.0000 []
+ | 29.9558 34.0096 93.3979 0.9953704 O=C(CSc1nc2ccccc2c(=O)n1Cc1ccccc1)NCc1ccnc(Cl)c1 1 O=C(CSc1nc2ccccc2c(=O)n1Cc1ccccc1)NCc1ccncc1 0.9953704 2.1340 1.0000000 1.0000 []
+ | 27.9150 26.0878 101.1228 0.9938331 Cc1cc2ccccc2n1CC(=O)N1CCNC(=O)C1 1 O=C1CN(C(=O)Cn2ccc3ccccc32)CCN1 0.9938331 2.2342 1.0000000 1.0000 []
+16:12:50 <INFO> Sampled SMILES O(c1cc(C)ccc1)Cc1sc2n(c(C)cc(C)n2)n1 failed to sanitize.
+16:12:50 <INFO> Sampled SMILES C1CCN(C1)c1ccc(Nc2nc(-c3sc(CN2c2cccc(c2)C)ccc3=O)=O)cc1 failed to sanitize.
+16:12:50 <INFO> Score: 0.89 Agent NLL: 27.82 Valid:  98% Step: 38
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 37.2688 42.9201 81.2874 0.9703705 CC(CNC(=O)Nc1cccc(-c2ccnc3c2cnn3Cc2ccc(F)cc2)c1)c1ccccc1 1 O=C(NCCc1ccccc1)Nc1cccc(-c2ccnc3c2cnn3Cc2ccccc2)c1 0.9703705 2.7878 1.0000000 1.0000 []
+ | 33.0107 38.0405 89.2154 0.9941868 CCOc1ccc(CC)nc1CCCN(Cc1ccccc1)c1ccccc1 1 c1ccc(CN(CCCc2ccccn2)c2ccccc2)cc1 0.9941868 2.2136 1.0000000 1.0000 []
+ | 28.0331 31.0994 87.1217 0.9236023 O=C1Nc2ccccc2N2CCN(CCCn3ccnc3)C12 1 O=C1Nc2ccccc2N2CCN(CCCn3ccnc3)C12 0.9236023 3.1341 1.0000000 1.0000 []
+ | 25.1921 31.5333 96.1928 0.9978601 O=C(Nc1ccc(CNc2c(Cl)cccc2[N+](=O)[O-])cc1)c1ccccc1 1 O=C(Nc1ccc(CNc2ccccc2)cc1)c1ccccc1 0.9978601 1.8651 1.0000000 1.0000 []
+ | 28.5418 32.3020 94.2798 0.9889204 Nc1cn[nH]c1NC1CCN(S(=O)(=O)c2ccccc2)CC1 1 O=S(=O)(c1ccccc1)N1CCC(Nc2ccn[nH]2)CC1 0.9889204 2.4395 1.0000000 1.0000 []
+ | 42.1911 45.5764 71.6027 0.9154616 CC1CN(C)CCN1c1cc2ccc(-c3ccc(F)cn3)cc2n(C2CC2)c1=O 1 O=c1c(N2CCNCC2)cc2ccc(-c3ccccn3)cc2n1C1CC1 0.9154616 3.1723 1.0000000 1.0000 []
+ | 31.6082 31.0088 94.0701 0.9771786 CCc1nnc(N2CCCC(C(=O)N3CCN(c4ccccc4)CC3)C2)s1 1 O=C(C1CCCN(c2nncs2)C1)N1CCN(c2ccccc2)CC1 0.9771786 2.6947 1.0000000 1.0000 []
+ | 21.7533 23.8263 103.4247 0.9941484 Brc1ccc(NCc2ccco2)cn1 1 c1cncc(NCc2ccco2)c1 0.9941484 2.2159 1.0000000 1.0000 []
+ | 23.2974 29.7425 97.7093 0.9957172 Clc1cccc(N=C(c2ccccc2)N2CCN(Cc3ccccc3)CC2)c1 1 c1ccc(CN2CCN(C(=Nc3ccccc3)c3ccccc3)CC2)cc1 0.9957172 2.1069 1.0000000 1.0000 []
+ | 23.2213 25.2203 102.2930 0.9961976 O=C(Nc1ccc(SC2CCCC2)cc1)c1ccco1 1 O=C(Nc1ccc(SC2CCCC2)cc1)c1ccco1 0.9961976 2.0654 1.0000000 1.0000 []
+16:12:51 <INFO> Sampled SMILES c1cc([N+]([O-])=O)ccc1C1C(=C(N=c2n1c(cs2)=Cc1ccc(C)cc1)c1ccccc1)C failed to sanitize.
+16:12:51 <INFO> Score: 0.93 Agent NLL: 27.43 Valid:  99% Step: 39
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 22.2682 24.5556 98.9412 0.9648184 Oc1c(Cl)cc(Cl)cc1C1CCCCN1 1 c1ccc(C2CCCCN2)cc1 0.9648184 2.8495 1.0000000 1.0000 []
+ | 34.0800 41.5526 85.4783 0.9924291 CNc1nccc(NCc2ccc(C3CC3)c(-c3ccc(Cl)cc3)c2)n1 1 c1ccc(-c2cc(CNc3ccncn3)ccc2C2CC2)cc1 0.9924291 2.3060 1.0000000 1.0000 []
+ | 24.1414 28.9856 98.6454 0.9971169 O=C(Nc1nc(-c2ccc(Cl)cc2)cs1)c1cc(Br)ccc1Br 1 O=C(Nc1nc(-c2ccccc2)cs1)c1ccccc1 0.9971169 1.9689 1.0000000 1.0000 []
+ | 26.5534 24.6553 102.8487 0.9961246 O=C(CCC1CCCCC1)NCc1ccc(Cn2ccnc2)cc1 1 O=C(CCC1CCCCC1)NCc1ccc(Cn2ccnc2)cc1 0.9961246 2.0720 1.0000000 1.0000 []
+ | 22.6352 26.4673 -26.4673 0.0000000 Cc1cc(I)ccc1NCc1ccc(Cl)c(Cl)c1 1 c1ccc(CNc2ccccc2)cc1 0.9975553 1.9114 1.0000000 1.0000 []
+ | 28.6210 31.0335 -31.0335 0.0000000 CCCCCCCCCCCCCCCCCC(=O)NC(Cc1ccc(O)cc1)C(=O)NCC(N)=O 1 c1ccccc1 0.9735360 2.7474 1.0000000 1.0000 []
+ | 17.5163 24.0046 103.8625 0.9989616 Cc1ccc(S(=O)(=O)N2CCN(c3ccccc3)CC2)cc1 1 O=S(=O)(c1ccccc1)N1CCN(c2ccccc2)CC1 0.9989616 1.6134 1.0000000 1.0000 []
+ | 30.0940 31.9511 95.2243 0.9935577 O=C(CN(Cc1nc2ccccc2o1)c1ccccc1)NC1CCCCCC1 1 O=C(CN(Cc1nc2ccccc2o1)c1ccccc1)NC1CCCCCC1 0.9935577 2.2495 1.0000000 1.0000 []
+ | 28.5940 33.6951 93.3170 0.9922823 c1ccc(-c2cc(-c3cccc(-c4ccc(-c5ccccc5-c5cc(-c6ccccc6)nc(-c6ccccc6)n5)cc4)c3)nc(-c3ccccc3)n2)cc1 1 c1ccc(-c2cc(-c3cccc(-c4ccc(-c5ccccc5-c5cc(-c6ccccc6)nc(-c6ccccc6)n5)cc4)c3)nc(-c3ccccc3)n2)cc1 0.9922823 2.3127 1.0000000 1.0000 []
+ | 37.6313 38.1578 89.0396 0.9937295 CCc1ccc(C(=Cc2cccc3ccccc23)C(=O)c2c[nH]c3ccccc23)cc1 1 O=C(C(=Cc1cccc2ccccc12)c1ccccc1)c1c[nH]c2ccccc12 0.9937295 2.2400 1.0000000 1.0000 []
+16:12:51 <INFO> Sampled SMILES N1(CCN([C@H](c2c(F)cccc2)C(Nc2ccc(F)cc2)=O)Cc2ccccc2)c2ccccc2ccc1 failed to sanitize.
+16:12:51 <INFO> Sampled SMILES c1nc(c(cc1)F)-c1ncc2n(ccc(c2)C)c1 failed to sanitize.
+16:12:51 <INFO> Score: 0.91 Agent NLL: 27.56 Valid:  98% Step: 40
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 19.2036 26.6214 101.1833 0.9984750 Cc1ccc(CN2CCN(c3ccccc3Oc3ccccc3)CC2)cc1 1 c1ccc(CN2CCN(c3ccccc3Oc3ccccc3)CC2)cc1 0.9984750 1.7471 1.0000000 1.0000 []
+ | 26.0652 29.3825 98.2603 0.9972094 COc1cncc(CN2CCN(C(=O)c3ccccc3F)CC2)c1 1 O=C(c1ccccc1)N1CCN(Cc2cccnc2)CC1 0.9972094 1.9575 1.0000000 1.0000 []
+ | 22.7463 26.3550 101.0421 0.9952896 c1ccc(CN2CCN(C3CN(c4nccs4)C3)CC2)cc1 1 c1ccc(CN2CCN(C3CN(c4nccs4)C3)CC2)cc1 0.9952896 2.1401 1.0000000 1.0000 []
+ | 26.7426 27.1983 99.6356 0.9908900 COc1ccc(C(CNC(=O)c2ccc(Cl)cc2)N2CCN(c3ccccc3)CC2)cc1 1 O=C(NCC(c1ccccc1)N1CCN(c2ccccc2)CC1)c1ccccc1 0.9908900 2.3708 1.0000000 1.0000 []
+ | 19.5306 24.6857 103.1515 0.9987276 Fc1cccc(CN2CCc3ccccc3C2)c1 1 c1ccc(CN2CCc3ccccc3C2)cc1 0.9987276 1.6841 1.0000000 1.0000 []
+ | 23.5133 26.3453 97.1022 0.9644332 Clc1ccc(-n2ccc3c2CCNC3)cc1Br 1 c1ccc(-n2ccc3c2CCNC3)cc1 0.9644332 2.8534 1.0000000 1.0000 []
+ | 46.5177 41.5380 -41.5380 0.0000000 CC1C=CC(Br)=C(C2C=[C+]C=C2)C1Br 1 [C+]1=CC(C2=CC=CCC2)C=C1 0.0000000 0.0000 0.0000000 0.0000 ['[#6;+]']
+ | 24.5755 25.3796 102.2738 0.9972925 COc1ccccc1NC(=O)COc1cccnc1[N+](=O)[O-] 1 O=C(COc1cccnc1)Nc1ccccc1 0.9972925 1.9470 1.0000000 1.0000 []
+ | 26.2657 24.1800 -24.1800 0.0000000 O=C(O)C(c1ccccc1)C(Br)(Br)Br 1 c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 34.9802 54.0031 -54.0031 0.0000000 N1(CCN([C@H](c2c(F)cccc2)C(Nc2ccc(F)cc2)=O)Cc2ccccc2)c2ccccc2ccc1 0 -- 0.0000000 0.0000 0.0000000 0.0000 None
+16:12:52 <INFO> Sampled SMILES c1cccc2c1nccn2CCNc1ccccc1 failed to sanitize.
+16:12:52 <INFO> Sampled SMILES c1(=O)cc(-c2ccccc2)c(-c2ccc(Cl)cc2)oc1-c1ccccc1 failed to sanitize.
+16:12:52 <INFO> Score: 0.86 Agent NLL: 26.89 Valid:  98% Step: 41
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 34.0060 40.9625 -40.9625 0.0000000 CCCCCCOc1ccc(N(CCCC)S(c2ccccc2)(c2ccccc2)c2ccc(Cl)cc2)cc1 1 c1ccc(NS(c2ccccc2)(c2ccccc2)c2ccccc2)cc1 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][S;!$(S(=O)=O)]']
+ | 31.8043 46.9828 -46.9828 0.0000000 Cc1ccc(C2Cc3ccccc3-c3cccn3-c3ccccc3N2C(=O)c2cccc(Cl)c2)cc1 1 O=C(c1ccccc1)N1c2ccccc2-n2cccc2-c2ccccc2CC1c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['[*;r{8-17}]']
+ | 27.3603 29.9663 94.4237 0.9717966 O=C(CC1COCCN1)Nc1ccc(-c2cccc(Cl)c2)nc1 1 O=C(CC1COCCN1)Nc1ccc(-c2ccccc2)nc1 0.9717966 2.7702 1.0000000 1.0000 []
+ | 32.8526 30.8575 94.6268 0.9803461 CC1CCCN(C(=O)c2cn(CCN3CCOCC3)c3ccccc23)C1 1 O=C(c1cn(CCN2CCOCC2)c2ccccc12)N1CCCCC1 0.9803461 2.6417 1.0000000 1.0000 []
+ | 27.8211 28.7003 97.2226 0.9837722 Cc1nc(-c2cc3ccccn3n2)ccc1Br 1 c1ccc(-c2cc3ccccn3n2)nc1 0.9837722 2.5739 1.0000000 1.0000 []
+ | 28.7790 31.5326 96.0893 0.9970466 O=C(Nc1ccc(Br)c(Cl)c1)c1cccc(NCc2ccco2)c1 1 O=C(Nc1ccccc1)c1cccc(NCc2ccco2)c1 0.9970466 1.9773 1.0000000 1.0000 []
+ | 24.5203 28.5980 99.1376 0.9979340 Cc1ccc(-c2nnc(-c3ccc(NC(=O)c4ccccc4)cc3)o2)cc1C 1 O=C(Nc1ccc(-c2nnc(-c3ccccc3)o2)cc1)c1ccccc1 0.9979340 1.8528 1.0000000 1.0000 []
+ | 33.0308 35.8496 -35.8496 0.0000000 CCC(c1ccccc1)N1OC(=S)NC(c2ccccc2)C1=O 1 O=C1C(c2ccccc2)NC(=S)ON1Cc1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 29.9419 32.3500 95.1290 0.9959294 CCc1ccc(NC(=O)c2ccc(CN(c3ccc(Br)cc3)S(=O)(=O)c3ccc(C)cc3)cc2)cc1 1 O=C(Nc1ccccc1)c1ccc(CN(c2ccccc2)S(=O)(=O)c2ccccc2)cc1 0.9959294 2.0891 1.0000000 1.0000 []
+ | 27.7421 33.9014 91.9942 0.9835593 CCNC(=NCC1CC1)NCC(c1ccccc1Cl)c1ccccc1Cl 1 C(=NCC1CC1)NCC(c1ccccc1)c1ccccc1 0.9835593 2.5785 1.0000000 1.0000 []
+16:12:52 <INFO> Sampled SMILES c1cc(ccc1)CN1Cc2sc(NC(c3ccc(NS(c4ccccc4)(=O)=O)ccc3)=O)cc2CC1 failed to sanitize.
+16:12:52 <INFO> Score: 0.90 Agent NLL: 28.00 Valid:  98% Step: 42
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 32.4164 34.1251 93.2861 0.9954003 Nc1cc(C(F)(F)F)nc(-c2ccc(C(=O)Nc3cccc(F)c3)cc2)n1 1 O=C(Nc1ccccc1)c1ccc(-c2ncccn2)cc1 0.9954003 2.1318 1.0000000 1.0000 []
+ | 25.4947 31.8413 95.6977 0.9963990 CC(C)c1ccc(N2CCN(C(=O)CN(Cc3ccccc3)C(=O)c3ccccc3)CC2)cc1 1 O=C(CN(Cc1ccccc1)C(=O)c1ccccc1)N1CCN(c2ccccc2)CC1 0.9963990 2.0464 1.0000000 1.0000 []
+ | 32.8576 35.1040 91.8059 0.9914833 N#Cc1cc2ccccc2cc1N(c1ccc(F)cc1)C1CC1 1 c1ccc(N(c2ccc3ccccc3c2)C2CC2)cc1 0.9914833 2.3472 1.0000000 1.0000 []
+ | 27.0349 30.5265 97.2840 0.9985191 CC(=O)Nc1ccc(Cl)c(NC(=O)c2ccccc2NC(=O)c2ccccc2)c1 1 O=C(Nc1ccccc1C(=O)Nc1ccccc1)c1ccccc1 0.9985191 1.7369 1.0000000 1.0000 []
+ | 28.5383 32.0777 90.2826 0.9559395 CC1(N)c2ccccc2CN(Cc2ccccc2)C1(C)C 1 c1ccc(CN2CCc3ccccc3C2)cc1 0.9559395 2.9309 1.0000000 1.0000 []
+ | 28.1658 30.9084 95.1971 0.9851994 COc1cccc(NC(=O)CC2Sc3ccccc3-c3ccccc32)c1 1 O=C(CC1Sc2ccccc2-c2ccccc21)Nc1ccccc1 0.9851994 2.5414 1.0000000 1.0000 []
+ | 27.8176 30.6161 96.4780 0.9929227 Cc1nc2ccc(C(F)(c3ccccc3)c3ccccc3)cc2s1 1 c1ccc(C(c2ccccc2)c2ccc3ncsc3c2)cc1 0.9929227 2.2824 1.0000000 1.0000 []
+ | 25.4055 29.4572 95.7494 0.9781764 CC1CCN(C(=O)CCc2ccc(F)cc2)CC1c1ccccc1 1 O=C(CCc1ccccc1)N1CCCC(c2ccccc2)C1 0.9781764 2.6788 1.0000000 1.0000 []
+ | 31.7355 41.8390 78.1671 0.9375483 COc1ccc(Cl)cc1N(C(C)C(=O)NC(c1ccccc1)c1ccc(Cl)cc1)S(=O)(=O)c1ccccc1 1 O=C(CN(c1ccccc1)S(=O)(=O)c1ccccc1)NC(c1ccccc1)c1ccccc1 0.9375483 3.0588 1.0000000 1.0000 []
+ | 28.1834 34.6832 92.8002 0.9959641 O=S(=O)(c1cccc(Cl)c1)N1CCN(c2ccc(N3CCN(Cc4ccccc4)CC3)cc2)CC1 1 O=S(=O)(c1ccccc1)N1CCN(c2ccc(N3CCN(Cc4ccccc4)CC3)cc2)CC1 0.9959641 2.0862 1.0000000 1.0000 []
+16:12:53 <INFO> Sampled SMILES C=C1CC2(CN(CCCn2c1)c1ccc(Cl)cc1)C failed to sanitize.
+16:12:53 <INFO> Score: 0.89 Agent NLL: 26.44 Valid:  99% Step: 43
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 32.9491 40.5301 81.2722 0.9515807 CC(C)CCN1C(=O)CC(c2ccc(-c3ccccc3)cc2)C1c1cccc(F)c1 1 O=C1CC(c2ccc(-c3ccccc3)cc2)C(c2ccccc2)N1 0.9515807 2.9653 1.0000000 1.0000 []
+ | 25.6582 30.7633 96.5682 0.9947773 Cc1ccc(C)c(S(=O)(=O)N2CCN(S(=O)(=O)c3ccccc3Cl)CC2)c1C 1 O=S(=O)(c1ccccc1)N1CCN(S(=O)(=O)c2ccccc2)CC1 0.9947773 2.1761 1.0000000 1.0000 []
+ | 25.6104 28.2867 98.7831 0.9927325 O=C(c1nc(-c2ccccc2)n2c1CCCC2)N1CCN(c2ccccn2)CC1 1 O=C(c1nc(-c2ccccc2)n2c1CCCC2)N1CCN(c2ccccn2)CC1 0.9927325 2.2916 1.0000000 1.0000 []
+ | 26.7065 28.9571 98.7324 0.9975738 Cc1cc(Cl)ccc1NS(=O)(=O)c1ccc(NC(=O)c2ccc(Cl)cc2Cl)cc1 1 O=C(Nc1ccc(S(=O)(=O)Nc2ccccc2)cc1)c1ccccc1 0.9975738 1.9088 1.0000000 1.0000 []
+ | 24.1560 27.5344 99.9183 0.9957247 Cn1c(N)nnc1SCC(=O)N1CCN(c2ccccc2)CC1 1 O=C(CSc1nnc[nH]1)N1CCN(c2ccccc2)CC1 0.9957247 2.1063 1.0000000 1.0000 []
+ | 27.7946 30.5783 97.0670 0.9972290 CC(C)CCCCCN1CCN(Cc2ccc(C(F)(F)F)cc2)CC1 1 c1ccc(CN2CCNCC2)cc1 0.9972290 1.9551 1.0000000 1.0000 []
+ | 31.0548 34.5004 92.1658 0.9895794 c1ccc(-c2cn(CSc3nnc(-c4ccc5ccccc5c4)o3)nn2)cc1 1 c1ccc(-c2cn(CSc3nnc(-c4ccc5ccccc5c4)o3)nn2)cc1 0.9895794 2.4180 1.0000000 1.0000 []
+ | 25.2801 26.6420 99.5510 0.9858833 O=C1CSC(c2ccccc2)N1Cc1ccc(C(F)(F)F)cc1 1 O=C1CSC(c2ccccc2)N1Cc1ccccc1 0.9858833 2.5247 1.0000000 1.0000 []
+ | 33.7264 32.7887 90.1896 0.9607681 CCC(C)(C)c1ccccc1C(NC1CC1)C(N)=O 1 c1ccc(CNC2CC2)cc1 0.9607681 2.8888 1.0000000 1.0000 []
+ | 21.7217 26.4902 100.8902 0.9951593 Nc1ccc(CN2CCC(c3ccccc3)C2)cc1 1 c1ccc(CN2CCC(c3ccccc3)C2)cc1 0.9951593 2.1496 1.0000000 1.0000 []
+16:12:53 <INFO> Sampled SMILES O=c1cccc(n2c1cccc2)=O failed to sanitize.
+16:12:53 <INFO> Sampled SMILES C1(N(Cc2ccccc2Cl)CCn2nc(ccc12)-c1ccco1)=O failed to sanitize.
+16:12:53 <INFO> Score: 0.89 Agent NLL: 26.22 Valid:  98% Step: 44
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 24.8524 28.3955 98.9233 0.9946781 O=C1NC(=O)N(c2cccc(F)c2)C(=O)C1=Cc1cccc(Br)c1 1 O=C1NC(=O)N(c2ccccc2)C(=O)C1=Cc1ccccc1 0.9946781 2.1827 1.0000000 1.0000 []
+ | 22.5726 26.5652 100.9976 0.9965844 c1ccc(-c2cc3ccccc3n2-c2nc3ccccc3s2)cc1 1 c1ccc(-c2cc3ccccc3n2-c2nc3ccccc3s2)cc1 0.9965844 2.0280 1.0000000 1.0000 []
+ | 28.2470 29.8887 97.4916 0.9951590 COc1ccc(NCn2cc(-c3ccc(Cl)cc3)nn2)cc1 1 c1ccc(NCn2cc(-c3ccccc3)nn2)cc1 0.9951590 2.1496 1.0000000 1.0000 []
+ | 14.9972 20.8058 107.0596 0.9989481 CCN(c1ccccc1)c1ccccc1 1 c1ccc(Nc2ccccc2)cc1 0.9989481 1.6179 1.0000000 1.0000 []
+ | 27.7753 28.5709 97.8555 0.9877065 COc1ccc(C)cc1NC(=O)C1Cc2ccccc2CN1 1 O=C(Nc1ccccc1)C1Cc2ccccc2CN1 0.9877065 2.4760 1.0000000 1.0000 []
+ | 29.4469 29.9634 96.9950 0.9918621 FCCCn1cc(C(c2ccccc2)c2ccccc2)nn1 1 c1ccc(C(c2ccccc2)c2c[nH]nn2)cc1 0.9918621 2.3312 1.0000000 1.0000 []
+ | 27.1068 29.5422 97.2078 0.9902347 N#Cc1ccc(C(=O)NC2CCCN(S(=O)(=O)c3ccccc3)C2)cc1 1 O=C(NC1CCCN(S(=O)(=O)c2ccccc2)C1)c1ccccc1 0.9902347 2.3952 1.0000000 1.0000 []
+ | 24.1951 32.3663 94.3529 0.9899934 Clc1cccnc1N1CCC(Oc2ccc(-c3ccccc3)cc2)C1 1 c1ccc(-c2ccc(OC3CCN(c4ccccn4)C3)cc2)cc1 0.9899934 2.4037 1.0000000 1.0000 []
+ | 21.8740 23.8779 97.1691 0.9456798 Nc1cccc(N2C(=O)C3CC=CCC3C2=O)c1 1 O=C1C2CC=CCC2C(=O)N1c1ccccc1 0.9456798 3.0074 1.0000000 1.0000 []
+ | 29.4697 36.0346 89.1475 0.9779851 O=C(Nc1cccc(Br)c1)c1cccc(NC2c3ccccc3C(=O)N2c2ccc(Cl)cc2)c1 1 O=C(Nc1ccccc1)c1cccc(NC2c3ccccc3C(=O)N2c2ccccc2)c1 0.9779851 2.6819 1.0000000 1.0000 []
+16:12:54 <INFO> Score: 0.91 Agent NLL: 26.32 Valid: 100% Step: 45
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 28.6915 29.7288 97.5519 0.9943810 CCCn1c(=O)c2ccccc2c(=O)n1CC(=O)Nc1ccccc1C 1 O=C(Cn1[nH]c(=O)c2ccccc2c1=O)Nc1ccccc1 0.9943810 2.2017 1.0000000 1.0000 []
+ | 33.7290 33.8282 92.8780 0.9898916 COc1cccc(OC)c1Nc1cc(-c2ccc3nccnc3c2)ncn1 1 c1ccc(Nc2cc(-c3ccc4nccnc4c3)ncn2)cc1 0.9898916 2.4073 1.0000000 1.0000 []
+ | 37.9405 42.5788 83.8839 0.9879901 Cc1cc(C)c(C(Cc2ccc(Cl)cc2)=NO)c(Sc2ccc(F)cc2)c1 1 N=C(Cc1ccccc1)c1ccccc1Sc1ccccc1 0.9879901 2.4678 1.0000000 1.0000 []
+ | 24.8638 29.1533 98.5147 0.9974066 CN1CCN(c2cccc(CNc3ccc(F)cc3F)c2)CC1 1 c1ccc(NCc2cccc(N3CCNCC3)c2)cc1 0.9974066 1.9320 1.0000000 1.0000 []
+ | 26.7759 27.5776 97.4388 0.9766910 NCC(CCc1ccccc1Cl)Cc1ccsc1 1 c1ccc(CCCCc2ccsc2)cc1 0.9766910 2.7022 1.0000000 1.0000 []
+ | 27.6378 33.8046 93.8854 0.9975783 O=C(Nc1ccc(Cl)cc1Cl)c1cccc(CSc2ccc(-c3ccccc3)cc2)c1 1 O=C(Nc1ccccc1)c1cccc(CSc2ccc(-c3ccccc3)cc2)c1 0.9975783 1.9081 1.0000000 1.0000 []
+ | 24.9097 23.5292 -23.5292 0.0000000 CNS(=O)(=O)Nc1cccc(F)c1F 1 c1ccccc1 0.9930031 2.2784 1.0000000 1.0000 []
+ | 30.4910 28.9497 96.8363 0.9827036 COc1cc2c(cc1C1=NCCN1C)OCO2 1 c1cc2c(cc1C1=NCCN1)OCO2 0.9827036 2.5964 1.0000000 1.0000 []
+ | 27.1881 34.7060 92.3392 0.9925402 O=c1cc(CN(Cc2ccccc2)Cc2ccc(F)cc2)nc(-c2ccccc2Cl)[nH]1 1 O=c1cc(CN(Cc2ccccc2)Cc2ccccc2)nc(-c2ccccc2)[nH]1 0.9925402 2.3008 1.0000000 1.0000 []
+ | 28.6996 31.7504 95.4795 0.9939832 Fc1ccc2c(-c3ccc(Cl)cc3)csc2c1Cl 1 c1ccc(-c2csc3ccccc23)cc1 0.9939832 2.2256 1.0000000 1.0000 []
+16:12:54 <INFO> Score: 0.92 Agent NLL: 25.82 Valid: 100% Step: 46
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 17.7998 22.6082 104.9148 0.9962734 c1ccc(N2CCCC2)c(NCc2ccoc2)c1 1 c1ccc(N2CCCC2)c(NCc2ccoc2)c1 0.9962734 2.0583 1.0000000 1.0000 []
+ | 27.0816 28.0474 95.4921 0.9651520 Cc1cc(C)cc(C[n+]2cncc(C)c2)c1 1 c1ccc(C[n+]2cccnc2)cc1 0.9651520 2.8461 1.0000000 1.0000 []
+ | 29.5094 32.2610 94.9908 0.9941546 O=C(c1ccoc1)N(CCn1ccc2ccccc21)Cc1ccccc1 1 O=C(c1ccoc1)N(CCn1ccc2ccccc21)Cc1ccccc1 0.9941546 2.2155 1.0000000 1.0000 []
+ | 22.5600 25.6120 100.9616 0.9888560 Cc1c(Br)n(-c2ccccc2)c2ncnc(N)c12 1 c1ccc(-n2ccc3cncnc32)cc1 0.9888560 2.4415 1.0000000 1.0000 []
+ | 39.8841 43.0776 83.9388 0.9923158 c1ccc(-c2ccc(Nc3cc4cc(-c5cccc(-c6cccnc6)c5)ccc4cn3)cc2)nc1 1 c1ccc(-c2ccc(Nc3cc4cc(-c5cccc(-c6cccnc6)c5)ccc4cn3)cc2)nc1 0.9923158 2.3112 1.0000000 1.0000 []
+ | 29.5052 32.1594 66.9319 0.7741507 O=C1NCCNC1c1cc(Cl)c(Br)cn1 1 O=C1NCCNC1c1ccccn1 0.7741507 3.5720 1.0000000 1.0000 []
+ | 28.1450 36.2509 88.9135 0.9778467 CN(Cc1ccccc1Cl)C(=O)C1CN(c2ccccc2)C(=O)c2ccccc21 1 O=C(NCc1ccccc1)C1CN(c2ccccc2)C(=O)c2ccccc21 0.9778467 2.6841 1.0000000 1.0000 []
+ | 34.7188 40.5853 86.0389 0.9892517 O=C(Nc1sc2c(c1-c1ccc(Cl)c(Cl)c1)CCCCC2)c1ccn(-c2ccccc2)n1 1 O=C(Nc1sc2c(c1-c1ccccc1)CCCCC2)c1ccn(-c2ccccc2)n1 0.9892517 2.4288 1.0000000 1.0000 []
+ | 30.7959 33.1767 92.3339 0.9805515 Cc1coc(CNc2cc([N+](=O)[O-])c(F)cc2F)c1 1 c1ccc(NCc2ccco2)cc1 0.9805515 2.6379 1.0000000 1.0000 []
+ | 23.0856 28.9436 97.1108 0.9848001 CC1=C(C(=O)Nc2ccccc2)C(C)N(Cc2ccccc2)C(=O)N1 1 O=C(Nc1ccccc1)C1=CNC(=O)N(Cc2ccccc2)C1 0.9848001 2.5508 1.0000000 1.0000 []
+16:12:55 <INFO> Sampled SMILES c1cccc(c1)Cc1oc(-c2ccccc2)c(c(c1)Oc1ccccc1)=O failed to sanitize.
+16:12:55 <INFO> Sampled SMILES c12c(ccc(C3N(C(c4ccccc4)=c4c(sc5c4cccc5)nc3)c3ccc(-c4ccccc4)cc3)c1)cccc2 failed to sanitize.
+16:12:55 <INFO> Score: 0.89 Agent NLL: 26.73 Valid:  98% Step: 47
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 34.4794 37.1597 85.4951 0.9582402 CC(C)n1ncc2cc(C3CCCN(Cc4ccc(F)c(Cl)c4)C3)cnc21 1 c1ccc(CN2CCCC(c3cnc4[nH]ncc4c3)C2)cc1 0.9582402 2.9114 1.0000000 1.0000 []
+ | 21.8980 26.6588 100.9063 0.9966025 Clc1ccccc1-c1noc(CNc2cccc(Br)c2)n1 1 c1ccc(NCc2nc(-c3ccccc3)no2)cc1 0.9966025 2.0261 1.0000000 1.0000 []
+ | 28.1012 34.0969 83.8097 0.9211454 O=C1Nc2cccc3c2C1(c1ccccc1)C(c1ccccc1)CC3 1 O=C1Nc2cccc3c2C1(c1ccccc1)C(c1ccccc1)CC3 0.9211454 3.1460 1.0000000 1.0000 []
+ | 23.0710 27.1751 100.3670 0.9964228 CSc1ccc(-c2cc(Nc3ccccc3)n[nH]2)cc1 1 c1ccc(Nc2cc(-c3ccccc3)[nH]n2)cc1 0.9964228 2.0441 1.0000000 1.0000 []
+ | 29.1298 28.5274 97.0974 0.9814441 N#Cc1ccc(CN2CCNC(=O)C2CCCc2ccccc2)cc1 1 O=C1NCCN(Cc2ccccc2)C1CCCc1ccccc1 0.9814441 2.6213 1.0000000 1.0000 []
+ | 20.6265 28.8953 98.8086 0.9976869 O=C(c1ccc(F)cc1)N(Cc1ccco1)c1ccc(Cl)cc1 1 O=C(c1ccccc1)N(Cc1ccco1)c1ccccc1 0.9976869 1.8922 1.0000000 1.0000 []
+ | 39.8115 41.6671 81.0640 0.9588371 CNCCCC(=O)N1CCCC(Cc2nc3ccc(Br)cc3n2C)C1 1 c1ccc2[nH]c(CC3CCCNC3)nc2c1 0.9588371 2.9062 1.0000000 1.0000 []
+ | 22.8438 26.6888 99.7949 0.9881542 CC(C)c1ccccc1NC1CCN(c2ccccc2)C1=O 1 O=C1C(Nc2ccccc2)CCN1c1ccccc1 0.9881542 2.4630 1.0000000 1.0000 []
+ | 21.8050 25.0704 102.7333 0.9984664 CCN(c1ccc(OC)cc1)S(=O)(=O)c1ccc(F)cc1 1 O=S(=O)(Nc1ccccc1)c1ccccc1 0.9984664 1.7491 1.0000000 1.0000 []
+ | 24.8990 29.9233 97.7946 0.9977957 c1cc(Nc2nc3ccccc3s2)cc(-c2cccc3ccccc23)c1 1 c1cc(Nc2nc3ccccc3s2)cc(-c2cccc3ccccc23)c1 0.9977957 1.8754 1.0000000 1.0000 []
+16:12:55 <INFO> Score: 0.92 Agent NLL: 28.00 Valid: 100% Step: 48
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 25.4863 29.1876 98.3404 0.9963120 Cc1ccc(CNC(=O)c2ccncc2Cl)nc1 1 O=C(NCc1ccccn1)c1ccncc1 0.9963120 2.0547 1.0000000 1.0000 []
+ | 20.0530 24.9855 102.7275 0.9977578 O=S(=O)(c1cc(Cl)ccc1Cl)N1CCN(c2ccc(F)cc2)CC1 1 O=S(=O)(c1ccccc1)N1CCN(c2ccccc2)CC1 0.9977578 1.8813 1.0000000 1.0000 []
+ | 29.5869 29.6917 97.4188 0.9930508 O=c1cc(NCc2cccnc2)[nH]c2ccc(Cl)cc12 1 O=c1cc(NCc2cccnc2)[nH]c2ccccc12 0.9930508 2.2760 1.0000000 1.0000 []
+ | 27.0823 29.2841 97.5515 0.9909028 CN(CCn1ccc2ccccc21)c1ccc(C#N)cn1 1 c1ccc(NCCn2ccc3ccccc32)nc1 0.9909028 2.3703 1.0000000 1.0000 []
+ | 26.9230 27.4932 -27.4932 0.0000000 C[S+]([O-])c1ccccc1C(=O)OC(c1ccccc1)c1ccccc1 1 O=C(OC(c1ccccc1)c1ccccc1)c1ccccc1 0.0000000 0.0000 0.0000000 0.0000 ['C(=[O,S])[O,S]']
+ | 25.2284 28.7643 98.3383 0.9929889 O=S(=O)(NC(c1ccccc1)c1ccc(Cl)cc1)c1cccc(Cl)c1 1 O=S(=O)(NC(c1ccccc1)c1ccccc1)c1ccccc1 0.9929889 2.2791 1.0000000 1.0000 []
+ | 29.9824 36.6655 90.3430 0.9922537 Clc1ccc(C(Cc2ccccc2)(Cc2ccccc2)N(Cc2ccccc2)c2ccccc2)cc1 1 c1ccc(CN(c2ccccc2)C(Cc2ccccc2)(Cc2ccccc2)c2ccccc2)cc1 0.9922537 2.3140 1.0000000 1.0000 []
+ | 24.8397 27.9485 98.3210 0.9864802 COc1cccc(CN2CCCC2c2nnc(-c3ccccc3)o2)c1 1 c1ccc(CN2CCCC2c2nnc(-c3ccccc3)o2)cc1 0.9864802 2.5095 1.0000000 1.0000 []
+ | 28.4856 31.1525 96.0468 0.9937444 O=C1CCCN1c1cccc(CN2CCC(Cc3ccco3)CC2)c1 1 O=C1CCCN1c1cccc(CN2CCC(Cc3ccco3)CC2)c1 0.9937444 2.2392 1.0000000 1.0000 []
+ | 37.5998 43.4223 83.3104 0.9900998 Fc1ccc(NCc2c[nH]cc2-c2ccccc2)cc1CSCc1ccccc1 1 c1ccc(CSCc2cccc(NCc3c[nH]cc3-c3ccccc3)c2)cc1 0.9900998 2.4000 1.0000000 1.0000 []
+16:12:56 <INFO> Sampled SMILES c12=NC(=C(C(=O)Nc3ccccc3)[C@@H](c3ccc(cc3)Cl)c1cccc2)c1ccccc1 failed to sanitize.
+16:12:56 <INFO> Score: 0.88 Agent NLL: 26.20 Valid:  99% Step: 49
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 23.1321 27.1971 100.4191 0.9970011 Clc1ccc(CN2CCN(CCCCn3cccn3)CC2)cc1 1 c1ccc(CN2CCN(CCCCn3cccn3)CC2)cc1 0.9970011 1.9826 1.0000000 1.0000 []
+ | 21.0194 23.9677 103.8504 0.9985788 O=C(CCOc1ccccc1)N1CCN(c2ccc(Cl)cc2)CC1 1 O=C(CCOc1ccccc1)N1CCN(c2ccccc2)CC1 0.9985788 1.7226 1.0000000 1.0000 []
+ | 24.3426 27.4208 99.8379 0.9942082 Cc1ccc(-n2nc(C3CC3)cc2C(C)C)cc1 1 c1ccc(-n2ccc(C3CC3)n2)cc1 0.9942082 2.2123 1.0000000 1.0000 []
+ | 23.3222 25.8924 101.8438 0.9979395 Cc1cc([N+](=O)[O-])ccc1NCCc1cccc(Cl)c1 1 c1ccc(CCNc2ccccc2)cc1 0.9979395 1.8519 1.0000000 1.0000 []
+ | 30.2505 33.0845 -33.0845 0.0000000 CC1=NN2CCN=CC2N1Cc1ccccc1 1 C1=NCCN2N=CN(Cc3ccccc3)C12 0.0000000 0.0000 0.0000000 0.0000 ['[#7;!n][#7;!n]']
+ | 23.6148 25.8728 101.7271 0.9968746 O=[N+]([O-])c1ccc2c(C(F)(F)F)cccc2c1 1 c1ccc2ccccc2c1 0.9968746 1.9970 1.0000000 1.0000 []
+ | 27.5973 34.4440 92.9847 0.9955367 Cc1ccccc1-c1csc(NS(=O)(=O)c2ccccc2)c1-c1ccccc1 1 O=S(=O)(Nc1scc(-c2ccccc2)c1-c1ccccc1)c1ccccc1 0.9955367 2.1213 1.0000000 1.0000 []
+ | 30.9008 33.6454 84.1894 0.9205844 NC1CCC2(CC1)CCN(c1ccc(-c3ncccn3)nc1)CC2 1 c1cnc(-c2ccc(N3CCC4(CCCCC4)CC3)cn2)nc1 0.9205844 3.1487 1.0000000 1.0000 []
+ | 32.3275 39.3812 86.0226 0.9797168 CSc1cccc(NS(=O)(=O)c2ccc3c(c2)C(c2ccccc2)CCC3)c1 1 O=S(=O)(Nc1ccccc1)c1ccc2c(c1)C(c1ccccc1)CCC2 0.9797168 2.6528 1.0000000 1.0000 []
+ | 24.7368 29.6506 95.1388 0.9749171 c1ccc(CC2CCCN(c3ncco3)C2)cc1 1 c1ccc(CC2CCCN(c3ncco3)C2)cc1 0.9749171 2.7283 1.0000000 1.0000 []
+16:12:56 <INFO> Sampled SMILES O(P(O[C@@H]1[C@H](NC(=O)C(F)(F)F)[C@](OC(=O)C)(C)[C@H](O)[C@H]([C@H]1O)NC(=O)C)(=O)=O)C(C)C failed to sanitize.
+16:12:56 <INFO> Score: 0.89 Agent NLL: 27.19 Valid:  98% Step: 50
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 39.2852 41.9365 84.0564 0.9843197 Nc1nc(-c2ccc(Cl)cc2)n2nc3ccccc3c2c1Cc1ccc(Cl)cc1Cl 1 c1ccc(Cc2cnc(-c3ccccc3)n3nc4ccccc4c23)cc1 0.9843197 2.5618 1.0000000 1.0000 []
+ | 28.2999 33.5705 91.7806 0.9793058 CC(Cn1ccnc1Nc1ccccc1Cl)c1ccccc1 1 c1ccc(CCn2ccnc2Nc2ccccc2)cc1 0.9793058 2.6599 1.0000000 1.0000 []
+ | 22.7657 24.8182 100.9302 0.9824093 O=Cc1nc(-c2ccc(Cl)cc2)sc1Br 1 c1ccc(-c2nccs2)cc1 0.9824093 2.6024 1.0000000 1.0000 []
+ | 25.8416 28.8218 97.5424 0.9872202 COc1ccc(CN2CC(=O)Nc3ccccc3C2c2ccccc2)cc1 1 O=C1CN(Cc2ccccc2)C(c2ccccc2)c2ccccc2N1 0.9872202 2.4897 1.0000000 1.0000 []
+ | 20.3034 20.8364 106.5150 0.9949325 Cc1ccc(C)c(=O)o1 1 O=c1cccco1 0.9949325 2.1656 1.0000000 1.0000 []
+ | 23.5492 28.7025 98.6307 0.9947903 O=C(NCc1cc([N+](=O)[O-])cs1)c1ccc(Br)cc1 1 O=C(NCc1cccs1)c1ccccc1 0.9947903 2.1753 1.0000000 1.0000 []
+ | 23.5352 25.3435 102.4444 0.9983430 O=C(CNC(=O)c1ccc(Cl)cc1)NCCSc1ccccc1 1 O=C(CNC(=O)c1ccccc1)NCCSc1ccccc1 0.9983430 1.7760 1.0000000 1.0000 []
+ | 23.7423 31.4224 96.2693 0.9975913 O=C(Cc1ccccc1)NCc1cc(-c2ccc(F)cc2)c2ccccc2n1 1 O=C(Cc1ccccc1)NCc1cc(-c2ccccc2)c2ccccc2n1 0.9975913 1.9063 1.0000000 1.0000 []
+ | 30.3502 31.0422 92.9048 0.9683356 OCC1Cn2c(nc3ccccc32)-c2cc(Cl)ccc2O1 1 c1ccc2c(c1)OCCn1c-2nc2ccccc21 0.9683356 2.8116 1.0000000 1.0000 []
+ | 25.8684 29.8011 97.8318 0.9971319 Brc1cc(CNCc2ccccc2)ccc1OCCc1cccs1 1 c1ccc(CNCc2ccc(OCCc3cccs3)cc2)cc1 0.9971319 1.9671 1.0000000 1.0000 []
+16:12:57 <INFO> Sampled SMILES c12ccccc1occ2cc1ccc2ccccc21 failed to sanitize.
+16:12:57 <INFO> Sampled SMILES c1ccc2c3c1ccc1c3scc1=CC2 failed to sanitize.
+16:12:57 <INFO> Score: 0.93 Agent NLL: 26.53 Valid:  98% Step: 51
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 17.0914 24.5687 -24.5687 0.0000000 Cc1ccc(Nc2nccc(-c3ccccc3)n2)cc1 1 c1ccc(Nc2nccc(-c3ccccc3)n2)cc1 0.9988536 1.6479 1.0000000 1.0000 []
+ | 24.7553 29.0693 98.1517 0.9939142 O=C1NC(=O)N(c2cccc(Br)c2)C(=O)C1=Cc1ccc(Cl)c(Cl)c1 1 O=C1NC(=O)N(c2ccccc2)C(=O)C1=Cc1ccccc1 0.9939142 2.2296 1.0000000 1.0000 []
+ | 27.5688 33.0171 94.6325 0.9972629 CS(=O)(=O)c1ccc(CN(Cc2ccc(Cl)cc2)Cc2ccc(-c3ccccc3)cc2)cc1 1 c1ccc(CN(Cc2ccccc2)Cc2ccc(-c3ccccc3)cc2)cc1 0.9972629 1.9508 1.0000000 1.0000 []
+ | 20.7206 25.0960 102.6322 0.9978768 Clc1ccccc1-c1nc(-c2ccccc2)[nH]c1-c1ccccc1 1 c1ccc(-c2nc(-c3ccccc3)c(-c3ccccc3)[nH]2)cc1 0.9978768 1.8623 1.0000000 1.0000 []
+ | 29.2306 32.6237 95.0596 0.9975262 COc1cc(CCNC(=O)C2CCN(c3ccccc3)CC2)ccc1Br 1 O=C(NCCc1ccccc1)C1CCN(c2ccccc2)CC1 0.9975262 1.9156 1.0000000 1.0000 []
+ | 18.7739 23.4642 104.4257 0.9991397 O=C(c1ccccc1Cl)N1CCN(Cc2ccccc2)CC1 1 O=C(c1ccccc1)N1CCN(Cc2ccccc2)CC1 0.9991397 1.5480 1.0000000 1.0000 []
+ | 46.6727 48.4166 77.7840 0.9859424 Clc1ccc(-c2cc(-c3ccco3)nc(NCc3ccccc3OCCn3cnc4ccccc43)n2)cc1 1 c1ccc(-c2cc(-c3ccco3)nc(NCc3ccccc3OCCn3cnc4ccccc43)n2)cc1 0.9859424 2.5232 1.0000000 1.0000 []
+ | 22.9453 27.1072 100.3856 0.9960377 Fc1ccc(-n2nc(C(F)(F)F)cc2-c2ccccc2F)cc1 1 c1ccc(-c2ccnn2-c2ccccc2)cc1 0.9960377 2.0797 1.0000000 1.0000 []
+ | 22.0475 24.4892 103.3804 0.9989807 COc1ccccc1NC(=O)Nc1c(C)cccc1C 1 O=C(Nc1ccccc1)Nc1ccccc1 0.9989807 1.6070 1.0000000 1.0000 []
+ | 23.6898 26.5509 101.2936 0.9987850 O=C(Nc1ccc(OCCc2ccccc2)cc1)c1ccc(I)cc1 1 O=C(Nc1ccc(OCCc2ccccc2)cc1)c1ccccc1 0.9987850 1.6681 1.0000000 1.0000 []
+16:12:57 <INFO> Sampled SMILES c1ccc(CN2C(S)N(CCCN=2)Cc2occc2)cc1 failed to sanitize.
+16:12:57 <INFO> Score: 0.92 Agent NLL: 26.15 Valid:  99% Step: 52
+ | Agent Prior Target Score SMILES SMILES_state Scaffold SA score (Ertl & Schuffenhauer) SA score (Ertl & Schuffenhauer) (raw) Unwanted SMARTS Unwanted SMARTS (raw) matchting_patterns (Unwanted SMARTS)
+ | 30.4633 34.3534 93.1977 0.9964924 CC(=O)Nc1ccc(-c2c(-c3ccccc3)c(=O)oc3ccc(Cl)cc23)cc1 1 O=c1oc2ccccc2c(-c2ccccc2)c1-c1ccccc1 0.9964924 2.0372 1.0000000 1.0000 []
+ | 18.5108 24.5465 103.3327 0.9990557 Cc1ccccc1C(=O)NC(c1ccccc1)c1ccccc1 1 O=C(NC(c1ccccc1)c1ccccc1)c1ccccc1 0.9990557 1.5804 1.0000000 1.0000 []
+ | 24.7136 23.1851 17.1682 0.3152603 SCCC1=CCSC1 1 C1=CCSC1 0.3152603 4.2695 1.0000000 1.0000 []
+ | 25.9209 25.9597 98.8356 0.9749633 CCc1nnc(-c2nn(C)cc2Br)o1 1 c1cc(-c2nnco2)n[nH]1 0.9749633 2.7277 1.0000000 1.0000 []
+ | 27.6296 29.3582 97.9620 0.9946888 O=C(c1cccc(NCc2ccccn2)n1)N1CCc2ccccc21 1 O=C(c1cccc(NCc2ccccn2)n1)N1CCc2ccccc21 0.9946888 2.1820 1.0000000 1.0000 []
+ | 27.1826 33.2588 93.4393 0.9898284 Cn1nnnc1Cn1ccc(-c2cccc(Cl)c2)cc1=O 1 O=c1cc(-c2ccccc2)ccn1Cc1nnn[nH]1 0.9898284 2.4095 1.0000000 1.0000 []
+ | 30.2529 35.9817 91.2426 0.9939396 CCCc1nc(-c2ccc(Cl)cc2Cl)c(-c2cccc(Cl)c2)[nH]1 1 c1ccc(-c2nc[nH]c2-c2ccccc2)cc1 0.9939396 2.2281 1.0000000 1.0000 []
+ | 28.1611 28.6727 96.6294 0.9789227 Oc1cccc(-c2csc3nnc(C(F)(F)F)n23)c1 1 c1ccc(-c2csc3nncn23)cc1 0.9789227 2.6665 1.0000000 1.0000 []
+ | 23.4390 26.1348 100.9153 0.9925785 Cc1sc(-c2ccc(Br)cc2)nc1CCl 1 c1ccc(-c2nccs2)cc1 0.9925785 2.2990 1.0000000 1.0000 []
+ | 35.1119 37.7538 88.2156 0.9841363 O=S(=O)(NCc1ncc2c(n1)CCN(Cc1ccccc1)C2)c1csc2ccccc12 1 O=S(=O)(NCc1ncc2c(n1)CCN(Cc1ccccc1)C2)c1csc2ccccc12 0.9841363 2.5659 1.0000000 1.0000 []
+16:12:58 <INFO> Terminating early in step = 51
+16:12:58 <INFO> Finished stage 1 >>>
+16:12:58 <INFO> Peak reserved GPU memory usage: 2086.000 MiB
+16:12:58 <INFO> Finished REINVENT on 2026-08-22

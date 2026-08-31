@@ -1,0 +1,5 @@
+molecule_chembl_id,pref_name,max_phase,mechanism_of_action,action_type,best_potency_nM,best_potency_type
+CHEMBL4650215,INAVOLISIB,4.0,PI3-kinase p110-alpha subunit inhibitor,INHIBITOR,0.034,Ki
+CHEMBL3218576,COPANLISIB,4.0,PI3-kinase p110-alpha subunit inhibitor,INHIBITOR,0.11,IC50
+CHEMBL3545068,COPANLISIB HYDROCHLORIDE,4.0,PI3-kinase p110-alpha subunit inhibitor,INHIBITOR,0.5,IC50
+CHEMBL2396661,ALPELISIB,4.0,PI3-kinase p110-alpha subunit inhibitor,INHIBITOR,1.7,IC50

@@ -1,0 +1,9 @@
+{
+  "PIK3CA": {
+    "pdb_id": "4JPS",
+    "confirmed_by": "user + Claude, 2026-08-20",
+    "ligand_name": "ALPELISIB",
+    "ligand_chembl_id": "CHEMBL2396661",
+    "note": "ATP-binding catalytic pocket of PI3K-alpha, co-crystallized with alpelisib (ligand code 1LT). InChIKey of 1LT (STUWGJZDJHPWGZ-LBPRGKRZSA-N) exactly matches alpelisib. Auto-search previously picked 9CMK (RAS-binding domain, unrelated molecular-glue pocket) — confirmed wrong and replaced with this manually-verified entry."
+  }
+}

@@ -1,0 +1,35 @@
+# Единственный файл, зависящий от конкретной машины. При переносе на
+# кластер меняется только этот файл (плюс способ запуска воркеров —
+# src/common/orchestrate.py, см. docs/scale-up.md).
+
+python_system: "C:/Program Files/Python310/python.exe"       # rdkit/meeko/gemmi/chembl_webresource_client
+python_diffsbdd: "module_generative/diffsbdd_env/Scripts/python.exe"
+vina_exe: "tools/vina.exe"
+mk_prepare_receptor: null   # auto-resolved, см. dock_existing_candidates._find_mk_prepare_exe
+mk_prepare_ligand: null
+
+structures_dir: "structures"
+data_dir: "data"
+results_dir: "results"
+config_dir: "config"
+
+state_file: "state.json"
+control_file: "CONTROL.json"
+status_file: "STATUS.md"
+final_report_file: "FINAL_REPORT.md"
+run_log: "run.log"
+failed_log: "failed.log"
+
+git_remote_public: "https://github.com/adilhanzheksengaliev2006-alt/onco-target-explorer.git"
+                           # создан автоматически 2026-08-31 через GitHub API
+                           # (fine-grained PAT пользователя, НЕ хранится в
+                           # этом файле -- живёт только в локальном
+                           # .git/config remote URL, который git не
+                           # коммитит). Первая попытка создать репозиторий
+                           # под другим, ошибочно закэшированным на машине
+                           # аккаунтом (Yryszhan) была остановлена
+                           # пользователем до какого-либо push.
+git_remote_private: null  # НЕ создан -- решение, заводить ли второй
+                           # (приватный) репозиторий для SMILES-содержащих
+                           # данных, оставлено пользователю; см.
+                           # docs/reproducibility.md

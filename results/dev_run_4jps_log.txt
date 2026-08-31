@@ -1,0 +1,168 @@
+﻿########## Итеративный пайплайн генерации+фильтрации+дообучения: PIK3CA ##########
+DEV_MODE=True, циклов=2, молекул/цикл=20
+
+[gene_target_utils] Поиск мишени ChEMBL для гена PIK3CA...
+[gene_target_utils] Найдена мишень: CHEMBL4005 (Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform), UniProt P42336
+[gene_target_utils] Используется ВРУЧНУЮ ПОДТВЕРЖДЁННАЯ структура 4JPS из confirmed_structures.json (подтвердил: user + Claude, 2026-08-20; ATP-binding catalytic pocket of PI3K-alpha, co-crystallized with alpelisib (ligand code 1LT). InChIKey of 1LT (STUWGJZDJHPWGZ-LBPRGKRZSA-N) exactly matches alpelisib. Auto-search previously picked 9CMK (RAS-binding domain, unrelated molecular-glue pocket) — confirmed wrong and replaced with this manually-verified entry.)
+[gene_target_utils] Скачано: C:\Users\adilh\Desktop\onco-target-explorer\structures\4JPS.pdb
+[gene_target_utils] Лиганд в структуре: 1LT (30 тяжёлых атомов), центр бокса (-1.32, -9.51, 16.95)
+Рецептор готов: C:\Users\adilh\Desktop\onco-target-explorer\structures\4JPS_receptor.pdbqt
+
+
+--- Контрольный докинг: ALPELISIB (CHEMBL2396661) в 4JPS ---
+  SMILES: Cc1nc(NC(=O)N2CCC[C@H]2C(N)=O)sc1-c1ccnc(C(C)(C)C(F)(F)F)c1
+  Docking score контроля: -6.069
+  Контроль пройден: скор в разумном диапазоне.
+
+
+======================================================================
+ЦИКЛ 1 (модель: jonghyunlee/MolGPT_pretrained-by-ZINC15)
+======================================================================
+python.exe : [transformers] Model config: bos_token_id must be `None` or an integer within the vocabulary (between 0 an
+d 2139), got 50256. This may result in unexpected behavior.
+At line:4 char:1
++ & "$env:USERPROFILE\miniconda3\envs\molgen\python.exe" -u module_gene ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([transformers] ...ected behavior.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 2139), got 
+50256. This may result in unexpected behavior.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and
+ faster downloads.
+
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 100/100 [00:00<00:00, 4946.52it/s]
+  сгенерировано 20/20
+Валидных уникальных молекул: 20/20 (100%)
+  докинг 1/20...
+    -> -5.284
+  докинг 2/20...
+    -> -3.695
+  докинг 3/20...
+    -> -5.578
+  докинг 4/20...
+    -> -4.302
+  докинг 5/20...
+    -> -5.91
+  докинг 6/20...
+    -> -5.3
+  докинг 7/20...
+    -> -5.797
+  докинг 8/20...
+    -> -5.331
+  докинг 9/20...
+    -> -5.928
+  докинг 10/20...
+    -> -5.303
+  докинг 11/20...
+    -> -5.975
+  докинг 12/20...
+    -> -5.809
+  докинг 13/20...
+    -> -5.551
+  докинг 14/20...
+    -> -5.801
+  докинг 15/20...
+    -> -5.923
+  докинг 16/20...
+    -> -5.145
+  докинг 17/20...
+    -> -7.461
+  докинг 18/20...
+    -> -5.034
+  докинг 19/20...
+    -> -6.079
+  докинг 20/20...
+    -> -6.506
+Докинг: 20/20 успешно задокировано, 1 прошли порог -7.0 ккал/моль
+Токсичность (PAINS/Brenk): 1/1 без алертов
+Селективность (<= 5 посторонних мишеней): 1/1
+
+--- Сводка цикла 1 ---
+  сгенерировано:        20
+  прошло валидность:    20
+  прошло докинг:        1
+  прошло токсичность:   1
+  прошло селективность: 1
+  время цикла:          5615.0с
+  сохранено: C:\Users\adilh\Desktop\onco-target-explorer\results\cycle_1_results_PIK3CA.csv (1 молекул)
+  Дообучение MolGPT на 1 молекулах, прошедших все фильтры...
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`
+.
+    эпоха 1/1 завершена
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 63.05it/s]
+  Чекпоинт сохранён: C:\Users\adilh\Desktop\onco-target-explorer\module_generative\checkpoints\PIK3CA\cycle_1 (средний loss: 0.4523)
+
+======================================================================
+ЦИКЛ 2 (модель: C:\Users\adilh\Desktop\onco-target-explorer\module_generative\checkpoints\PIK3CA\cycle_1)
+======================================================================
+
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 100/100 [00:00<00:00, 9922.18it/s]
+  сгенерировано 20/20
+Валидных уникальных молекул: 20/20 (100%)
+  докинг 1/20...
+    -> -5.855
+  докинг 2/20...
+    -> -5.709
+  докинг 3/20...
+    -> -5.093
+  докинг 4/20...
+    -> -5.624
+  докинг 5/20...
+    -> -4.865
+  докинг 6/20...
+    -> -4.965
+  докинг 7/20...
+    -> -4.996
+  докинг 8/20...
+    -> -4.4
+  докинг 9/20...
+    -> -5.136
+  докинг 10/20...
+    -> -4.752
+  докинг 11/20...
+    -> -5.542
+  докинг 12/20...
+    -> -4.747
+  докинг 13/20...
+    -> -5.161
+  докинг 14/20...
+    -> -6.037
+  докинг 15/20...
+    -> -5.442
+  докинг 16/20...
+    -> -6.163
+  докинг 17/20...
+    -> -6.184
+  докинг 18/20...
+    -> -3.968
+  докинг 19/20...
+    -> -4.401
+  докинг 20/20...
+    -> -5.838
+Докинг: 20/20 успешно задокировано, 0 прошли порог -7.0 ккал/моль
+Ни одна молекула не прошла докинг-фильтр — цикл завершён без результатов.
+
+--- Сводка цикла 2 ---
+  сгенерировано:        20
+  прошло валидность:    20
+  прошло докинг:        0
+  прошло токсичность:   0
+  прошло селективность: 0
+  время цикла:          192.1с
+  сохранено: C:\Users\adilh\Desktop\onco-target-explorer\results\cycle_2_results_PIK3CA.csv (0 молекул)
+  В цикле 2 НИ ОДНА молекула не прошла все фильтры — дообучение на этом цикле ПРОПУЩЕНО (нельзя обучать на пустом наборе).
+
+======================================================================
+ИТОГ ПО ВСЕМ ЦИКЛАМ (PIK3CA)
+======================================================================
+ cycle                                                                               model_path  generated  valid  docked_pass  tox_pass  selectivity_pass  elapsed_sec
+     1                                                  jonghyunlee/MolGPT_pretrained-by-ZINC15         20     20            1         1                 1       5615.0
+     2 C:\Users\adilh\Desktop\onco-target-explorer\module_generative\checkpoints\PIK3CA\cycle_1         20     20            0         0                 0        192.1
+
+Всего молекул, прошедших все фильтры за все циклы: 1
+Сводка сохранена: C:\Users\adilh\Desktop\onco-target-explorer\results\run_summary_PIK3CA.csv

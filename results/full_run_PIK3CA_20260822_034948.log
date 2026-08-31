@@ -1,0 +1,40 @@
+﻿########## Итеративный пайплайн генерации+фильтрации+дообучения: PIK3CA ##########
+DEV_MODE=False, циклов=20, молекул/цикл=500
+
+[gene_target_utils] Поиск мишени ChEMBL для гена PIK3CA...
+[gene_target_utils] Найдена мишень: CHEMBL4005 (Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform), UniProt P42336
+[gene_target_utils] Используется ВРУЧНУЮ ПОДТВЕРЖДЁННАЯ структура 4JPS из confirmed_structures.json (подтвердил: user + Claude, 2026-08-20; ATP-binding catalytic pocket of PI3K-alpha, co-crystallized with alpelisib (ligand code 1LT). InChIKey of 1LT (STUWGJZDJHPWGZ-LBPRGKRZSA-N) exactly matches alpelisib. Auto-search previously picked 9CMK (RAS-binding domain, unrelated molecular-glue pocket) — confirmed wrong and replaced with this manually-verified entry.)
+[gene_target_utils] Скачано: C:\Users\adilh\Desktop\onco-target-explorer\structures\4JPS.pdb
+[gene_target_utils] Лиганд в структуре: 1LT (30 тяжёлых атомов), центр бокса (-1.32, -9.51, 16.95)
+Рецептор готов: C:\Users\adilh\Desktop\onco-target-explorer\structures\4JPS_receptor.pdbqt
+
+
+--- Контрольный докинг: ALPELISIB (CHEMBL2396661) в 4JPS ---
+  SMILES: Cc1nc(NC(=O)N2CCC[C@H]2C(N)=O)sc1-c1ccnc(C(C)(C)C(F)(F)F)c1
+  Docking score контроля: -5.99
+  Контроль пройден: скор в разумном диапазоне.
+
+
+======================================================================
+ЦИКЛ 1 (модель: jonghyunlee/MolGPT_pretrained-by-ZINC15)
+======================================================================
+python.exe : Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher ra
+te limits and faster downloads.
+At line:3 char:1
++ & "C:\Users\adilh\miniconda3\envs\molgen\python.exe" -u iterative_fin ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Warning: You ar...ster downloads.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[transformers] Model config: bos_token_id must be `None` or an integer within the vocabulary (between 0 and 2139), got 
+50256. This may result in unexpected behavior.
+[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 2139), got 
+50256. This may result in unexpected behavior.
+
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 100/100 [00:00<00:00, 3025.89it/s]
+  сгенерировано 50/500
+  сгенерировано 100/500
+  сгенерировано 150/500
+  сгенерировано 200/500
+  сгенерировано 250/500

@@ -1,0 +1,106 @@
+﻿########## Продолжение прогона: PIK3CA, с цикла 13 ##########
+N_CYCLES=20, молекул/цикл=500
+
+Стартовая модель: C:\Users\adilh\Desktop\onco-target-explorer\module_generative\checkpoints\PIK3CA\cycle_12
+
+[gene_target_utils] Поиск мишени ChEMBL для гена PIK3CA...
+[gene_target_utils] Найдена мишень: CHEMBL4005 (Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform), UniProt P42336
+[gene_target_utils] Используется ВРУЧНУЮ ПОДТВЕРЖДЁННАЯ структура 4JPS из confirmed_structures.json (подтвердил: user + Claude, 2026-08-20; ATP-binding catalytic pocket of PI3K-alpha, co-crystallized with alpelisib (ligand code 1LT). InChIKey of 1LT (STUWGJZDJHPWGZ-LBPRGKRZSA-N) exactly matches alpelisib. Auto-search previously picked 9CMK (RAS-binding domain, unrelated molecular-glue pocket) — confirmed wrong and replaced with this manually-verified entry.)
+[gene_target_utils] Скачано: C:\Users\adilh\Desktop\onco-target-explorer\structures\4JPS.pdb
+[gene_target_utils] Лиганд в структуре: 1LT (30 тяжёлых атомов), центр бокса (-1.32, -9.51, 16.95)
+Рецептор готов: C:\Users\adilh\Desktop\onco-target-explorer\structures\4JPS_receptor.pdbqt
+
+
+--- Контрольный докинг: ALPELISIB (CHEMBL2396661) в 4JPS ---
+  SMILES: Cc1nc(NC(=O)N2CCC[C@H]2C(N)=O)sc1-c1ccnc(C(C)(C)C(F)(F)F)c1
+  Docking score контроля: -6.045
+  Контроль пройден: скор в разумном диапазоне.
+
+
+======================================================================
+ЦИКЛ 13 (модель: C:\Users\adilh\Desktop\onco-target-explorer\module_generative\checkpoints\PIK3CA\cycle_12)
+======================================================================
+python.exe : [transformers] Model config: bos_token_id must be `None` or an integer within the vocabulary (between 0 an
+d 2139), got 50256. This may result in unexpected behavior.
+At line:2 char:1
++ & "$env:USERPROFILE\miniconda3\envs\molgen\python.exe" -u resume_from ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([transformers] ...ected behavior.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 2139), got 
+50256. This may result in unexpected behavior.
+
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 100/100 [00:00<00:00, 5479.24it/s]
+  сгенерировано 50/500
+  сгенерировано 100/500
+  сгенерировано 150/500
+  сгенерировано 200/500
+  сгенерировано 250/500
+  сгенерировано 300/500
+  сгенерировано 350/500
+  сгенерировано 400/500
+  сгенерировано 450/500
+  сгенерировано 500/500
+[15:07:41] SMILES Parse Error: extra open parentheses while parsing: C[C@H]1CC(=O)N[C@@H](C(=O)N[C@H]2CN(c3cncc(-c4nn[n
+H]n4)n3)CC2(C)C1
+[15:07:41] SMILES Parse Error: check for mistakes around position 21:
+[15:07:41] C[C@H]1CC(=O)N[C@@H](C(=O)N[C@H]2CN(c3cnc
+[15:07:41] ~~~~~~~~~~~~~~~~~~~~^
+[15:07:41] SMILES Parse Error: Failed parsing SMILES ' C[C@H]1CC(=O)N[C@@H](C(=O)N[C@H]2CN(c3cncc(-c4nn[nH]n4)n3)CC2(C)
+C1' for input: ' C[C@H]1CC(=O)N[C@@H](C(=O)N[C@H]2CN(c3cncc(-c4nn[nH]n4)n3)CC2(C)C1'
+Валидных уникальных молекул: 396/500 (79%)
+  докинг 1/396...
+    -> -7.557
+  докинг 2/396...
+    -> None
+  докинг 3/396...
+    -> None
+  докинг 4/396...
+    -> None
+  докинг 5/396...
+    -> None
+  докинг 6/396...
+    -> None
+  докинг 7/396...
+    -> None
+  докинг 8/396...
+    -> None
+  докинг 9/396...
+    -> None
+  докинг 10/396...
+    -> None
+  докинг 11/396...
+    -> None
+  докинг 12/396...
+    -> None
+  докинг 13/396...
+    -> None
+  докинг 14/396...
+    -> None
+  докинг 15/396...
+    -> None
+  докинг 16/396...
+    -> None
+  докинг 17/396...
+    -> None
+  докинг 18/396...
+    -> -8.24
+  докинг 19/396...
+    -> -8.501
+  докинг 20/396...
+    -> -8.089
+  докинг 21/396...
+    -> -8.154
+  докинг 22/396...
+    -> -8.551
+  докинг 23/396...
+    -> -8.238
+  докинг 24/396...
+    -> -6.653
+  докинг 25/396...
+    -> -9.643
+  докинг 26/396...
+    -> -7.293
+  докинг 27/396...

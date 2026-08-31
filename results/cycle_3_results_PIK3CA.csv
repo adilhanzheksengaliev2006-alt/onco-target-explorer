@@ -1,0 +1,6 @@
+SMILES,docking_score_kcal_mol,selectivity_note
+Cc1nonc1CC(=O)NC[C@H]1CCCN(C(=O)c2nccnc2N)C1,-7.306,молекула не найдена в ChEMBL (новая) — посторонняя активность неизвестна
+O=C1N[C@H](C(=O)NC[C@]2(O)CCN(c3ncccc3-c3nn[nH]n3)C2)CO1,-7.257,молекула не найдена в ChEMBL (новая) — посторонняя активность неизвестна
+Cc1[nH]nc(C(=O)N2C[C@H]3CN(C(=O)c4cnn[nH]4)C[C@@]3(C)C2)c1O,-7.076,молекула не найдена в ChEMBL (новая) — посторонняя активность неизвестна
+O=C1NCC[C@H]1N1C[C@@H]2CN(C(=O)c3cc(-c4nn[nH]n4)c[nH]3)C[C@]2(C(=O)O)C1,-7.279,молекула не найдена в ChEMBL (новая) — посторонняя активность неизвестна
+Cc1cc(C(=O)N[C@H]2CN(C(=O)Cn3cnnn3)CC[C@@H]2C)on1,-7.243,молекула не найдена в ChEMBL (новая) — посторонняя активность неизвестна

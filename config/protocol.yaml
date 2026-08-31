@@ -1,0 +1,80 @@
+# PIK3CA pilot pipeline — предрегистрация протокола.
+# Коммитится ДО получения каких-либо результатов, тег `preregistration`.
+# Скрипт запуска сверяет SHA256 этого файла со state.json и отказывается
+# стартовать, если файл изменился после тега.
+
+target:
+  gene: PIK3CA
+  pdb_id: 4JPS
+  chembl_target_id: CHEMBL4005
+  uniprot_accession: P42336
+  cocrystal_ligand_resname: 1LT
+  cocrystal_ligand_chembl_id: CHEMBL2396661  # alpelisib
+
+test0_redock:
+  rmsd_threshold_angstrom: 2.0
+  exhaustiveness: 8
+
+test_a_calibration:
+  active_ic50_nm_max: 100
+  inactive_ic50_nm_min: 10000
+  bedroc_alpha: 20
+  bedroc_threshold: 0.20
+  min_actives: 30
+  min_actives_preferred: 50
+  ratio_actives_to_decoys: 30
+  bootstrap_iterations: 2000
+  permutation_iterations: 1000
+  exhaustiveness: 8
+  # решается по факту curation (см. results/metrics/test_a_data_decision.json):
+  # "A" = property-matched ZINC decoys (основной) + experimental inactives
+  #       at whatever ratio exists (вторичный, оба считаются)
+  # "B" = 1:10 на экспериментальных inactives, если декои из ZINC недоступны
+  decoy_strategy: null  # заполняется автоматически при curation
+
+alpelisib_series_exclusion:
+  # основной набор Теста A исключает химические аналоги алпелисиба
+  # (карман 4JPS решён с алпелисибом, точка отсчёта смещена под его класс)
+  method: "murcko_scaffold_match_or_tanimoto"
+  tanimoto_ecfp4_threshold: 0.5
+  # версия "со всеми" (без исключения) считается отдельно как оценка смещения
+
+test_n_shuffle:
+  n_permutations: 100
+
+test_a_prime_size_bias:
+  r2_threshold: 0.5
+  # считается и на ChEMBL-наборе (Test A), и на генерации (Test B)
+
+test_b_generation:
+  generator: DiffSBDD
+  n_seeds: 6
+  seeds: [1, 2, 3, 4, 5, 6]
+  baseline: ZINC
+  # ZINC-подвыборка берётся ЗАНОВО на каждый сид (не одна фиксированная
+  # выборка против всех 6 сидов генератора)
+  ligand_efficiency_percentile: 10
+  permutation_iterations: 1000
+  min_p_value_achievable_at_6_seeds: 0.0625  # 2/2^6, выше порога 0.05 —
+    # честно записано как ограничение мощности теста, не скрывается
+
+vina_own_variance:
+  n_ligands: 10
+  n_seeds: 5
+
+runtime:
+  max_wallclock_hours: 48
+  deadline_checkpoints:
+    stop_new_ligands_before_deadline_min: 120
+    finalize_metrics_before_deadline_min: 90
+    final_commit_push_before_deadline_min: 60
+    retry_reserve_before_deadline_min: 30
+  max_consecutive_failures: 50
+  parallel_vina_processes: 20  # cpu_count()-4 на этой машине (24 ядра),
+    # согласовано с dock_batch_for_reinvent.py
+
+docking:
+  exe: tools/vina.exe
+  receptor_pdbqt: structures/4JPS_receptor.pdbqt
+  box_center: [-1.3186999999999998, -9.512666666666666, 16.9481]
+  box_size: [20, 20, 23.114]

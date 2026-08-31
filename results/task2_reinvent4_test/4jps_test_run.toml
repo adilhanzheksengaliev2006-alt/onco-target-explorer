@@ -1,0 +1,83 @@
+# Bounded smoke test: verify REINVENT4's RL loop + our own scoring wiring
+# work end-to-end on GPU. Uses SAScore (module5_admet_filters.py's own
+# metric, reused via REINVENT4's built-in component) as a fast, local,
+# real pipeline component. Docking-in-the-loop (Vina against 4JPS) is
+# NOT wired in here — 128 mols x 100-200 steps would mean tens of
+# thousands of dock runs, far outside this test's time budget. That is
+# flagged as a separate follow-up decision, not silently skipped.
+
+run_type = "staged_learning"
+device = "cuda:0"
+tb_logdir = "tb_logs_4jps_test"
+json_out_config = "_4jps_test_run.json"
+
+[parameters]
+
+summary_csv_prefix = "4jps_test_run"
+use_checkpoint = false
+purge_memories = false
+
+prior_file = "priors/reinvent.prior"
+agent_file = "priors/reinvent.prior"
+
+batch_size = 128
+
+randomize_smiles = true
+
+
+[learning_strategy]
+
+type = "dap"
+sigma = 128
+rate = 0.0001
+
+
+[diversity_filter]
+
+type = "IdenticalMurckoScaffold"
+bucket_size = 25
+minscore = 0.4
+minsimilarity = 0.4
+
+
+### Stage 1: SA score optimization smoke test (PIK3CA/4JPS project context,
+### no docking in this bounded test)
+[[stage]]
+
+chkpt_file = "4jps_test.chkpt"
+
+termination = "simple"
+max_score = 0.6
+min_steps = 50
+max_steps = 150
+
+[stage.scoring]
+type = "geometric_mean"
+
+[[stage.scoring.component]]
+[stage.scoring.component.custom_alerts]
+
+[[stage.scoring.component.custom_alerts.endpoint]]
+name = "Unwanted SMARTS"
+weight = 0.5
+params.smarts = [
+    "[*;r{8-17}]",
+    "[#8][#8]",
+    "[#6;+]",
+    "[#16][#16]",
+    "[#7;!n][S;!$(S(=O)=O)]",
+    "[#7;!n][#7;!n]",
+    "C#C",
+    "C(=[O,S])[O,S]",
+]
+
+[[stage.scoring.component]]
+[stage.scoring.component.SAScore]
+
+[[stage.scoring.component.SAScore.endpoint]]
+name = "SA score (Ertl & Schuffenhauer)"
+weight = 1.0
+transform.type = "reverse_sigmoid"
+transform.high = 6.0
+transform.low = 2.0
+transform.k = 0.5

@@ -1,0 +1,103 @@
+# Docking-in-the-loop integration test: real AutoDock Vina scores against
+# the 4JPS (PIK3CA) pocket as part of the RL reward, via the custom
+# PIK3CADocking component (reinvent_plugins/components/comp_pik3ca_dock.py),
+# combined with SAScore + custom_alerts as before.
+#
+# DELIBERATELY SMALL SCALE: batch_size=8, exhaustiveness=4, max_steps=10
+# (~5s/molecule measured on this machine -> ~5-7 min total). This proves
+# the docking-in-the-loop wiring works end-to-end; it is NOT the batch_size
+# 128 / hundreds-of-steps production configuration the project ultimately
+# wants — that would need either much more wall-clock time, parallel
+# docking workers, or a lighter-weight proxy score. See
+# results/task2_reinvent4_docking_test/summary.md.
+
+run_type = "staged_learning"
+device = "cuda:0"
+tb_logdir = "tb_logs_4jps_docking_test"
+json_out_config = "_4jps_docking_test.json"
+
+[parameters]
+
+summary_csv_prefix = "4jps_docking_test"
+use_checkpoint = false
+purge_memories = false
+
+prior_file = "priors/reinvent.prior"
+agent_file = "priors/reinvent.prior"
+
+batch_size = 8
+
+randomize_smiles = true
+
+
+[learning_strategy]
+
+type = "dap"
+sigma = 128
+rate = 0.0001
+
+
+[diversity_filter]
+
+type = "IdenticalMurckoScaffold"
+bucket_size = 25
+minscore = 0.4
+minsimilarity = 0.4
+
+
+[[stage]]
+
+chkpt_file = "4jps_docking_test.chkpt"
+
+termination = "simple"
+max_score = 0.99
+min_steps = 5
+max_steps = 10
+
+[stage.scoring]
+type = "geometric_mean"
+
+[[stage.scoring.component]]
+[stage.scoring.component.custom_alerts]
+
+[[stage.scoring.component.custom_alerts.endpoint]]
+name = "Unwanted SMARTS"
+weight = 0.3
+params.smarts = [
+    "[*;r{8-17}]",
+    "[#8][#8]",
+    "[#6;+]",
+    "[#16][#16]",
+    "[#7;!n][S;!$(S(=O)=O)]",
+    "[#7;!n][#7;!n]",
+    "C#C",
+    "C(=[O,S])[O,S]",
+]
+
+[[stage.scoring.component]]
+[stage.scoring.component.SAScore]
+
+[[stage.scoring.component.SAScore.endpoint]]
+name = "SA score (Ertl & Schuffenhauer)"
+weight = 0.5
+transform.type = "reverse_sigmoid"
+transform.high = 6.0
+transform.low = 2.0
+transform.k = 0.5
+
+[[stage.scoring.component]]
+[stage.scoring.component.PIK3CADocking]
+
+[[stage.scoring.component.PIK3CADocking.endpoint]]
+name = "Vina docking vs 4JPS pocket"
+weight = 1.0
+params.python_path = "C:/Program Files/Python310/python.exe"
+params.script_path = "C:/Users/yrysz/Downloads/onco-target-explorer/onco-target-explorer/dock_batch_for_reinvent.py"
+params.receptor_pdbqt = "C:/Users/yrysz/Downloads/onco-target-explorer/onco-target-explorer/structures/4JPS_receptor.pdbqt"
+params.box_center = "-1.3186999999999998,-9.512666666666666,16.9481"
+params.box_size = "20,20,23.114"
+params.exhaustiveness = 4
+transform.type = "reverse_sigmoid"
+transform.high = -6.0
+transform.low = -11.0
+transform.k = 0.5

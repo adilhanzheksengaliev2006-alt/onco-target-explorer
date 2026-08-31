@@ -1,0 +1,51 @@
+# --- Claude Code session-local files, never project content ---
+.claude/
+
+# --- сторонние клонированные репозитории (внешние зависимости, не наш
+#     код; чекпоинты/окружения там скачиваются по URL, см.
+#     docs/reproducibility.md) ---
+module_generative/DiffSBDD/
+module_generative/REINVENT4/
+module_generative/diffsbdd_env/
+module_generative/checkpoints/
+__pycache__/
+*.pyc
+.venv/
+
+# --- модели / чекпоинты (крупные бинарники, восстановимы по URL) ---
+*.ckpt
+*.chkpt
+*.safetensors
+
+# --- промежуточные позы докинга (восстановимы из SMILES+конфига+сида) ---
+**/*.pdbqt
+!structures/4JPS_receptor.pdbqt
+scratch_dock_test/
+*_worker.log
+
+# --- сырые/большие данные вне пилота ТЗ v3 ---
+cancer_data.db
+data/raw/
+
+# --- старые/неактуальные REINVENT4 RL-эксперименты этой сессии (не часть
+#     пилота ТЗ v3, копии их итогов уже лежат обезличенно в results/) ---
+results/task2_reinvent4_test/*.chkpt
+results/task2_reinvent4_docking_test/*.chkpt
+results/task2_sbdd_diffsbdd_test/*.pdb
+
+# --- служебное ---
+*.tmp
+.DS_Store
+Thumbs.db
+
+# --- ligand_id -> SMILES маппинги и полные позы кандидатов идут ТОЛЬКО в
+#     приватный репозиторий (не настроен в этом пилоте -- см.
+#     src/common/anonymize.py и docs/reproducibility.md). Публичные
+#     *_public.csv (ligand_id вместо SMILES) НЕ исключаются -- см. ! ниже.
+results/testB_generation/*_smiles.csv
+results/testB_generation/*_docked.csv
+data/processed/test_a_actives*.csv
+data/processed/test_a_decoys.csv
+data/processed/test_a_inactives*.csv
+data/processed/test_a_docked*.csv
+!*_public.csv

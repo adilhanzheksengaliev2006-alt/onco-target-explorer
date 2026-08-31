@@ -1,0 +1,3 @@
+cycle,model_path,generated,valid,docked_pass,tox_pass,selectivity_pass,elapsed_sec
+1,jonghyunlee/MolGPT_pretrained-by-ZINC15,20,20,1,1,1,5615.0
+2,C:\Users\adilh\Desktop\onco-target-explorer\module_generative\checkpoints\PIK3CA\cycle_1,20,20,0,0,0,192.1

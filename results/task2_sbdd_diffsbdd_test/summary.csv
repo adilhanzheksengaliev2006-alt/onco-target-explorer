@@ -1,0 +1,7 @@
+idx,valid,SMILES,MW
+0,False,,
+1,True,NC(=O)C(=CCC1C=C(F)C2=NC=C(C[C@@H]3N[C@]34CC[C@H]3C[C@H]3C4)C2=C1)OP(=O)(O)O,449.4
+2,True,CCNC(=O)[C@H]1[C@@H](CC(=O)O)[C@@H]1c1ccnc2c1CCN2C(N)=O,332.4
+3,True,CC(C)[C@@H]1C=CC[C@@H](C2=C3CC(C4(O)CC4)=CN=C3C=C2)C(=O)C1,323.4
+4,True,Cc1c(CN)ccc(-c2nnnn2C(=O)C(C)C)c1F,277.3
+5,True,CO[C@H](SC1=NN(C)[C@H](N)C2=C1CCCO2)[C@H](C)CC(=O)O,329.4
