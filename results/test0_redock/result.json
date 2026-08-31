@@ -1,6 +1,6 @@
 {
-  "docking_score_kcal_mol": -10.2,
-  "rmsd_angstrom": 0.7048578476888842,
+  "docking_score_kcal_mol": -10.21,
+  "rmsd_angstrom": 0.6907254819992968,
   "threshold_angstrom": 2.0,
   "passed": true,
   "exhaustiveness": 8,
