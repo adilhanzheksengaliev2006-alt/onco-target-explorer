@@ -7,13 +7,15 @@
     "test_a_curation",
     "test_a_docking",
     "test_a_metrics",
-    "test_n_shuffle"
+    "test_n_shuffle",
+    "test_a_prime"
   ],
   "stage_timings": {
     "test0_redock": 0.08788321812947592,
     "test_a_curation": 0.3842025876045227,
     "test_a_docking": 108.91409553686778,
     "test_a_metrics": 0.06735024849573772,
-    "test_n_shuffle": 0.0007864077885945638
+    "test_n_shuffle": 0.0007864077885945638,
+    "test_a_prime": 0.0065854986508687334
   }
 }
