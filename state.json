@@ -5,11 +5,13 @@
   "stages_completed": [
     "test0_redock",
     "test_a_curation",
-    "test_a_docking"
+    "test_a_docking",
+    "test_a_metrics"
   ],
   "stage_timings": {
     "test0_redock": 0.08788321812947592,
     "test_a_curation": 0.3842025876045227,
-    "test_a_docking": 108.91409553686778
+    "test_a_docking": 108.91409553686778,
+    "test_a_metrics": 0.06735024849573772
   }
 }

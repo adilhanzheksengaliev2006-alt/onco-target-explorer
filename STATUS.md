@@ -1,9 +1,9 @@
 # STATUS
 
-Обновлено: 2026-08-31 16:19:54
+Обновлено: 2026-08-31 16:20:02
 Дедлайн: 2026-09-02T14:22:34.308325 (осталось 46.0 ч.)
-Текущий этап: test_a_docking -- завершён
-Завершённые этапы: test0_redock, test_a_curation, test_a_docking
+Текущий этап: test_a_metrics -- завершён
+Завершённые этапы: test0_redock, test_a_curation, test_a_docking, test_a_metrics
 Ошибок в failed.log: 0
 
 **git remote не настроен** -- push в GitHub не выполняется, изменения только в локальном репозитории.
@@ -12,3 +12,4 @@
 - test0_redock: 0.1 мин
 - test_a_curation: 0.4 мин
 - test_a_docking: 108.9 мин
+- test_a_metrics: 0.1 мин

@@ -1,0 +1,19 @@
+{
+  "n_active": 118,
+  "n_total": 569,
+  "ra_active_fraction": 0.20738137082601055,
+  "bedroc_alpha": 20,
+  "bedroc_observed": 0.6926230340899937,
+  "bedroc_random_baseline_empirical_mean": 0.2099813894200665,
+  "bedroc_random_baseline_empirical_std": 0.05160392037895148,
+  "bedroc_bootstrap_ci_95_lo": 0.6205927583682027,
+  "bedroc_bootstrap_ci_95_hi": 0.7514730324064955,
+  "permutation_p_value": 0.0,
+  "n_permutations": 1000,
+  "n_bootstrap": 2000,
+  "EF_1%": 4.018361581920904,
+  "EF_5%": 3.4918176504967855,
+  "EF_10%": 3.214689265536723,
+  "auc_roc": 0.8223345484610505,
+  "passed_threshold": true
+}
