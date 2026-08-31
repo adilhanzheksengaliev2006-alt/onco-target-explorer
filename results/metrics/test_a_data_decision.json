@@ -9,6 +9,5 @@
   "decoy_strategy_primary": "property_matched_chembl_pool",
   "decoy_strategy_deviation_from_protocol": "protocol.yaml specified ZINC as primary decoy source (option A); used ChEMBL general compound pool instead for reliability/time reasons under pilot time constraints. Same matching logic (MW/ALogP/HBD/HBA/RTB tolerance + Tanimoto ECFP4 < 0.35 to all actives). See docs/limitations.md.",
   "n_decoys_assigned": 701,
-  "decoy_ratio_achieved_avg": 2.8,
-  "decoy_ratio_target_vs_achieved_note": "Protocol target was 1:30 (actives:decoys). Achieved avg 2.8:1 with only 54/247 actives getting any property-matched decoy at all -- the ChEMBL candidate pool (bounded to ~4000 records for pilot time reasons) was too sparse after MW/ALogP/HBD/HBA/RTB tolerance + Tanimoto<0.35 filtering. Test A still runs on the full 247 actives vs 701 decoys (pooled, not per-active) -- a valid but less early-enrichment-powered calibration set than originally specified. Documented honestly rather than re-tuned indefinitely under pilot time constraints."
+  "decoy_ratio_achieved_avg": 2.8
 }

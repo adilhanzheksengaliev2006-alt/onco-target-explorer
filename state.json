@@ -3,9 +3,11 @@
   "deadline": "2026-09-02T14:22:34.308325",
   "protocol_sha256": "920b33bdfaadc0217454eb1075917dd04b3c49f31fce6b72206f7e497c4a0044",
   "stages_completed": [
-    "test0_redock"
+    "test0_redock",
+    "test_a_curation"
   ],
   "stage_timings": {
-    "test0_redock": 0.08788321812947592
+    "test0_redock": 0.08788321812947592,
+    "test_a_curation": 0.3842025876045227
   }
 }
