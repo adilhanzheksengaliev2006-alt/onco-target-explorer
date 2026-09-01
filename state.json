@@ -9,7 +9,8 @@
     "test_a_metrics",
     "test_n_shuffle",
     "test_a_prime",
-    "vina_variance"
+    "vina_variance",
+    "test_b_generation"
   ],
   "stage_timings": {
     "test0_redock": 0.08788321812947592,
@@ -19,6 +20,6 @@
     "test_n_shuffle": 0.0007864077885945638,
     "test_a_prime": 0.0065854986508687334,
     "vina_variance": 70.24200760920843,
-    "test_b_generation": 30.76761168638865
+    "test_b_generation": 38.265740553538
   }
 }

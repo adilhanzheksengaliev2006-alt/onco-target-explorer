@@ -1,0 +1,16 @@
+{
+  "n_seeds": 6,
+  "n_per_seed_requested": 60,
+  "n_generated_valid": 170,
+  "n_generated_docked": 150,
+  "n_baseline": 170,
+  "n_baseline_docked": 155,
+  "le_generated_median": 0.299375,
+  "le_baseline_median": 0.2864375,
+  "le_generated_p10": 0.22602985347985347,
+  "le_baseline_p10": 0.24375,
+  "permutation_observed_diff_p10": -0.01772014652014653,
+  "permutation_p_value": 0.956,
+  "n_permutations": 1000,
+  "min_achievable_p_at_n_seeds": 0.0312
+}

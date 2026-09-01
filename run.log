@@ -514,3 +514,16 @@ ga('create', 'UA-629242-1', 'auto');
 2026-08-31 18:01:19 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
 2026-08-31 18:01:19 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
 2026-08-31 18:01:22 git push: ok
+2026-09-01 13:22:59 === Пилотный пайплайн PIK3CA/4JPS запущен. Дедлайн: 2026-09-02T14:22:34.308325 ===
+2026-09-01 13:22:59 [test0_redock] уже завершён, пропуск
+2026-09-01 13:22:59 [test_a_curation] уже завершён, пропуск
+2026-09-01 13:22:59 [test_a_docking] уже завершён, пропуск
+2026-09-01 13:22:59 [test_a_metrics] уже завершён, пропуск
+2026-09-01 13:22:59 [test_n_shuffle] уже завершён, пропуск
+2026-09-01 13:22:59 [test_a_prime] уже завершён, пропуск
+2026-09-01 13:22:59 [vina_variance] уже завершён, пропуск
+2026-09-01 13:22:59 [test_b_generation] старт
+2026-09-01 14:01:16 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
+2026-09-01 14:01:16 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
+2026-09-01 14:01:16 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\results\testB_generation\generated_docked_public.csv
+2026-09-01 14:01:16 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\results\testB_generation\baseline_docked_public.csv
