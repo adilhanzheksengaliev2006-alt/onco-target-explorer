@@ -68,6 +68,9 @@ FAILED_LOG = os.path.join(BASE_DIR, "failed.log")
 
 def generate_for_seed(seed: int, n_samples: int) -> list:
     out_sdf = os.path.join(OUT_DIR, f"generated_seed{seed}.sdf")
+    if os.path.exists(out_sdf) and os.path.getsize(out_sdf) > 0:
+        print(f"  [test_b] seed {seed}: {out_sdf} уже существует, генерация пропущена (идемпотентность)")
+        return _valid_smiles_from_sdf(out_sdf)
     cmd = [
         DIFFSBDD_PYTHON,
         os.path.join(DIFFSBDD_DIR, "generate_ligands.py"),
@@ -89,8 +92,11 @@ def generate_for_seed(seed: int, n_samples: int) -> list:
 
     if not os.path.exists(out_sdf):
         return []
+    return _valid_smiles_from_sdf(out_sdf)
 
-    suppl = Chem.SDMolSupplier(out_sdf)
+
+def _valid_smiles_from_sdf(sdf_path: str) -> list:
+    suppl = Chem.SDMolSupplier(sdf_path)
     smiles_list = []
     for mol in suppl:
         if mol is None:
@@ -112,7 +118,14 @@ def generate_for_seed(seed: int, n_samples: int) -> list:
 
 def fetch_baseline_smiles(n: int, seed: int, exclude_smiles: set) -> list:
     """Случайная выборка drug-like молекул из общего пула ChEMBL, заново на
-    каждый сид (не фиксированный набор на все 6 сидов)."""
+    каждый сид (не фиксированный набор на все 6 сидов).
+
+    Постраничная выборка с ретраями -- тот же паттерн, что и в
+    src/01_data_curation/curate_test_a.py: ChEMBL/EBI изредка отдают HTML
+    вместо JSON посреди пагинации; implicit-итератор queryset тогда падает
+    необратимо и роняет весь этап (что и случилось в первом прогоне
+    пилота, см. failed.log). Одна неудачная страница здесь пропускается
+    (после ретраев), а не роняет Тест B."""
     molecule = new_client.molecule
     rng = random.Random(seed + 1000)
     # окно MW, типичное для drug-like малых молекул -- широкое, не
@@ -120,17 +133,42 @@ def fetch_baseline_smiles(n: int, seed: int, exclude_smiles: set) -> list:
     # где матчинг по свойствам -- часть самого теста; здесь baseline
     # должен быть НЕподобранным)
     mw_lo, mw_hi = rng.choice([(250, 350), (300, 400), (350, 450), (400, 500)])
-    recs = molecule.filter(
+    qs = molecule.filter(
         molecule_properties__mw_freebase__range=[mw_lo, mw_hi],
     ).only(["molecule_chembl_id", "molecule_structures"])
+
     out = []
-    for r in recs:
-        smi = (r.get("molecule_structures") or {}).get("canonical_smiles")
-        if not smi or smi in exclude_smiles:
+    offset = 0
+    page_size = 500
+    target = n * 3  # запас на невалидные/дубликаты
+    consecutive_failures = 0
+    max_offset = 6000
+    while len(out) < target and consecutive_failures < 5 and offset < max_offset:
+        page = None
+        for attempt in range(3):
+            try:
+                page = list(qs[offset:offset + page_size])
+                break
+            except Exception as e:
+                print(f"  [test_b] baseline страница {offset}: попытка {attempt + 1}/3 не удалась ({e}), повтор через 5с...")
+                import time
+                time.sleep(5)
+        if page is None:
+            consecutive_failures += 1
+            offset += page_size
             continue
-        out.append(smi)
-        if len(out) >= n * 3:  # запас на невалидные/дубликаты
+        consecutive_failures = 0
+        if not page:
             break
+        for r in page:
+            smi = (r.get("molecule_structures") or {}).get("canonical_smiles")
+            if not smi or smi in exclude_smiles:
+                continue
+            out.append(smi)
+            if len(out) >= target:
+                break
+        offset += page_size
+
     rng.shuffle(out)
     return out[:n]
 

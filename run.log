@@ -513,3 +513,4 @@ ga('create', 'UA-629242-1', 'auto');
 2026-08-31 18:01:19 === Пайплайн завершён (все этапы пройдены или остановлен по дедлайну/CONTROL.json) ===
 2026-08-31 18:01:19 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
 2026-08-31 18:01:19 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
+2026-08-31 18:01:22 git push: ok

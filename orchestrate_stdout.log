@@ -1,0 +1,592 @@
+2026-08-31 14:31:00 === Пилотный пайплайн PIK3CA/4JPS запущен. Дедлайн: 2026-09-02T14:22:34.308325 ===
+2026-08-31 14:31:00 [test0_redock] уже завершён, пропуск
+2026-08-31 14:31:00 [test_a_curation] уже завершён, пропуск
+2026-08-31 14:31:00 [test_a_docking] старт
+  [dock_dataframe] 50/948 за 252с (5.04с/мол среднее)
+  [dock_dataframe] 100/948 за 456с (4.56с/мол среднее)
+  [dock_dataframe] 150/948 за 711с (4.74с/мол среднее)
+  [dock_dataframe] 200/948 за 976с (4.88с/мол среднее)
+  [dock_dataframe] 250/948 за 1213с (4.85с/мол среднее)
+  [dock_dataframe] 300/948 за 1448с (4.83с/мол среднее)
+  [dock_dataframe] 350/948 за 1624с (4.64с/мол среднее)
+  [dock_dataframe] 400/948 за 1773с (4.43с/мол среднее)
+  [dock_dataframe] 450/948 за 1964с (4.36с/мол среднее)
+  [dock_dataframe] 500/948 за 2166с (4.33с/мол среднее)
+  [dock_dataframe] 550/948 за 2385с (4.34с/мол среднее)
+  [dock_dataframe] 600/948 за 2628с (4.38с/мол среднее)
+  [dock_dataframe] 650/948 за 2804с (4.31с/мол среднее)
+  [dock_dataframe] 700/948 за 2947с (4.21с/мол среднее)
+  [dock_dataframe] 750/948 за 3157с (4.21с/мол среднее)
+  [dock_dataframe] 800/948 за 3293с (4.12с/мол среднее)
+  [dock_dataframe] 850/948 за 3487с (4.10с/мол среднее)
+  [dock_dataframe] 900/948 за 3653с (4.06с/мол среднее)
+[dock_dataframe] Готово: 569/948 успешно задокировано (379 не удалось)
+  [dock_dataframe] 50/642 за 335с (6.69с/мол среднее)
+  [dock_dataframe] 100/642 за 583с (5.83с/мол среднее)
+  [dock_dataframe] 150/642 за 825с (5.50с/мол среднее)
+  [dock_dataframe] 200/642 за 1080с (5.40с/мол среднее)
+  [dock_dataframe] 250/642 за 1331с (5.33с/мол среднее)
+  [dock_dataframe] 300/642 за 1445с (4.82с/мол среднее)
+  [dock_dataframe] 350/642 за 1631с (4.66с/мол среднее)
+  [dock_dataframe] 400/642 за 1843с (4.61с/мол среднее)
+  [dock_dataframe] 450/642 за 2059с (4.57с/мол среднее)
+  [dock_dataframe] 500/642 за 2208с (4.42с/мол среднее)
+  [dock_dataframe] 550/642 за 2349с (4.27с/мол среднее)
+  [dock_dataframe] 600/642 за 2561с (4.27с/мол среднее)
+[dock_dataframe] Готово: 368/642 успешно задокировано (274 не удалось)
+2026-08-31 16:19:55 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
+2026-08-31 16:19:55 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
+2026-08-31 16:19:58 git push: ok
+2026-08-31 16:19:58 [test_a_docking] готово за 108.9 мин
+2026-08-31 16:19:58 [test_a_metrics] старт
+2026-08-31 16:20:00 Тест A: BEDROC=0.693 (порог 0.2, случайный уровень 0.210), p=0.0000
+2026-08-31 16:20:03 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
+2026-08-31 16:20:03 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
+2026-08-31 16:20:05 git push: ok
+2026-08-31 16:20:05 [test_a_metrics] готово за 0.1 мин
+2026-08-31 16:20:05 [test_n_shuffle] старт
+2026-08-31 16:20:06 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
+2026-08-31 16:20:06 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
+2026-08-31 16:20:09 git push: ok
+2026-08-31 16:20:09 [test_n_shuffle] готово за 0.0 мин
+2026-08-31 16:20:09 [test_a_prime] старт
+2026-08-31 16:20:10 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
+2026-08-31 16:20:10 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
+2026-08-31 16:20:12 git push: ok
+2026-08-31 16:20:12 [test_a_prime] готово за 0.0 мин
+2026-08-31 16:20:12 [vina_variance] старт
+  лиганд 0, seed 1: -8.024
+  лиганд 0, seed 2: -8.064
+  лиганд 0, seed 3: -7.984
+  лиганд 0, seed 4: -8.038
+  лиганд 0, seed 5: -8.044
+  лиганд 1, seed 1: -6.781
+  лиганд 1, seed 2: -6.779
+  лиганд 1, seed 3: -6.778
+  лиганд 1, seed 4: -6.783
+  лиганд 1, seed 5: -6.77
+  лиганд 2, seed 1: -6.73
+  лиганд 2, seed 2: -6.768
+  лиганд 2, seed 3: -6.699
+  лиганд 2, seed 4: -6.672
+  лиганд 2, seed 5: -6.704
+  лиганд 3, seed 1: -7.781
+  лиганд 3, seed 2: -7.723
+  лиганд 3, seed 3: -7.765
+  лиганд 3, seed 4: -7.867
+  лиганд 3, seed 5: -7.764
+  лиганд 4, seed 1: -8.886
+  лиганд 4, seed 2: -8.834
+  лиганд 4, seed 3: -8.882
+  лиганд 4, seed 4: -8.91
+  лиганд 4, seed 5: -8.884
+  лиганд 6, seed 1: -9.472
+  лиганд 6, seed 2: -9.53
+  лиганд 6, seed 3: -9.535
+  лиганд 6, seed 4: -9.523
+  лиганд 6, seed 5: -9.515
+  лиганд 7, seed 1: -9.6
+  лиганд 7, seed 2: -9.69
+  лиганд 7, seed 3: -9.544
+  лиганд 7, seed 4: -9.796
+  лиганд 7, seed 5: -9.586
+  лиганд 8, seed 1: -9.261
+  лиганд 8, seed 2: -9.64
+  лиганд 8, seed 3: -9.425
+  лиганд 8, seed 4: -9.037
+  лиганд 8, seed 5: -9.607
+  лиганд 9, seed 1: -9.532
+  лиганд 9, seed 2: -9.361
+  лиганд 9, seed 3: -9.337
+  лиганд 9, seed 4: -9.276
+  лиганд 9, seed 5: -9.579
+
+[vina_variance] Средний std по 9 лигандам: 0.06558994800407607
+2026-08-31 17:30:27 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
+2026-08-31 17:30:27 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
+2026-08-31 17:30:29 git push: ok
+2026-08-31 17:30:29 [vina_variance] готово за 70.2 мин
+2026-08-31 17:30:29 [test_b_generation] старт
+[test_b] Сид 1: генерация 60 молекул DiffSBDD...
+  Валидных (SMILES + центр масс в боксе): 25/60
+  Baseline (ChEMBL, заново на этот сид): 25
+[test_b] Сид 2: генерация 60 молекул DiffSBDD...
+  Валидных (SMILES + центр масс в боксе): 26/60
+2026-08-31 18:01:15 [test_b_generation] ОШИБКА: Error for url https://www.ebi.ac.uk/chembl/api/data/molecule.json, server response: <!doctype html>
+<html lang="en" class="vf-no-js">
+  <head>
+    <script>
+// Detect if JS is on and swap vf-no-js for vf-js on the html element
+(function(H){H.className=H.className.replace(/\bvf-no-js\b/,'vf-js')})(document.documentElement);
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" media="all" href="/css/styles.css?" /> -->
+    <title>Error: 500 | EMBLâs European Bionformatics Institute</title>
+
+
+
+    <link rel="icon" type="image/x-icon"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/favicon.ico" />
+<link rel="icon" type="image/png"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="192Ã192"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/android-chrome-192x192.png" />
+<!-- Android (192px) -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/apple-icon-114x114.png" />
+<!-- For iPhone 4 Retina display (114px) -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/apple-icon-72x72.png" />
+<!-- For iPad (72px) -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/apple-icon-144x144.png" />
+<!-- For iPad retinat (144px) -->
+<link rel="apple-touch-icon-precomposed"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/apple-icon-57x57.png" />
+<!-- For iPhone (57px) -->
+<link rel="mask-icon"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/safari-pinned-tab.svg"
+  color="#ffffff" /> <!-- Safari icon for pinned tab -->
+<meta name="msapplication-TileColor" content="#2b5797" /> <!-- MS Icons -->
+<meta name="msapplication-TileImage"
+  content="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/mstile-144x144.png" />
+
+
+
+
+
+
+    <!-- Search indexing optimisations -->
+    <meta class="swiftype" name="what" data-type="string" content="none" />
+    <meta class="swiftype" name="where" data-type="string" content="EMBL-EBI" />
+
+
+    <!-- Descriptive meta -->
+    <meta name="title" content="Error: 500">
+    <meta name="author" content="European Bioinformatics Institute">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ebi.ac.uk/info/error-pages/500-standalone/">
+    <meta property="og:title" content="Error: 500">
+    <meta property="og:description" content="">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://www.ebi.ac.uk/info/error-pages/500-standalone/">
+    <meta property="twitter:title" content="Error: 500">
+    <meta property="twitter:description" content="">
+
+
+    <!-- Content descriptors -->
+    <meta name="embl:who" content="EMBL-EBI Web Dev">
+    <meta name="embl:where" content="EMBL-EBI">
+    <meta name="embl:what" content="none">
+    <meta name="embl:active" content="where">
+
+    <!-- Content role -->
+    <meta name="embl:utility" content="10">
+    <meta name="embl:reach" content="0">
+
+    <!-- Page infromation -->
+    <meta name="embl:maintainer" content="EMBL-EBI Web Dev">
+    <meta name="embl:last-review" content="2021.04.01">
+    <meta name="embl:review-cycle" content="365">
+    <meta name="embl:expiry" content="never">
+
+    <!-- analytics -->
+    <meta name="vf:page-type" content="404;dimension1">
+
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://assets.emblstatic.net/vf/v2.5.7/css/styles.css">
+<!-- JS -->
+<script src="https://assets.emblstatic.net/vf/v2.5.7/scripts/scripts.js"></script>
+<head>
+  <body class="vf-body vf-stack vf-stack--400">
+    <style>head, title, link, meta, style, script {--vf-stack-margin--custom: 0; }</style>
+
+    <!-- See the EBI Header Footer docs: https://stable.visual-framework.dev/components/ebi-header-footer -->
+
+    <link rel="stylesheet" href="https://assets.emblstatic.net/vf/v2.4.5/assets/ebi-header-footer/ebi-header-footer.css" type="text/css" media="all">
+    <header id="masthead-black-bar" class="clearfix masthead-black-bar | ebi-header-footer vf-content vf-u-fullbleed"></header>
+
+
+
+
+<style>
+  .embl-grid {
+    margin-bottom: 48px;
+  }
+</style>
+
+<section class="vf-intro" id="500">
+
+  <div><!-- empty --></div>
+
+  <div class="vf-stack">
+
+  <h1 class="vf-intro__heading ">Error: 500</h1>
+<p class="vf-lede">There was a technical error.</p>
+
+
+<p class="vf-intro__text">Something has gone wrong with our web server when attempting to make this page.</p><p class="vf-intro__text">Unfortunately, the service you are trying to access is currently unavailable. <br>Please try again later.</p>
+  </div>
+</section>
+
+
+<section class="embl-grid embl-grid--has-centered-content">
+  <div></div>
+ <section>
+      <form id="ebi_search" action="/ebisearch/search.ebi" class="vf-form vf-form--search vf-form--search--mini | vf-sidebar vf-sidebar--end">
+        <div class="vf-sidebar__inner" style="flex-wrap: nowrap;">
+          <div class="vf-form__item">
+            <label class="vf-form__label vf-u-sr-only | vf-search__label" for="searchitem">Search</label>
+            <input name="query" type="search" placeholder="Find a gene, protein or chemical" id="searchitem" class="vf-form__input" required="" spellcheck="false" data-ms-editor="true">
+            <input name="requestFrom" id="requestFrom" type="hidden" class="vf-form__input" value="ebi_index">
+          </div>
+          <div class="vf-form__item">
+            <select name="db" id="db" tabindex="1" class="vf-form__select" style="max-width: 150px">
+              <option value="allebi">All</option>
+              <optgroup label="Science search">
+                <option value="genomes">Genomes &amp; metagenomes</option>
+                <option value="nucleotideSequences">Nucleotide sequences</option>
+                <option value="proteinSequences">Protein sequences</option>
+                <option value="smallMolecules">Small molecules</option>
+                <option value="geneExpression">Gene expression</option>
+                <option value="geneDiseaseAssociations">Gene-Disease Associations</option>
+                <option value="diseases">Diseases</option>
+                <option value="molecularInteractions">Molecular interactions</option>
+                <option value="reactionsPathways">Reactions &amp; pathways</option>
+                <option value="proteinFamilies">Protein families</option>
+                <option value="literature">Literature</option>
+                <option value="ontologies">Samples &amp; ontologies</option>
+              </optgroup>
+              <optgroup label="Search web content">
+                <option value="ebiweb_people">EMBL-EBI People</option>
+                <option value="ebiweb">EMBL-EBI web</option>
+                <!-- <option value="ebiweb">EMBL web</option> -->
+              </optgroup>
+            </select>
+          </div>
+
+
+          <button type="submit" class="vf-search__button | vf-button vf-button--primary">
+            <span class="vf-button__text">Search</span>
+          </button>
+        </div>
+      </form>
+      <p class="vf-text-body--5 vf-u-margin__bottom--0">
+        Example searches: <a class="vf-link" href="/ebisearch/search.ebi?db=allebi&amp;requestFrom=ebi_index&amp;query=blast">blast</a>
+        <a class="vf-link" href="/ebisearch/search.ebi?db=allebi&amp;query=keratin&amp;requestFrom=ebi_index">keratin</a>
+        <a class="vf-link" href="/ebisearch/search.ebi?db=allebi&amp;query=bfl1&amp;requestFrom=ebi_index">bfl1</a>
+        | <a class="vf-link" href="https://www.ebi.ac.uk/ebisearch/overview.ebi/about">About EBI Search</a>
+      </p>
+    </section>
+</section>
+
+<section class="embl-grid">
+  <div></div>
+  <div class="vf-content">
+    <h3>Need assistance?</h3>
+    <a class="vf-button vf-button--primary" href="https://www.ebi.ac.uk/support/error">Contact our support team</a>
+  </div>
+</section>
+
+    <!-- embl global footer -->
+
+
+<!-- embl-ebi global footer -->
+<link rel="import" href="https://www.embl.org/api/v1/pattern.html?filter-content-type=article&filter-id=106902&pattern=node-body&source=contenthub" data-target="self" data-embl-js-content-hub-loader>
+
+    <script src="https://assets.emblstatic.net/vf/v2.4.9/scripts/scripts.js"></script>
+<!--
+  When using legacy EBI 1.x JS, we disable the old cookie banner.
+  https://stable.visual-framework.dev/components/ebi-header-footer/
+  -->
+<div class="vf-u-display-none" data-protection-message-disable="true"></div>
+
+<!-- IE11 polyfill JS -->
+<script nomodule crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=default"></script>
+<!-- <script src="/scripts/scripts.js?"></script> -->
+<script defer="defer" src="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/js/script.js"></script>
+<link rel="stylesheet" href="//ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.3/fonts.css" type="text/css" media="all" />
+
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-629242-1', 'auto');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+
+        //- Code to execute when only the HTML document is loaded.
+        //- This doesn't wait for stylesheets,
+        // images, and subframes to finish loading.
+  });
+</script>
+
+  </body>
+</html>
+
+Traceback (most recent call last):
+  File "C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\src\common\orchestrate.py", line 170, in run_stage
+    fn()
+  File "C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\src\common\orchestrate.py", line 298, in stage_test_b
+    test_b_generation.main()
+  File "C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\src\06_generation\test_b_generation.py", line 170, in main
+    baseline_smiles = fetch_baseline_smiles(max(len(gen_smiles), 1), seed, exclude_smiles=set(gen_smiles))
+  File "C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\src\06_generation\test_b_generation.py", line 127, in fetch_baseline_smiles
+    for r in recs:
+  File "C:\Users\yrysz\AppData\Roaming\Python\Python310\site-packages\chembl_webresource_client\query_set.py", line 127, in __next__
+    return self.next()
+  File "C:\Users\yrysz\AppData\Roaming\Python\Python310\site-packages\chembl_webresource_client\query_set.py", line 115, in next
+    self.chunk = self.query.next_page()
+  File "C:\Users\yrysz\AppData\Roaming\Python\Python310\site-packages\chembl_webresource_client\url_query.py", line 434, in next_page
+    return self.get_page()
+  File "C:\Users\yrysz\AppData\Roaming\Python\Python310\site-packages\chembl_webresource_client\url_query.py", line 394, in get_page
+    handle_http_error(res)
+  File "C:\Users\yrysz\AppData\Roaming\Python\Python310\site-packages\chembl_webresource_client\http_errors.py", line 113, in handle_http_error
+    raise exception_class(request.url, request.text)
+chembl_webresource_client.http_errors.HttpApplicationError: Error for url https://www.ebi.ac.uk/chembl/api/data/molecule.json, server response: <!doctype html>
+<html lang="en" class="vf-no-js">
+  <head>
+    <script>
+// Detect if JS is on and swap vf-no-js for vf-js on the html element
+(function(H){H.className=H.className.replace(/\bvf-no-js\b/,'vf-js')})(document.documentElement);
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" media="all" href="/css/styles.css?" /> -->
+    <title>Error: 500 | EMBLâs European Bionformatics Institute</title>
+
+
+
+    <link rel="icon" type="image/x-icon"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/favicon.ico" />
+<link rel="icon" type="image/png"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="192Ã192"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/android-chrome-192x192.png" />
+<!-- Android (192px) -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/apple-icon-114x114.png" />
+<!-- For iPhone 4 Retina display (114px) -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/apple-icon-72x72.png" />
+<!-- For iPad (72px) -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/apple-icon-144x144.png" />
+<!-- For iPad retinat (144px) -->
+<link rel="apple-touch-icon-precomposed"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/apple-icon-57x57.png" />
+<!-- For iPhone (57px) -->
+<link rel="mask-icon"
+  href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/safari-pinned-tab.svg"
+  color="#ffffff" /> <!-- Safari icon for pinned tab -->
+<meta name="msapplication-TileColor" content="#2b5797" /> <!-- MS Icons -->
+<meta name="msapplication-TileImage"
+  content="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/images/logos/EMBL-EBI/favicons/mstile-144x144.png" />
+
+
+
+
+
+
+    <!-- Search indexing optimisations -->
+    <meta class="swiftype" name="what" data-type="string" content="none" />
+    <meta class="swiftype" name="where" data-type="string" content="EMBL-EBI" />
+
+
+    <!-- Descriptive meta -->
+    <meta name="title" content="Error: 500">
+    <meta name="author" content="European Bioinformatics Institute">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ebi.ac.uk/info/error-pages/500-standalone/">
+    <meta property="og:title" content="Error: 500">
+    <meta property="og:description" content="">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://www.ebi.ac.uk/info/error-pages/500-standalone/">
+    <meta property="twitter:title" content="Error: 500">
+    <meta property="twitter:description" content="">
+
+
+    <!-- Content descriptors -->
+    <meta name="embl:who" content="EMBL-EBI Web Dev">
+    <meta name="embl:where" content="EMBL-EBI">
+    <meta name="embl:what" content="none">
+    <meta name="embl:active" content="where">
+
+    <!-- Content role -->
+    <meta name="embl:utility" content="10">
+    <meta name="embl:reach" content="0">
+
+    <!-- Page infromation -->
+    <meta name="embl:maintainer" content="EMBL-EBI Web Dev">
+    <meta name="embl:last-review" content="2021.04.01">
+    <meta name="embl:review-cycle" content="365">
+    <meta name="embl:expiry" content="never">
+
+    <!-- analytics -->
+    <meta name="vf:page-type" content="404;dimension1">
+
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://assets.emblstatic.net/vf/v2.5.7/css/styles.css">
+<!-- JS -->
+<script src="https://assets.emblstatic.net/vf/v2.5.7/scripts/scripts.js"></script>
+<head>
+  <body class="vf-body vf-stack vf-stack--400">
+    <style>head, title, link, meta, style, script {--vf-stack-margin--custom: 0; }</style>
+
+    <!-- See the EBI Header Footer docs: https://stable.visual-framework.dev/components/ebi-header-footer -->
+
+    <link rel="stylesheet" href="https://assets.emblstatic.net/vf/v2.4.5/assets/ebi-header-footer/ebi-header-footer.css" type="text/css" media="all">
+    <header id="masthead-black-bar" class="clearfix masthead-black-bar | ebi-header-footer vf-content vf-u-fullbleed"></header>
+
+
+
+
+<style>
+  .embl-grid {
+    margin-bottom: 48px;
+  }
+</style>
+
+<section class="vf-intro" id="500">
+
+  <div><!-- empty --></div>
+
+  <div class="vf-stack">
+
+  <h1 class="vf-intro__heading ">Error: 500</h1>
+<p class="vf-lede">There was a technical error.</p>
+
+
+<p class="vf-intro__text">Something has gone wrong with our web server when attempting to make this page.</p><p class="vf-intro__text">Unfortunately, the service you are trying to access is currently unavailable. <br>Please try again later.</p>
+  </div>
+</section>
+
+
+<section class="embl-grid embl-grid--has-centered-content">
+  <div></div>
+ <section>
+      <form id="ebi_search" action="/ebisearch/search.ebi" class="vf-form vf-form--search vf-form--search--mini | vf-sidebar vf-sidebar--end">
+        <div class="vf-sidebar__inner" style="flex-wrap: nowrap;">
+          <div class="vf-form__item">
+            <label class="vf-form__label vf-u-sr-only | vf-search__label" for="searchitem">Search</label>
+            <input name="query" type="search" placeholder="Find a gene, protein or chemical" id="searchitem" class="vf-form__input" required="" spellcheck="false" data-ms-editor="true">
+            <input name="requestFrom" id="requestFrom" type="hidden" class="vf-form__input" value="ebi_index">
+          </div>
+          <div class="vf-form__item">
+            <select name="db" id="db" tabindex="1" class="vf-form__select" style="max-width: 150px">
+              <option value="allebi">All</option>
+              <optgroup label="Science search">
+                <option value="genomes">Genomes &amp; metagenomes</option>
+                <option value="nucleotideSequences">Nucleotide sequences</option>
+                <option value="proteinSequences">Protein sequences</option>
+                <option value="smallMolecules">Small molecules</option>
+                <option value="geneExpression">Gene expression</option>
+                <option value="geneDiseaseAssociations">Gene-Disease Associations</option>
+                <option value="diseases">Diseases</option>
+                <option value="molecularInteractions">Molecular interactions</option>
+                <option value="reactionsPathways">Reactions &amp; pathways</option>
+                <option value="proteinFamilies">Protein families</option>
+                <option value="literature">Literature</option>
+                <option value="ontologies">Samples &amp; ontologies</option>
+              </optgroup>
+              <optgroup label="Search web content">
+                <option value="ebiweb_people">EMBL-EBI People</option>
+                <option value="ebiweb">EMBL-EBI web</option>
+                <!-- <option value="ebiweb">EMBL web</option> -->
+              </optgroup>
+            </select>
+          </div>
+
+
+          <button type="submit" class="vf-search__button | vf-button vf-button--primary">
+            <span class="vf-button__text">Search</span>
+          </button>
+        </div>
+      </form>
+      <p class="vf-text-body--5 vf-u-margin__bottom--0">
+        Example searches: <a class="vf-link" href="/ebisearch/search.ebi?db=allebi&amp;requestFrom=ebi_index&amp;query=blast">blast</a>
+        <a class="vf-link" href="/ebisearch/search.ebi?db=allebi&amp;query=keratin&amp;requestFrom=ebi_index">keratin</a>
+        <a class="vf-link" href="/ebisearch/search.ebi?db=allebi&amp;query=bfl1&amp;requestFrom=ebi_index">bfl1</a>
+        | <a class="vf-link" href="https://www.ebi.ac.uk/ebisearch/overview.ebi/about">About EBI Search</a>
+      </p>
+    </section>
+</section>
+
+<section class="embl-grid">
+  <div></div>
+  <div class="vf-content">
+    <h3>Need assistance?</h3>
+    <a class="vf-button vf-button--primary" href="https://www.ebi.ac.uk/support/error">Contact our support team</a>
+  </div>
+</section>
+
+    <!-- embl global footer -->
+
+
+<!-- embl-ebi global footer -->
+<link rel="import" href="https://www.embl.org/api/v1/pattern.html?filter-content-type=article&filter-id=106902&pattern=node-body&source=contenthub" data-target="self" data-embl-js-content-hub-loader>
+
+    <script src="https://assets.emblstatic.net/vf/v2.4.9/scripts/scripts.js"></script>
+<!--
+  When using legacy EBI 1.x JS, we disable the old cookie banner.
+  https://stable.visual-framework.dev/components/ebi-header-footer/
+  -->
+<div class="vf-u-display-none" data-protection-message-disable="true"></div>
+
+<!-- IE11 polyfill JS -->
+<script nomodule crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=default"></script>
+<!-- <script src="/scripts/scripts.js?"></script> -->
+<script defer="defer" src="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.4/js/script.js"></script>
+<link rel="stylesheet" href="//ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.3/fonts.css" type="text/css" media="all" />
+
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-629242-1', 'auto');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+
+        //- Code to execute when only the HTML document is loaded.
+        //- This doesn't wait for stylesheets,
+        // images, and subframes to finish loading.
+  });
+</script>
+
+  </body>
+</html>
+
+
+2026-08-31 18:01:16 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
+2026-08-31 18:01:16 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
+2026-08-31 18:01:19 git push: ok
+2026-08-31 18:01:19 [test_b_generation] провалился за 30.8 мин
+2026-08-31 18:01:19 === Пайплайн завершён (все этапы пройдены или остановлен по дедлайну/CONTROL.json) ===
+2026-08-31 18:01:19 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_public.csv
+2026-08-31 18:01:19 обезличенная публичная копия: C:\Users\yrysz\Downloads\onco-target-explorer\onco-target-explorer\data\processed\test_a_docked_experimental_secondary_public.csv
+2026-08-31 18:01:22 git push: ok
